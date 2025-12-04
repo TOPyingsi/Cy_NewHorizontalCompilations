@@ -1,6 +1,7 @@
-import { _decorator, Color, Component, director, Label, Node, NodeEventType, ParticleSystem2D, Sprite, UIOpacity, UITransform, Vec3 } from 'cc';
+import { _decorator, Color, Component, director, Label, Node, NodeEventType, ParticleSystem2D, Sprite, UIOpacity, UITransform, v3, Vec3 } from 'cc';
 import { ZSTSB_GameMgr } from './ZSTSB_GameMgr';
 import { ZSTSB_AudioManager } from './ZSTSB_AudioManager';
+import { ZSTSB_GameData } from './ZSTSB_GameData';
 const { ccclass, property } = _decorator;
 
 @ccclass('ZSTSB_Pixel')
@@ -13,7 +14,7 @@ export class ZSTSB_Pixel extends Component {
     private pixelColor: Color = new Color();
 
     public sprite: Sprite = null;
-    private label: Label = null;
+    private label: Label = null
     private isFilled: boolean = false;
     public get IsFilled(): boolean {
         // console.log("填充状态" + this.isFilled);
@@ -26,12 +27,8 @@ export class ZSTSB_Pixel extends Component {
     private particle: ParticleSystem2D = null;
 
     protected onLoad(): void {
-        // this.sprite = this.node.getChildByName("图片").getComponent(Sprite);
-        // this.sprite = this.node.getComponent(Sprite);
         this.label = this.node.getChildByName("数字").getComponent(Label);
-        // this.particle = this.node.getChildByName("粒子").getComponent(ParticleSystem2D);
         this.changeUIOpacity(0);
-
     }
 
     showIndex: number = 5;
@@ -46,21 +43,13 @@ export class ZSTSB_Pixel extends Component {
         this.spUIOp = this.sprite.getComponent(UIOpacity);
 
         let buildingName = ZSTSB_GameMgr.instance.curBuildingName;
-        if (buildingName === "2-31"
-            || buildingName === "2-8"
-            || buildingName === "2-81"
-            || buildingName === "2-9"
-            || buildingName === "2-10"
-            || buildingName === "2-101") {
-            this.showIndex = 3;
-        }
-        else {
-            this.showIndex = 5;
-        }
+        let showNum = ZSTSB_GameData.getShowNumByName(buildingName);
+        this.showIndex = showNum;
 
         if (color.a === 0) {
             this.pixelColor = new Color(0, 0, 0, 0);
             this.sprite.color = new Color(0, 0, 0, 0);
+            return;
         }
         else {
             this.pixelColor = color;
@@ -82,7 +71,9 @@ export class ZSTSB_Pixel extends Component {
         }
 
         // this.scheduleOnce(() => {
-        //     this.sprite.color = this.pixelColor;
+        //     if (this.colorIndex === 10) {
+        //         console.log(this.pixelColor);
+        //     }
         // }, 2);
 
         director.getScene().on("钻石填色本_颜色填充加一", (colorIndex: number) => {
@@ -93,7 +84,7 @@ export class ZSTSB_Pixel extends Component {
     }
 
     showLabel(flag: boolean) {
-        console.log(this.colorIndex + "显示");
+        // console.log(this.colorIndex + "显示");
         this.label.node.active = flag;
     }
 
@@ -112,7 +103,6 @@ export class ZSTSB_Pixel extends Component {
             && this.pixelColor.g === mgrColor.g
             && this.pixelColor.b === mgrColor.b
             && this.pixelColor.a === mgrColor.a) {
-            // console.log("填充正确像素");
             this.isFilled = true;
             this.label.string = "";
 
@@ -123,22 +113,18 @@ export class ZSTSB_Pixel extends Component {
             }
 
             this.sprite.color = spriteColor;
-            // this.sprite.color.set(spriteColor.r, spriteColor.g, spriteColor.b, spriteColor.a);
-
-            // this.particle.startColor = spriteColor;
-            // this.particle.endColor = spriteColor;
-
-            // this.particle.node.active = true;
-            // this.particle.resetSystem();
 
             ZSTSB_AudioManager.instance.playSFX("填涂");
+
+            if (ZSTSB_GameData.Instance.isGameFirst && ZSTSB_GameMgr.instance.isFirstFill) {
+                ZSTSB_GameMgr.instance.isFirstFill = false;
+                director.getScene().emit("钻石填色本_新手教程");
+            }
+
 
             ZSTSB_GameMgr.instance.fillColor(this.colorIndex);
             ZSTSB_GameMgr.instance.ParticleEffect(this.node.worldPosition.clone(), spriteColor);
 
-        }
-        else {
-            // console.log("填充错误像素");
         }
     }
 
@@ -156,12 +142,6 @@ export class ZSTSB_Pixel extends Component {
         }
 
         this.sprite.color = spriteColor;
-
-        // this.particle.startColor = spriteColor;
-        // this.particle.endColor = spriteColor;
-
-        // this.particle.node.active = true; 
-        // this.particle.resetSystem();
 
         ZSTSB_GameMgr.instance.fillColor(this.colorIndex);
         ZSTSB_GameMgr.instance.ParticleEffect(this.node.worldPosition.clone(), spriteColor);
@@ -182,8 +162,6 @@ export class ZSTSB_Pixel extends Component {
 
         this.sprite.color = spriteColor;
 
-        // ZSTSB_GameMgr.instance.finishColorNum++;
-        // director.getScene().emit("钻石填色本_颜色填充加一", ZSTSB_GameMgr.instance.finishColorNum);
     }
 
     reset() {
@@ -196,7 +174,6 @@ export class ZSTSB_Pixel extends Component {
     }
 
     changeUIOpacity(opacity: number) {
-        // this.uiOp.opacity = opacity;
         if (this.spUIOp) {
             this.spUIOp.opacity = opacity;
         }

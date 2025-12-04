@@ -1,0 +1,124 @@
+import { _decorator, Component, EventTouch, Input, instantiate, Node, Prefab, Touch, UITransform, v2, v3, Vec2, Vec3 } from 'cc';
+import { XCT_KLM_DataManager, XCT_KLM_IngredientType } from '../../Manager/XCT_KLM_DataManager';
+import { EventManager } from 'db://assets/Scripts/Framework/Managers/EventManager';
+import { XCT_Events } from '../../Common/XCT_Events';
+const { ccclass, property } = _decorator;
+
+@ccclass('XCT_KLM_Pies')
+export class XCT_KLM_Pies extends Component {
+
+    startPos: Vec3 = null;
+    targetPos: Vec3 = null;
+    piePrefab: Node = null;
+
+    @property(Node)
+    targetArea: Node = null; // 锅子节点
+    private isCanMove: boolean = false;
+
+    protected onLoad(): void {
+        this.startPos = this.node.getWorldPosition();
+        this.targetPos = this.targetArea.getWorldPosition();
+        this.node.getChildByName('selected').active = false;
+        this.piePrefab = this.node.getChildByName('piePrefab');
+        this.piePrefab.active = false;
+        // 注册触摸事件
+        this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this);
+        this.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        this.node.on(Node.EventType.TOUCH_END, this.onTouchEnd, this);
+        this.node.on(Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
+    }
+
+    /** 触摸开始：初始化角度 */
+    private onTouchStart(event: Touch): void {
+        if (XCT_KLM_DataManager.Instance.isPacked) {
+            EventManager.Scene.emit(XCT_Events.showTip, "卷冷面后不可再添加材料哦！");
+            return;
+        }
+        if (XCT_KLM_DataManager.Instance.currentCookedSteps.includes("冷面皮")) {
+            EventManager.Scene.emit(XCT_Events.showTip, "冷面皮只可以放一张！");
+            return;
+        }
+        let hasSauce = false;
+        let sauces = ["油"]
+        XCT_KLM_DataManager.Instance.currentCookedSteps.forEach((ingredient: string) => {
+            if (hasSauce) return;
+            if (sauces.includes(ingredient)) {
+                hasSauce = true;
+            }
+        })
+        if (!hasSauce) {
+            EventManager.Scene.emit(XCT_Events.showTip, "要先刷油才可以放冷面皮哦！");
+            this.isCanMove = false;
+
+            return;
+        }
+
+        if(XCT_KLM_DataManager.Instance.playerData.currentDay == 1 &&!XCT_KLM_DataManager.Instance.isTutorialEnd){
+            let num = [1];
+            if (num.indexOf(XCT_KLM_DataManager.Instance.tutorialIdx) == -1) {
+                return;
+            }
+        }
+
+
+        EventManager.Scene.emit(XCT_Events.KLM_Cancel_All_Ingredients);
+        this.isCanMove = true;
+
+        const touchPos = event.getUILocation(); // 触摸点世界坐标
+        this.node.setWorldPosition(v3(touchPos.x, touchPos.y, 0));
+        this.node.getChildByName('selected').active = true;
+    }
+
+    /** 触摸移动：实时更新角度和旋转 */
+    private onTouchMove(event: Touch): void {
+        if (!this.isCanMove) return;
+
+        const touchPos = event.getUILocation();
+
+        this.node.setWorldPosition(v3(touchPos.x, touchPos.y, 0));
+    }
+
+
+    /** 触摸结束：重置状态 */
+    private onTouchEnd(event: Touch): void {
+        if (!this.isCanMove) return;
+
+        const uiTrans = this.targetArea.getComponent(UITransform);
+        const isInside = uiTrans.getBoundingBoxToWorld().contains(v2(this.node.getWorldPosition().x, this.node.getWorldPosition().y))
+
+        if (isInside) {
+            let pieNode = instantiate(this.piePrefab);
+            pieNode.parent = this.targetArea.getChildByName("Contanter");
+            pieNode.setWorldPosition(this.targetPos);
+            pieNode.active = true;
+            this.node.setWorldPosition(this.startPos);
+            this.node.getChildByName('selected').active = false;
+
+            if (XCT_KLM_DataManager.Instance.tutorialIdx == 1) {
+                EventManager.Scene.emit(XCT_Events.HandAnimation_End);
+                XCT_KLM_DataManager.Instance.tutorialIdx++;
+            }
+            XCT_KLM_DataManager.Instance.currentCookedSteps.push(this.node.name);
+
+            if (!XCT_KLM_DataManager.Instance.currentDishes[this.node.name]) {
+                XCT_KLM_DataManager.Instance.currentDishes[this.node.name] = {
+                    type: XCT_KLM_IngredientType.SPICE,
+                    need: 1,
+                    count: 0,
+                    percentage: 0,
+                    rotateCount: 0
+                }
+            }
+            XCT_KLM_DataManager.Instance.currentDishes[this.node.name].count++;
+
+            XCT_KLM_DataManager.Instance.playerData.money -= XCT_KLM_DataManager.Instance.ingredientsConfigObject[this.node.name].cost;
+            XCT_KLM_DataManager.Instance.dayCost += XCT_KLM_DataManager.Instance.ingredientsConfigObject[this.node.name].cost;
+            EventManager.Scene.emit(XCT_Events.KLM_Update_Money);
+        } else {
+            this.node.setWorldPosition(this.startPos);
+            this.node.getChildByName('selected').active = false;
+        }
+    }
+}
+
+

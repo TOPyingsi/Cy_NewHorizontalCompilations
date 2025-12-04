@@ -1,0 +1,4789 @@
+[
+    {
+        "day": 1,
+        "customers": [
+            {
+                "id": 1,
+                "avatar": "学生",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "开始制作",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份冷面，多放鸡蛋和生菜，少点洋葱哈"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就要一份冷面皮，刷上油，放个鸡蛋，加点点浅色酱，加一片生菜和一点点洋葱就行"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我整个份冷面，多搁点洋葱和生菜，抹点浅色酱就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "OK!",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷好油，放一个鸡蛋，撒上浅色酱，洋葱多放几片，生菜也多来点儿"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，配料都正常放就好，不要太多哦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "就来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就要一份冷面皮，刷上油，一个鸡蛋，一点浅色酱，放一片洋葱和一片生菜就可以啦"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "avatar": "体育",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份量大的冷面，多放鸡蛋和生菜，管饱！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷上油，放三个鸡蛋，一点浅色酱，来一片洋葱，再来两片生菜，越多越好"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，两个鸡蛋，其他配料正常放"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，放两个鸡蛋，抹上浅色酱，加一片洋葱和一片生菜"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "avatar": "上班族",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，多放生菜，快点做，赶时间"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷好油，一个鸡蛋，一点浅色酱，一片洋葱，再来两片生菜，快点哈"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再描述下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份个性冷面，鸡蛋和洋葱多整点，够味！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，两个鸡蛋，一点浅色酱，洋葱多放几片，再来一片生菜，要够劲"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，多放洋葱，其他正常"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，一个鸡蛋，一点浅色酱，洋葱多来两片，一片生菜就行"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "customers": [
+            {
+                "id": 1,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "我考虑一下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "老板，这肥猫老在这附近晃悠，瞧瞧这体型，你不领养它，估计会偷你东西吃。"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 3
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "话说回来，我的个性冷面，要多放俩鸡蛋，加点火腿肠！"
+                    },
+                    {
+                        "id": 3,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，两个鸡蛋打上去，抹点浅色酱，放一片洋葱，加一根火腿肠，齐活！"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面哦，鸡蛋要一个，多放点生菜，加点火腿肠和芝麻，清淡点~"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一张刷好油，一个鸡蛋摊开，抹上浅色酱，放两片生菜，加一根火腿肠，最后撒点芝麻就行啦"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "就来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份实在的冷面，三个鸡蛋，多放洋葱，加根火腿肠，味道足点"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "稍等",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，三个鸡蛋打匀摊好，抹上浅色酱，放两片洋葱，加一根火腿肠，搞定"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "avatar": "体育",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "大份冷面，俩鸡蛋，多来点火腿肠，生菜洋葱都放上，撒点芝麻补能量"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "OK!",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一张刷油，两个鸡蛋摊好，抹上浅色酱，放一片生菜、一片洋葱、两根火腿肠，最后撒芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "avatar": "上班族",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "就来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份标准冷面，鸡蛋洋葱生菜火腿肠都来点，赶时间老板"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "稍等片刻",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，一个鸡蛋，抹浅色酱，加一片洋葱、一片生菜、一根火腿肠"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "OK!",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我来份冷面，多放俩鸡蛋，芝麻多撒点，生菜少来点，别糊弄"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一张刷油，两个鸡蛋摊好，抹上浅色酱，放一片生菜，多撒点芝麻，要足量"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "avatar": "学生",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上马上！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说明白点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，加个鸡蛋，多放两根火腿肠，撒点芝麻和洋葱，谢谢"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，一个鸡蛋，抹浅色酱，放两根火腿肠、一片洋葱，最后撒上芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说仔细",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份料足的冷面，三个鸡蛋，多放洋葱，加根火腿肠和芝麻，别抠搜"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "稍等哦！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，三个鸡蛋摊开，抹浅色酱，放两片洋葱、一根火腿肠，撒上芝麻，要够量"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 3,
+        "customers": [
+            {
+                "id": 101,
+                "avatar": "外卖员",
+                "order": {},
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "可以",
+                                "action": "开展外卖业务",
+                                "nextSegment": 2
+                            },
+                            {
+                                "text": "啥意思",
+                                "action": "下一段对话",
+                                "nextSegment": 3
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "你好，有没有兴趣开通外卖业务，免费赠送这个机子，开通外卖功能后，订单量会暴增哦！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "好的，机子就放在这了，随时可以开通，我是您的专属外卖员，期待合作！"
+                    },
+                    {
+                        "id": 3,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开展外卖业务",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是机子放在你这，随时都可开通的意思，开通后就可以，用这台机子接外卖订单啦！"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "拿去吧",
+                                "action": "递餐",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你好，我来取外卖订单！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "送达",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "那我出发了！"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份冷面，多放俩鸡蛋，加点火腿肠，简单点就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "收到",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷上油，放两个鸡蛋，抹点浅色酱，加一片洋葱、一片生菜和一根火腿肠"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "avatar": "体育",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，整份量大的冷面，鸡蛋多来点，加鸡柳和生菜，管饱！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "收到",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷油，三个鸡蛋，抹点调味酱，来两片生菜，再加两根鸡柳，越多越够劲"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "喂，来份冷面，多放洋葱，加辣白菜和芝麻，用花生酱啊，别搞错了"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "收到",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷好油，一个鸡蛋，抹花生酱，放两片洋葱，加一勺辣白菜，撒点芝麻，快点做"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再描述下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "你好，一份冷面，多放点生菜，撒点芝麻，少点酱哦，谢谢"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷薄薄一层油，一个鸡蛋，少抹点浅色酱，放两片生菜，最后撒点芝麻就好啦"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "avatar": "上班族",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，俩鸡蛋，加火腿肠和鸡柳，快点，赶时间上班"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷油，两个鸡蛋，抹点调味酱，放一根火腿肠和一根鸡柳，快速做好就行"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "嘿，来份个性冷面，双蛋加辣白菜和辣条，花生酱安排上，够味！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，两个鸡蛋，抹花生酱，来两勺辣白菜，加一根辣条，必须带劲"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "avatar": "学生",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，正常配料就行，加个鸡蛋和芝麻，谢谢啦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷油，一个鸡蛋，抹点浅色酱，加一片洋葱、一片生菜，最后撒点芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份冷面，两个鸡蛋，加火腿肠和鸡柳，正常调味就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷油，两个鸡蛋，抹点调味酱，加一片洋葱、一根火腿肠和一根鸡柳"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 4,
+        "customers": [
+            {
+                "id": 1,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份冷面，多放俩鸡蛋，加点火腿肠，快点搞！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷上油，放两个鸡蛋，抹点浅色酱，加一片洋葱、一片生菜，再来一根火腿肠"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "你好，一份冷面，加个鸡蛋，多放生菜和芝麻呀"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷点油，放一个鸡蛋，加调味酱，一片洋葱，两片生菜，撒点芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再描述下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，两个鸡蛋，多放洋葱，加点辣白菜"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，放两个鸡蛋，抹浅色酱，加两片洋葱、一片生菜和一点辣白菜"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "avatar": "学生",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，加个鸡蛋和鸡柳，撒点芝麻哈"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，放一个鸡蛋，加调味酱，一片洋葱、一片生菜、一根鸡柳，再撒点芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份个性冷面，俩鸡蛋，加辣条，够味就行！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，俩鸡蛋，抹浅色酱，加一片洋葱、一片生菜，再来点辣条"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "avatar": "上班族",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，加个鸡蛋和火腿肠，快点做，赶时间"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，一个鸡蛋，加调味酱，一片洋葱、一片生菜、一根火腿肠，快点弄好"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "avatar": "体育",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份量大的冷面，俩鸡蛋，多放生菜和鸡柳，管饱！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷上油，放两个鸡蛋，抹浅色酱，一片洋葱，两片生菜，再来一根鸡柳"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，多放洋葱，加点辣白菜和芝麻，其他正常"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，一个鸡蛋，加调味酱，两片洋葱、一片生菜、一点辣白菜，再撒点芝麻"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 5,
+        "customers": [
+            {
+                "id": 1,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "细说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份带劲的冷面，多放鸡蛋和辣条，其他整点酷炫的配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，俩鸡蛋，浅色酱来点，放片洋葱、片生菜，加根火腿肠、根辣条，撒点芝麻，齐活！"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "avatar": "学生",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，多放生菜和鸡柳，酱用调味酱就行，实惠点！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，一个鸡蛋，抹调味酱，放片洋葱、俩片生菜，加点辣白菜、根鸡柳，撒点芝麻。"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝士": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说仔细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份清爽的冷面，加个鸡蛋和芝士，配料简单点就好~"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，一个鸡蛋，抹点浅色酱，放片洋葱、片生菜，加片芝士、根火腿肠，撒点芝麻。"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "猪排": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份实在的冷面，多放鸡蛋和洋葱，加块猪排，别偷工减料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，俩鸡蛋，抹调味酱，放俩片洋葱、片生菜，加点辣白菜、块猪排，撒点芝麻。"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "avatar": "体育",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，整份管饱的冷面，鸡蛋多来点，鸡柳也加够，生菜不能少！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，三个鸡蛋，抹浅色酱，放片洋葱、俩片生菜，加俩根鸡柳、根火腿肠，撒点芝麻。"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "avatar": "上班族",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "猪排": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝士": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份快手冷面，加个鸡蛋和猪排，有啥酱料来一种，快点做我赶时间！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，一个鸡蛋，抹调味酱，放片洋葱、片生菜，加块猪排、点辣白菜，放片芝士。"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再描述",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份冷面，俩鸡蛋，加点火腿肠和鸡柳，正常调味就行。"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，俩鸡蛋，抹浅色酱，放片洋葱、片生菜，加根火腿肠、根辣条、根鸡柳。"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝士": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说详细",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份好吃的冷面，加芝士和辣白菜，生菜多放些，酱用调味酱~"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮刷油，一个鸡蛋，抹调味酱，放片洋葱、俩片生菜，加片芝士、点辣白菜，撒点芝麻。"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 6,
+        "customers": [
+            {
+                "id": 1,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份冷面，多放俩鸡蛋，加点火腿肠和芝麻，清淡点就行~"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面皮，刷上油，放两个鸡蛋，抹点浅色酱，加一片洋葱、一片生菜，再来一根火腿肠和一小把芝麻哦"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "avatar": "上班族",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鱼片": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，多放鸡柳，加辣白菜和鱼片，快点弄，赶时间！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷好油，一个鸡蛋，放调味酱，加两块鸡柳、一点辣白菜、一片生菜和一片鱼片，速度要快啊"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "猪排": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份实在的冷面，鸡蛋多放几个，加猪排和辣条，料给足咯！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷上油，三个鸡蛋，抹花生酱，放两片洋葱、两片生菜，加一块猪排和一根辣条，别抠搜的"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝士": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再描述下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，整个个性冷面，双蛋加辣白菜，再来点芝士和芝麻，酷一点！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，两个鸡蛋，放调味酱，加两坨辣白菜、一片芝士、一根火腿肠，最后撒把芝麻，要够炫"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鱼片": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，正常配料，加个鸡柳和鱼片，别太花哨"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，一个鸡蛋，抹浅色酱，放一片洋葱、一片生菜，加一块鸡柳和一片鱼片，简单点"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "avatar": "学生",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份管饱的冷面，多放鸡蛋和火腿肠，加辣条，要香点！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷上油，两个鸡蛋，放调味酱，加两片生菜、两根火腿肠、一根辣条，最后撒点芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "avatar": "体育",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "猪排": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份量大的冷面，三个鸡蛋，加猪排和鸡柳，多放生菜！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "就来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，三个鸡蛋，抹花生酱，放一片洋葱、两片生菜，加一块猪排和一块鸡柳，要够吃"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝士": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鱼片": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再描述下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，弄份潮点的冷面，双蛋加辣白菜，放芝士和鱼片，撒点芝麻！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，两个鸡蛋，抹浅色酱，加两坨辣白菜、一片芝士、一片鱼片，最后撒把芝麻，要够味"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 7,
+        "customers": [
+            {
+                "id": 1,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，多放鸡蛋和生菜，加点火腿肠和芝麻，谢谢啦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷上油，放两个鸡蛋，抹点浅色酱，加一片洋葱、两片生菜、一根火腿肠，再撒点芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "avatar": "上班族",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "赶时间，一份冷面，多放洋葱和鸡柳，加辣白菜，调味酱就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷油，一个鸡蛋，抹调味酱，放两片洋葱、一片生菜、两块鸡柳，再来点辣白菜"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "猪排": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份实在的冷面，鸡蛋和生菜多来点，加块猪排和辣条，用花生酱"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份，刷上油，三个鸡蛋，抹花生酱，一片洋葱、三片生菜、一块猪排，再放根辣条"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鱼片": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝士": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细描述",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "超酷冷面来一份！洋葱多到爆，加两片鱼片和芝士，鸡蛋也不能少～"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，两个鸡蛋，抹浅色酱，三片洋葱、一片生菜、两片鱼片，再来块芝士"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，正常配料，多放两根火腿肠和生菜，撒点芝麻"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，一个鸡蛋，抹调味酱，一片洋葱、两片生菜、两根火腿肠，撒上芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "avatar": "学生",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "就来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，一份冷面，多放鸡蛋和鸡柳，加辣白菜，用花生酱，谢谢"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，两个鸡蛋，抹花生酱，一片洋葱、一片生菜、两块鸡柳，再来点辣白菜"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "avatar": "体育",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "猪排": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鱼片": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份量大的冷面！鸡蛋、生菜多来点，加猪排和鱼片，够吃就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，三个鸡蛋，抹浅色酱，两片洋葱、三片生菜、一块猪排和一片鱼片"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝士": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再描述下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "个性冷面！放俩鸡蛋，加两根辣条和芝士，调味酱安排上～"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，两个鸡蛋，抹调味酱，一片洋葱、一片生菜、两根辣条，再来块芝士"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "avatar": "美女",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，用花生酱，加根火腿肠和芝麻，生菜多一点点哦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，一个鸡蛋，抹花生酱，一片洋葱、两片生菜、一根火腿肠，撒点芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "avatar": "学生",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣白菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上马上！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，冷面加俩鸡蛋，多放洋葱，再来点鸡柳和辣白菜，用浅色酱"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，两个鸡蛋，抹浅色酱，两片洋葱、一片生菜、一块鸡柳，加点辣白菜"
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "avatar": "便衣",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "猪排": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鱼片": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份冷面，加猪排和鱼片，生菜多放，用调味酱就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，一个鸡蛋，抹调味酱，一片洋葱、两片生菜、一块猪排和一片鱼片"
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "avatar": "包租婆",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细描述",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份料足的冷面，三个鸡蛋，两根火腿肠，加辣条，用花生酱"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，三个鸡蛋，抹花生酱，一片洋葱、两片生菜、两根火腿肠，放根辣条"
+                    }
+                ]
+            },
+            {
+                "id": 13,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "浅色酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡柳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝士": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "超炫冷面！洋葱多放，俩鸡蛋，两块鸡柳加芝士，浅色酱搞起～"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，两个鸡蛋，抹浅色酱，三片洋葱、一片生菜、两块鸡柳，再来块芝士"
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "avatar": "非主流",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "调味酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鱼片": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "芝麻": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "个性冷面！俩鸡蛋，两片鱼片，撒点芝麻，调味酱安排上～"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，两个鸡蛋，抹调味酱，一片洋葱、一片生菜、两片鱼片，撒上芝麻"
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "avatar": "体育",
+                "order": {
+                    "冷面皮": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "油": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "洋葱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "花生酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "猪排": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "大份冷面来一份！鸡蛋、生菜多来点，加猪排和火腿肠，用花生酱"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "冷面皮一份刷油，三个鸡蛋，抹花生酱，两片洋葱、三片生菜、一块猪排和一根火腿肠"
+                    }
+                ]
+            }
+        ]
+    }
+]

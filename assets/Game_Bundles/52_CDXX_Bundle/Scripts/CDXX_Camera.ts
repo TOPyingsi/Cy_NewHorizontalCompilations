@@ -1,0 +1,54 @@
+import { _decorator, Component, math, Node, Rect, v3, Vec3 } from 'cc';
+import { CDXX_GameManager } from './CDXX_GameManager';
+const { ccclass, property } = _decorator;
+
+@ccclass('CDXX_Camera')
+export class CDXX_Camera extends Component {
+
+    @property(Node)
+    Target: Node = null;
+
+    @property(Rect)
+    followArea: Rect = new Rect(0, 0, 1000, 1000); // 跟随区域（定义一个矩形区域）
+
+    @property(Vec3)
+    cameraOffset: Vec3 = new Vec3(0, 0, 0); // 摄像机的偏移量
+
+    @property(Rect)
+    cameraBounds: Rect = new Rect(0, 0, 2000, 2000); // 摄像机的移动范围
+
+    Y: number = 0;
+
+
+    protected onLoad(): void {
+        this.Y = this.node.getWorldPosition().clone().y;
+    }
+
+    protected update(dt: number): void {
+        if (CDXX_GameManager.Instance.IsBattle) {
+            this.node.setPosition(v3(0, 0, 1000));
+            return;
+        }
+        if (this.Target) {
+            // 获取 Player 当前的位置
+            const playerPos = this.Target.worldPosition;
+            // console.log(playerPos.x, playerPos.y);
+            // 判断 Player 是否在跟随区域内
+            // 平滑跟随 Player
+            const currentCameraPos = this.node.worldPosition;
+            const targetPos = new Vec3(playerPos.x + this.cameraOffset.x, playerPos.y + this.cameraOffset.y, currentCameraPos.z);
+
+            // 使用插值 (Lerp) 实现平滑跟随
+            const smoothPos = Vec3.lerp(new Vec3(), currentCameraPos, targetPos, 0.1);
+
+            // 限制摄像机的移动范围
+            smoothPos.x = math.clamp(smoothPos.x, this.cameraBounds.xMin, this.cameraBounds.xMax);
+
+            // smoothPos.y = math.clamp(smoothPos.y, this.cameraBounds.yMin, this.cameraBounds.yMax);
+            smoothPos.y = this.Y;
+            this.node.setWorldPosition(smoothPos);
+        }
+    }
+}
+
+

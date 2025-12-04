@@ -29,11 +29,7 @@ export class ZSTSB_FillColor extends Component {
         this.node.on(NodeEventType.TOUCH_END, this.onTouchEnd, this);
 
         director.getScene().on("钻石填色本_颜色填充完毕", (colorIndex: number) => {
-            if (this.colorIndex == colorIndex) {
-                this.colorIndexLabel.string = "";
-                this.node.getChildByName("完成").active = true;
-                this.node.off(NodeEventType.TOUCH_END, this.onTouchEnd, this);
-            }
+            this.onColorFilled(colorIndex);
         }, this);
     }
 
@@ -42,5 +38,19 @@ export class ZSTSB_FillColor extends Component {
         ZSTSB_GameMgr.instance.SwitchColorNodes(this.colorValue);
         ZSTSB_GameMgr.instance.selectNodeRoot = this.node;
         ZSTSB_AudioManager.instance.playSFX("按钮");
+    }
+
+    onDestroy() {
+        // 清理事件监听器
+        this.node.off(NodeEventType.TOUCH_END, this.onTouchEnd, this);
+        director.getScene().off("钻石填色本_颜色填充完毕", this.onColorFilled, this);
+    }
+
+    private onColorFilled(colorIndex: number) {
+        if (this.colorIndex == colorIndex) {
+            this.colorIndexLabel.string = "";
+            this.node.getChildByName("完成").active = true;
+            this.node.off(NodeEventType.TOUCH_END, this.onTouchEnd, this);
+        }
     }
 }

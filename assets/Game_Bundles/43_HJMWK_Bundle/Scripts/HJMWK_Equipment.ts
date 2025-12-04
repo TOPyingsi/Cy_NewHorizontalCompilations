@@ -55,7 +55,7 @@ export class HJMWK_Equipment extends Component {
             const item = instantiate(this.ItemEquipmentPrefab);
             item.parent = this.Content;
             const itemEquipment: HJMWK_ItemEquipment = item.getComponent(HJMWK_ItemEquipment);
-            itemEquipment.show(key, count)
+            itemEquipment.show(key, count);
             if (key === HJMWK_GameData.Instance.CurProp) itemEquipment.onClick();
             this.MapProp.get(key).push(itemEquipment);
         }

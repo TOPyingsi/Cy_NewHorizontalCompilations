@@ -1,4 +1,4 @@
-import { _decorator, Color, Component, director, DynamicAtlasManager, dynamicAtlasManager, EventTouch, ImageAsset, instantiate, macro, Node, ParticleSystem2D, Prefab, ScrollView, Sprite, SpriteFrame, Texture2D, tween, UITransform, v3, Vec3 } from 'cc';
+import { _decorator, Button, Color, Component, director, DynamicAtlasManager, EventTouch, gfx, ImageAsset, instantiate, Label, macro, Node, NodeEventType, ParticleSystem2D, Prefab, renderer, ScrollView, sp, Sprite, SpriteFrame, sys, Texture2D, tween, UITransform, v3, Vec3 } from 'cc';
 import { ZSTSB_Pixel } from './ZSTSB_Pixel';
 import { ZSTSB_Incident } from './ZSTSB_Incident';
 import { ZSTSB_FillColor } from './ColorScene/ZSTSB_FillColor';
@@ -6,10 +6,9 @@ import { ZSTSB_GameData } from './ZSTSB_GameData';
 import { ZSTSB_AudioManager } from './ZSTSB_AudioManager';
 import { ZSTSB_PixelPool } from './ZSTSB_PixelPool';
 import { ZSTSB_ParticlePool } from './ZSTSB_ParticlePool';
+import { ProjectEvent, ProjectEventManager } from 'db://assets/Scripts/Framework/Managers/ProjectEventManager';
+import { UIManager } from 'db://assets/Scripts/Framework/Managers/UIManager';
 const { ccclass, property } = _decorator;
-
-macro.CLEANUP_IMAGE_CACHE = false;
-DynamicAtlasManager.instance.enabled = true;
 
 @ccclass('ZSTSB_GameMgr')
 export class ZSTSB_GameMgr extends Component {
@@ -27,13 +26,17 @@ export class ZSTSB_GameMgr extends Component {
     selectNode: Node | null = null;
 
     @property(Node)
-    CourseNode: Node | null = null;
-
-    @property(Node)
     ControlNode: Node | null = null;
 
     @property(Node)
     Target: Node | null = null;
+
+    @property(Label)
+    CurModeLabel: Label = null;
+
+    AirWall: Node = null;
+
+    CourseNode: Node | null = null;
 
     selectNodeRoot: Node | null = null;
 
@@ -53,6 +56,8 @@ export class ZSTSB_GameMgr extends Component {
     public fillNodes: Node[] = [];
     public posNodes: Node[] = [];
 
+    public isPoolInit: boolean = false;
+    public isFirstFill: boolean = true;
     public isUseProp: boolean = false;
     public isLock: boolean = false;
 
@@ -63,19 +68,26 @@ export class ZSTSB_GameMgr extends Component {
     public start() {
         ZSTSB_GameMgr.instance = this;
 
+        if (ZSTSB_GameData.isText) {
+            this.node.getChildByName("测试").active = true;
+        }
+        else {
+            this.node.getChildByName("测试").active = false;
+        }
+
+        if (!ZSTSB_GameData.Instance.isMapFirst) {
+            director.getScene().getChildByPath("Canvas/钻石填色/首次教程").active = false;
+        }
+        else {
+            director.getScene().getChildByPath("Canvas/钻石填色/首次教程").active = true;
+        }
+
         this.LockBtn = this.ControlNode.getChildByName("锁定视角");
         this.winNode = this.ControlNode.getChildByName("完成");
+        this.CourseNode = this.ControlNode.getChildByName("教程");
+        this.AirWall = this.node.getChildByName("阻挡墙");
 
-        director.getScene().on("钻石填色本_开始填色", (touchPos: Vec3) => {
-            this.onFill(touchPos);
-        }, this);
-
-        director.getScene().on("钻石填色本_结束填色", () => {
-            if (this.isTruePos) {
-                this.isTruePos = false;
-                this.useProp();
-            }
-        }, this);
+        ProjectEventManager.emit(ProjectEvent.游戏开始);
 
     }
 
@@ -83,13 +95,35 @@ export class ZSTSB_GameMgr extends Component {
         let levelName = "关卡" + this.curMapID;
         let path = "Sprites/关卡/" + levelName + "/" + this.curBuildingName;
         ZSTSB_Incident.LoadImageAsset(path).then((imageAsset: ImageAsset) => {
+            console.log("开始加载游戏");
+            this.CurModeLabel.string = "当前模式：解锁视角\n双指缩放,单指拖拽或填涂\n不可单指拖拽批量填涂";
+
             this.targetImage = imageAsset;
+            this.AirWall.active = true;
+            this.SelectColor();
+            // director.getScene().emit("钻石填色本_初始化道具");
+
+            director.getScene().emit("钻石填色本_初始化游戏");
+
             this.loadImage();
+
+            director.getScene().on("钻石填色本_开始填色", (touchPos: Vec3) => {
+                this.onFill(touchPos);
+            }, this);
+
+            director.getScene().on("钻石填色本_结束填色", () => {
+                if (this.isTruePos) {
+                    this.isTruePos = false;
+                    this.useProp();
+                }
+            }, this);
+
+            // console.log(ZSTSB_GameMgr.instance);
         });
     }
 
     SelectColor() {
-        this.selectNode.parent = this.ControlNode.getChildByName("填色").getComponent(ScrollView).view.node;
+        this.selectNode.parent = this.ControlNode.getChildByName("左区").getChildByName("填色").getComponent(ScrollView).view.node;
         this.selectNode.setSiblingIndex(0);
     }
 
@@ -98,35 +132,135 @@ export class ZSTSB_GameMgr extends Component {
     }
 
     LockBtn: Node = null;
+    isFirstCourse: boolean = true;
     onBtnClick(event: EventTouch) {
         ZSTSB_AudioManager.instance.playSFX("按钮");
 
         switch (event.target.name) {
             case "锁定视角":
                 this.isLock = !this.isLock;
-                console.log("锁定视角:", this.isLock);
+
+                if (ZSTSB_GameData.Instance.isGameFirst) {
+                    director.getScene().emit("钻石填色本_新手教程");
+                }
+                // console.log("锁定视角:", this.isLock);
                 let sprite = event.target.getComponent(Sprite);
-                if (!this.isLock) { sprite.color = new Color(255, 255, 255, 150); }
-                else { sprite.color = new Color(255, 255, 255, 255); }
+                if (!this.isLock) {
+                    sprite.color = new Color(255, 255, 255, 150);
+                    UIManager.ShowTip("解锁视角");
+                    this.CurModeLabel.string = "当前模式：解锁视角\n双指缩放,单指拖拽或填涂\n不可单指拖拽批量填涂";
+                }
+                else {
+                    sprite.color = new Color(255, 255, 255, 255);
+                    UIManager.ShowTip("锁定视角");
+                    this.CurModeLabel.string = "当前模式：锁定视角\n双指缩放移动,单指填涂\n可单指拖拽批量填涂";
+                }
                 break;
             case "教程按钮":
                 this.CourseNode.active = true;
+                if (ZSTSB_GameData.Instance.isGameFirst && this.isFirstCourse) {
+                    this.isFirstCourse = false;
+                    director.getScene().emit("钻石填色本_新手教程");
+                }
                 break;
             case "复位":
                 this.restoration();
                 break;
-            case "道具":
-
+            case "获得道具":
+                director.getScene().emit("钻石填色本_获得道具", "消除当前数字索引", 20);
+                break;
+            case "完成当前关卡":
+                this.winText();
                 break;
         }
+    }
+
+    //完成当前关卡(测试用)
+    winText() {
+        // 检查是否有正在进行的道具使用操作
+        if (this.isUsingPorp) {
+            console.log("正在使用道具，无法立即通关");
+            return;
+        }
+
+        // 模拟按顺序使用所有剩余颜色的道具来完成关卡
+        this.useAllPropsInOrder();
+    }
+
+    /**
+     * 按顺序使用所有未完成颜色的道具来完成关卡
+     */
+    private async useAllPropsInOrder() {
+        // 创建一个待处理的颜色索引队列
+        const pendingColors: number[] = [];
+
+        // 遍历所有颜色，找出尚未完成的颜色
+        for (let i = 1; i <= this.colorIndexMap.size; i++) {
+            let curColor = this.colorIndexMap.get(i.toString());
+            // 如果该颜色还未完全填充，则加入待处理队列
+            if (curColor[0] < curColor[1]) {
+                pendingColors.push(i);
+            }
+        }
+
+        // 如果没有未完成的颜色，直接调用胜利方法
+        if (pendingColors.length === 0) {
+            this.Win();
+            return;
+        }
+
+        // 按顺序处理每个颜色
+        for (const colorIndex of pendingColors) {
+            // 检查是否正在使用道具
+            if (this.isUsingPorp) {
+                // 等待当前道具使用完成
+                await new Promise(resolve => {
+                    const checkInterval = setInterval(() => {
+                        if (!this.isUsingPorp) {
+                            clearInterval(checkInterval);
+                            resolve(null);
+                        }
+                    }, 100);
+                });
+            }
+
+            // 获取该颜色的第一个未填充节点
+            const posNodes = this.posNodeMap.get(colorIndex.toString());
+            if (posNodes && posNodes.length > 0) {
+                for (const node of posNodes) {
+                    const pixelComp = node.getComponent(ZSTSB_Pixel);
+                    // 找到第一个未填充的像素
+                    if (pixelComp && !pixelComp.IsFilled) {
+                        // 设置为道具使用模式
+                        this.isUseProp = true;
+                        this.propBoxTs = pixelComp;
+                        this.isTruePos = true;
+
+                        // 使用道具填充该颜色的所有像素
+                        await this.useProp();
+                        break;
+                    }
+                }
+            }
+
+            // 等待一小段时间确保道具使用完成
+            await new Promise(resolve => this.scheduleOnce(resolve, 0.1));
+        }
+
+        // 所有颜色处理完成后调用胜利方法
+        this.Win();
     }
 
     winNode: Node = null;
     Win() {
         this.fillOver();
 
-        this.selectNode.active = false;
-        this.selectNodeRoot = null;
+        ZSTSB_GameData.Instance.saveBuildingData(this.curMapID, this.curBuildingName, null);
+        ZSTSB_GameData.Instance.setBuildingData(this.curMapID, this.curBuildingName, true);
+
+        ZSTSB_GameData.DateSave();
+
+        ProjectEventManager.emit(ProjectEvent.游戏结束);
 
         this.scheduleOnce(() => {
             this.WinAni();
@@ -135,22 +269,39 @@ export class ZSTSB_GameMgr extends Component {
     }
 
     WinAni() {
+        if (!ZSTSB_GameData.Instance.isFillFirst) {
+            ZSTSB_GameData.Instance.isFillFirst = true;
+        }
+
         this.winNode.active = true;
 
         let winSprite = this.winNode.getChildByName("图片").getChildByName("完成图").getComponent(Sprite);
-        let WinEffect = this.winNode.getChildByName("WinEffect").getComponent(ParticleSystem2D);
 
         let levelName = "关卡" + ZSTSB_GameMgr.instance.curMapID;
         let path = "Sprites/关卡/" + levelName + "/" + this.curBuildingName;
         ZSTSB_Incident.LoadSprite(path).then((spriteFrame: SpriteFrame) => {
             winSprite.spriteFrame = spriteFrame;
+
+            let maskSprite = this.winNode.getChildByPath("图片/mask").getComponent(Sprite);
+            maskSprite.spriteFrame = spriteFrame;
+
             tween(winSprite.node.parent)
                 .to(0.5, { scale: v3(1, 1, 1) })
                 .call(() => {
-                    WinEffect.resetSystem();
+                    this.WinEffect();
                 })
                 .start();
         });
+    }
+
+    WinEffect() {
+        let WinEffect = this.winNode.getChildByName("WinEffect").getComponent(ParticleSystem2D);
+        WinEffect.resetSystem();
+    }
+
+    StopWinEffect() {
+        let WinEffect = this.winNode.getChildByName("WinEffect").getComponent(ParticleSystem2D);
+        WinEffect.stopSystem();
     }
 
     public onFill(touchPos: Vec3) {
@@ -205,6 +356,7 @@ export class ZSTSB_GameMgr extends Component {
         }
     }
 
+    isFirstProp: boolean = true;
     isTruePos: boolean = false;
     isUsingPorp: boolean = false;
     propBoxTs: ZSTSB_Pixel = null;
@@ -233,8 +385,15 @@ export class ZSTSB_GameMgr extends Component {
         let curPosNode = this.posNodeMap.get(index);
         this.isUsingPorp = true;
 
+        this.AirWall.active = true;
+
+        if (ZSTSB_GameData.Instance.isGameFirst && this.isFirstProp) {
+            this.isFirstProp = false;
+            director.getScene().emit("钻石填色本_新手教程");
+        }
+
         // 减少批处理大小并增加间隔以避免卡顿
-        const batchSize = 20; // 减小批处理大小
+        const batchSize = 30; // 减小批处理大小
         const interval = 0.05; // 增加间隔时间
 
         for (let i = 0; i < curPosNode.length; i += batchSize) {
@@ -259,9 +418,9 @@ export class ZSTSB_GameMgr extends Component {
                 director.getScene().emit("钻石填色本_使用道具", this.propName);
                 this.propBoxTs = null;
                 this.isUsingPorp = false;
+                this.AirWall.active = false;
             }
         }
-
 
     }
 
@@ -299,8 +458,7 @@ export class ZSTSB_GameMgr extends Component {
             this.SelectColor();
 
             let color = this.colorMap.get(this.curColorIndex.toString());
-            console.log("当前填充颜色为：" + color + ",填充完毕");
-            // console.log(curColor);
+            // console.log("当前填充颜色为：" + color + ",填充完毕");
             this.SwitchColorNodes(color);
         }
     }
@@ -339,55 +497,21 @@ export class ZSTSB_GameMgr extends Component {
             }
         }
 
-        console.log(fillArr.length);
+        // console.log(fillArr.length);
 
         ZSTSB_GameData.Instance.saveBuildingData(this.curMapID, this.curBuildingName, fillArr);
         ZSTSB_GameData.DateSave();
     }
 
-    // async saveFillData() {
-    //     let fillArr: boolean[] = [];
-    //     console.log("共有" + this.heightNum * this.widthNum);
-    //     console.log(this.fillNodes.length);
-
-    //     for (let i = 0; i < this.heightNum; i++) {
-    //         for (let j = 0; j < this.widthNum; j++) {
-    //             let box = this.fillNodes[i * this.widthNum + j];
-    //             let boxTs = box.getComponent(ZSTSB_Pixel);
-    //             //boxTs.sprite.color.r !== 0 && boxTs.sprite.color.g !== 0 && boxTs.sprite.color.b !== 0 && 
-    //             if (boxTs.sprite.color.r !== 0 && boxTs.sprite.color.g !== 0 && boxTs.sprite.color.b !== 0 && boxTs.sprite.color.a !== 0) {
-    //                 if (boxTs.IsFilled) {
-    //                     fillArr.push(true);
-    //                 }
-    //                 else {
-    //                     fillArr.push(false);
-    //                 }
-    //             }
-    //             // else {
-    //             //     fillArr.push(true);
-    //             // }
-    //         }
-    //     }
-
-    //     console.log(fillArr);
-
-    //     ZSTSB_GameData.Instance.saveBuildingData(this.curMapID, this.curBuildingName, fillArr);
-
-    //     ZSTSB_GameData.DateSave();
-
-    //     // console.log(ZSTSB_GameData.Instance.mapData);
-    // }
-
     //当前图片填充完毕
     fillOver() {
-        console.log("图片填充完毕");
-        let mapData = ZSTSB_GameData.Instance.getMapDataByName(this.curMapID, this.curBuildingName);
-        mapData.State = true;
-        ZSTSB_GameData.DateSave();
+        // console.log("图片填充完毕");
 
-        console.log(ZSTSB_GameData.Instance.mapData);
+        this.selectNode.active = false;
+        this.selectNodeRoot = null;
 
         this.restoration();
+
     }
 
     //更换填充颜色指向的节点数组
@@ -411,7 +535,7 @@ export class ZSTSB_GameMgr extends Component {
                 this.preColorIndex = this.curColorIndex;
                 this.curColorIndex = x;
                 this.selectNodeRoot = this.colorSelect[x - 1];
-                console.log("切换颜色,当前颜色索引为：" + this.curColorIndex);
+                // console.log("切换颜色,当前颜色索引为：" + this.curColorIndex);
                 break;
             }
         }
@@ -468,16 +592,30 @@ export class ZSTSB_GameMgr extends Component {
             .start();
     }
 
+    off() {
+        director.getScene().off("钻石填色本_开始填色");
+        director.getScene().off("钻石填色本_结束填色");
+        director.getScene().off("钻石填色本_颜色填充加一");
+        director.getScene().off("钻石填色本_颜色填充完毕");
+        // director.getScene().off("钻石填色本_使用道具");
+        // director.getScene().off("钻石填色本_获得道具");
+    }
+
     //重置游戏状态
     async restart() {
         await this.saveFillData();
+
+        this.off();
+
         this.restoration();
 
         director.getScene().emit("钻石填色本_开始切换场景");
+        director.getScene().emit("钻石填色本_退出游戏");
 
         // 分批回收像素节点避免卡顿
         this.PixelPoolCtrl.loading();
         this.PixelPoolCtrl.recyclePixel();
+        this.ParticlePoolCtrl.recycleParticle();
 
         this.winNode.active = false;
 
@@ -486,35 +624,85 @@ export class ZSTSB_GameMgr extends Component {
             .to(0.2, { scale: v3(0, 0, 0) })
             .start();
 
-        let colorBoxParent = this.ControlNode.getChildByName("填色").getComponent(ScrollView).content;
-        colorBoxParent.children.forEach(node => {
+        let colorBoxParent = this.ControlNode.getChildByName("左区").getChildByName("填色").getComponent(ScrollView).content;
+        while (colorBoxParent.children.length > 0) {
+            const node = colorBoxParent.children[0];
+            node.removeFromParent();
             node.destroy();
-        });
+        }
 
-        this.isLock = false;
-        this.isFirst = false;
-        this.isShow = false;
-        this.colorMap.clear();
-        this.posNodeMap.clear();
-        this.colorIndexMap.clear();
-        this.colorLookupMap.clear();
+        this.clearColorData();
 
-        this.posNodes = [];
-        this.fillNodes = [];
-        this.colorSelect = [];
-        this.finishColorNum = 4;
+        this.resetGameState();
 
-        this.curIndex = 0;
-        this.curColorIndex = 1;
+        // 重置像素数据
+        this.resetPixelData2D();
+        this.pixelData2D = []
 
-        this.curColor = new Color(255, 255, 255, 255);
-        this.curBuildingName = "";
+        // 清理图片资源引用
+        this.cleanupImageResources();
+
         this.selectNodeRoot = null;
 
         let sprite = this.LockBtn.getComponent(Sprite);
         sprite.color = new Color(255, 255, 255, 150);
 
-        console.log(ZSTSB_GameMgr.instance);
+        this.unscheduleAllCallbacks(); // 取消所有调度器回调
+
+        // console.log(ZSTSB_GameMgr.instance);
+    }
+
+    resetGameState() {
+        this.isLock = false;
+        this.isFirst = false;
+        this.isShow = false;
+        this.isUseProp = false;
+        this.isUsingPorp = false;
+        this.isTruePos = false;
+        this.isCamMove = false;
+
+        this.finishColorNum = 4;
+        this.curIndex = 0;
+        this.curColorIndex = 1;
+
+        this.curColor = new Color(255, 255, 255, 255);
+        this.curBuildingName = "";
+    }
+
+    clearColorData() {
+        // 清理所有颜色相关Map
+        if (this.colorMap) this.colorMap.clear();
+        if (this.posNodeMap) this.posNodeMap.clear();
+        if (this.colorIndexMap) this.colorIndexMap.clear();
+        if (this.colorLookupMap) this.colorLookupMap.clear();
+        if (this.colorCache) this.colorCache.clear();
+    }
+
+    cleanupImageResources() {
+        // 清理目标图像引用
+        if (this.targetImage) {
+            // 注意：ImageAsset通常由引擎管理，不需要手动销毁
+            this.targetImage = null;
+        }
+
+        // 清理节点引用
+        if (this.fillNodes) {
+            this.fillNodes.length = 0;
+            this.fillNodes = null;
+            this.fillNodes = [];
+        }
+
+        if (this.posNodes) {
+            this.posNodes.length = 0;
+            this.posNodes = null;
+            this.posNodes = [];
+        }
+
+        if (this.colorSelect) {
+            this.colorSelect.length = 0;
+            this.colorSelect = null;
+            this.colorSelect = [];
+        }
     }
 
     colorIndexMap: Map<string, number[]> = new Map();
@@ -523,25 +711,17 @@ export class ZSTSB_GameMgr extends Component {
     initSelectColor() {
         this.selectNode.active = true;
 
-        if (this.curBuildingName === "2-31"
-            || this.curBuildingName === "2-8"
-            || this.curBuildingName === "2-81"
-            || this.curBuildingName === "2-9"
-            || this.curBuildingName === "2-10"
-            || this.curBuildingName === "2-101") {
-            this.finishColorNum = 2;
-        }
-        else {
-            this.finishColorNum = 4;
-        }
+        let showNum = ZSTSB_GameData.getShowNumByName(this.curBuildingName);
+        this.finishColorNum = showNum - 1;
 
-        let colorBoxNode = this.ControlNode.getChildByName("填色");
+        let colorBoxNode = this.ControlNode.getChildByName("左区").getChildByName("填色");
         let colorBoxParent = colorBoxNode.getComponent(ScrollView).content;
         let arr = [0, this.posNodeMap.get(this.curIndex.toString()).length]
         this.colorIndexMap.set(this.curIndex.toString(), arr);
 
         for (let i = 1; i < this.colorMap.size; i++) {
             let color = this.colorMap.get(i.toString());
+
             let colorBox = instantiate(this.colorBoxPrefab);
             colorBox.parent = colorBoxParent;
 
@@ -565,28 +745,26 @@ export class ZSTSB_GameMgr extends Component {
             this.colorSelect.push(colorBox);
         }
 
+        if (ZSTSB_GameData.Instance.isGameFirst) {
+            //选择颜料
+            colorBoxParent.children[0].once(NodeEventType.TOUCH_END, () => {
+                director.getScene().emit("钻石填色本_新手教程");
+            }, this);
 
+        }
 
         // console.log(this.colorIndexMap);
 
         /**
-  * 检查每个颜色组的填充状态并更新当前颜色
-  * 该函数遍历所有颜色组，统计每个组内已填充的节点数量，
-  * 当某个颜色组完全填充时发出相应事件，
-  * 并根据颜色索引映射查找下一个需要填充的颜色
-  */
+        * 检查每个颜色组的填充状态并更新当前颜色
+        * 该函数遍历所有颜色组，统计每个组内已填充的节点数量，
+        * 当某个颜色组完全填充时发出相应事件，
+        * 并根据颜色索引映射查找下一个需要填充的颜色
+        */
         for (let j = 1; j < this.colorMap.size; j++) {
             // 获取当前颜色组的所有节点
             let posNodes = this.posNodeMap.get(j.toString());
             let fillNum: number = 0;
-
-            // 统计当前颜色组内已填充的节点数量
-            // for (let y = 0; y < posNodes.length; y++) {
-            //     let boxTs = posNodes[y].getComponent(ZSTSB_Pixel);
-            //     if (boxTs.IsFilled) {
-            //         fillNum++;
-            //     }
-            // }
 
             for (let y = 0; y < posNodes.length; y++) {
                 const boxTs = posNodes[y].getComponent(ZSTSB_Pixel);
@@ -619,6 +797,8 @@ export class ZSTSB_GameMgr extends Component {
             director.getScene().emit("钻石填色本_颜色填充加一", this.finishColorNum);
         }
 
+        console.log(this.colorMap);
+
         // 设置当前颜色并切换到该颜色的节点
         let color = this.colorMap.get(this.curColorIndex.toString());
         // this.curColor = color;
@@ -627,15 +807,14 @@ export class ZSTSB_GameMgr extends Component {
 
         this.scheduleOnce(() => {
             tween(this.Target)
-                .to(0.5, { scale: v3(4, 4, 4) })
+                .to(0.5, { scale: v3(6, 6, 6) })
+                .call(() => {
+                    this.AirWall.active = false;
+                })
                 .start();
 
-            if (ZSTSB_GameData.Instance.isGameFirst) {
-                this.CourseNode.active = true;
-                ZSTSB_GameData.Instance.isGameFirst = false;
-            }
-
         }, 0.5);
+
     }
 
     isFirst: boolean = false;
@@ -650,14 +829,20 @@ export class ZSTSB_GameMgr extends Component {
 
     //初始化图片
     async loadImage() {
+        if (this.targetImage) {
+            console.log("图片存在");
+        }
+        else {
+            console.log("图片不存在");
+        }
 
         if (this.targetImage) {
 
             await this.loadImagePixelData(this.targetImage);
-            console.log('像素数据加载完成，二维数组尺寸:', this.pixelData2D.length, 'x', this.pixelData2D[0]?.length || 0);
+            // console.log('像素数据加载完成，二维数组尺寸:', this.pixelData2D.length, 'x', this.pixelData2D[0]?.length || 0);
 
             let offsetX = this.Target.position.x - this.widthNum * this.startSize / 2;
-            let offsetY = this.Target.position.y - this.heightNum * this.startSize / 2;
+            let offsetY = this.Target.position.y - this.heightNum * this.startSize / 2 - 50;
             this.startPos = v3(offsetX, offsetY, 0);
 
             // 清空之前的缓存
@@ -671,12 +856,13 @@ export class ZSTSB_GameMgr extends Component {
             this.posNodeMap.set(this.curIndex.toString(), []);
             this.curIndex++;
 
+            // console.error(333);
             await this.createPixel(this.Target);
 
-            console.log('像素数据创建完成');
+            // console.log('像素数据创建完成');
 
             // console.log(this.posNodes);
-            console.log(this.colorMap);
+            // console.log(this.colorMap);
         }
     }
 
@@ -684,29 +870,6 @@ export class ZSTSB_GameMgr extends Component {
     private colorLookupMap: Map<string, number> = new Map();
     // 颜色查找算法
     private findColorIndex(pixelColor: { r: number, g: number, b: number, a: number }): number {
-        // // 创建颜色的唯一标识符
-
-        // const colorKey = `${pixelColor.r},${pixelColor.g},${pixelColor.b},${pixelColor.a}`;
-
-        // // 先检查缓存
-        // if (this.colorCache.has(colorKey)) {
-        //     return this.colorCache.get(colorKey)!;
-        // }
-
-        // // 如果没有缓存，则查找或创建新颜色
-        // for (let k = 0; k < this.colorMap.size; k++) {
-        //     let color = this.colorMap.get(k.toString());
-        //     if (pixelColor.r === color.r &&
-        //         pixelColor.g === color.g &&
-        //         pixelColor.b === color.b &&
-        //         pixelColor.a === color.a) {
-        //         this.colorCache.set(colorKey, k);
-        //         return k;
-        //     }
-        // }
-
-        // // 未找到匹配颜色，返回-1表示需要新增颜色
-        // return -1;
 
         const colorKey = `${pixelColor.r},${pixelColor.g},${pixelColor.b},${pixelColor.a}`;
 
@@ -735,20 +898,6 @@ export class ZSTSB_GameMgr extends Component {
 
     // 预扫描所有颜色
     private preScanColors() {
-        // const uniqueColors = new Map<string, { r: number, g: number, b: number, a: number }>();
-
-        // for (let i = 0; i < this.heightNum; i++) {
-        //     for (let j = 0; j < this.widthNum; j++) {
-        //         const pixel = this.pixelData2D[i][j];
-        //         const key = `${pixel.r},${pixel.g},${pixel.b},${pixel.a}`;
-
-        //         if (!uniqueColors.has(key)) {
-        //             uniqueColors.set(key, { ...pixel });
-        //         }
-        //     }
-        // }
-
-        // console.log(`发现 ${uniqueColors.size} 种不同颜色`);
 
         const uniqueColors = new Map<string, { r: number, g: number, b: number, a: number }>();
 
@@ -757,6 +906,9 @@ export class ZSTSB_GameMgr extends Component {
             for (let j = 0; j < this.widthNum; j++) {
                 const pixel = this.pixelData2D[i][j];
                 const key = `${pixel.r},${pixel.g},${pixel.b},${pixel.a}`;
+                if (pixel.a === 0) {
+                    continue;
+                }
 
                 if (!uniqueColors.has(key)) {
                     uniqueColors.set(key, { ...pixel });
@@ -764,7 +916,7 @@ export class ZSTSB_GameMgr extends Component {
             }
         }
 
-        console.log(`发现 ${uniqueColors.size} 种不同颜色`);
+        // console.log(`发现 ${uniqueColors.size} 种不同颜色`);
 
         // 预热颜色缓存
         this.preWarmColorCache();
@@ -772,12 +924,6 @@ export class ZSTSB_GameMgr extends Component {
 
     // 颜色缓存预热方法，在预扫描颜色时调用
     private preWarmColorCache() {
-        // // 预先将所有颜色添加到缓存中
-        // for (let k = 0; k < this.colorMap.size; k++) {
-        //     let color = this.colorMap.get(k.toString());
-        //     const colorKey = `${color.r},${color.g},${color.b},${color.a}`;
-        //     this.colorCache.set(colorKey, k);
-        // }
 
         this.colorLookupMap.clear();
 
@@ -807,12 +953,8 @@ export class ZSTSB_GameMgr extends Component {
         this.scheduleOnce(() => {
             this.initSelectColor();
             ZSTSB_AudioManager.instance.playBGM("游戏场景");
-            console.log(this.fillNodes.length);
+            // console.log(this.fillNodes.length);
         }, 0.1);
-
-        this.scheduleOnce(() => {
-
-        }, 0.7);
 
     }
 
@@ -827,7 +969,10 @@ export class ZSTSB_GameMgr extends Component {
     isShow: boolean = false;
     // 优化的像素创建方法
     private async createPixelsOptimized(Target: Node) {
-        let mapData = ZSTSB_GameData.Instance.getMapDataByName(this.curMapID, this.curBuildingName);
+        // console.error(444);
+
+        const mapData = ZSTSB_GameData.Instance.getMapDataByName(this.curMapID, this.curBuildingName);
+        const fillArr = ZSTSB_GameData.Instance.getBuildingData(this.curMapID, this.curBuildingName);
 
         let batchSize = 50; // 合适的批处理大小
         let totalPixels = this.heightNum * this.widthNum;
@@ -841,18 +986,17 @@ export class ZSTSB_GameMgr extends Component {
         let createdCount = 0;
         let progress = 0;
 
+        // console.error(555);
+
         // 按颜色组依次创建像素
         for (const [colorKey, pixels] of groupedByColor) {
             for (let i = 0; i < pixels.length; i += batchSize) {
                 let batch = pixels.slice(i, i + batchSize);
 
                 // 批量创建同颜色像素
-                this.createPixelBatch(Target, mapData.fillArr, batch);
+                this.createPixelBatch(Target, fillArr, batch);
 
                 createdCount += batch.length;
-
-                // progress = createdCount / totalPixels;
-                // director.getScene().emit("钻石填色本_加载进度", progress);
 
                 // 更新进度
                 if (!this.isShow) {
@@ -866,18 +1010,20 @@ export class ZSTSB_GameMgr extends Component {
                 }
             }
 
-            if (totalPixels < 3000) {
+            if (totalPixels < 3400) {
                 continue;
             }
 
-            if (totalPixels > 3000 && progress >= 0.6) {
+            if (totalPixels > 3400 && progress >= 0.7) {
                 director.getScene().emit("钻石填色本_加载进度", 1);
                 this.isShow = true;
             }
 
+            console.log(progress);
         }
     }
 
+    private tempVec3: Vec3 = new Vec3();
     // 预计算所有像素数据
     private precomputeAllPixelData(): Array<{
         i: number,
@@ -911,7 +1057,7 @@ export class ZSTSB_GameMgr extends Component {
                 originalColor = this.pixelData2D[i][j];
 
                 // 计算位置
-                const position = new Vec3(offsetX + j * pixelWidth, yPos, 0);
+                const position = this.tempVec3.set(offsetX + j * pixelWidth, yPos, 0);
 
                 // 灰度处理 - 使用更高效的计算方式并缓存常用值
                 const gray = (originalColor.r * 77 + originalColor.g * 150 + originalColor.b * 29) >> 8;
@@ -924,7 +1070,7 @@ export class ZSTSB_GameMgr extends Component {
 
                 // 查找或创建颜色索引
                 colorIndex = this.findColorIndex(originalColor);
-                if (colorIndex === -1) {
+                if (colorIndex === -1 && originalColor.a !== 0) {
                     colorIndex = this.colorMap.size;
                     this.colorMap.set(colorIndex.toString(),
                         new Color(originalColor.r, originalColor.g, originalColor.b, originalColor.a));
@@ -937,7 +1083,7 @@ export class ZSTSB_GameMgr extends Component {
                 result[index] = {
                     i,
                     j,
-                    position,
+                    position: position.clone(),
                     grayColor,
                     originalColor,
                     colorIndex
@@ -952,22 +1098,8 @@ export class ZSTSB_GameMgr extends Component {
 
     // 按颜色分组像素数据
     private groupPixelsByColor(precomputedData: ReturnType<typeof this.precomputeAllPixelData>): Map<string, typeof precomputedData> {
-        // const groups = new Map<string, typeof precomputedData>();
-
-        // for (const data of precomputedData) {
-        //     const colorKey = `${data.grayColor.r},${data.grayColor.g},${data.grayColor.b},${data.grayColor.a}`;
-        //     if (!groups.has(colorKey)) {
-        //         groups.set(colorKey, []);
-        //     }
-        //     groups.get(colorKey)!.push(data);
-        // }
-
-        // return groups;
 
         const groups = new Map<string, typeof precomputedData>();
-
-        // 预先估计分组数量以优化Map性能
-        const estimatedGroups = Math.min(100, Math.ceil(precomputedData.length / 10));
 
         // 通过一次遍历完成分组，避免多次查找
         for (let i = 0; i < precomputedData.length; i++) {
@@ -987,118 +1119,8 @@ export class ZSTSB_GameMgr extends Component {
 
     // 批量创建像素
     private createPixelBatch(Target: Node, fillArr: boolean[], batch: ReturnType<typeof this.precomputeAllPixelData>) {
-        //     const box = this.PixelPoolCtrl.getPixelFromPool();
 
-        //     box.parent = Target;
-        //     box.position = data.position;
-
-        //     const boxSprite = box.getChildByName("图片")?.getComponent(Sprite);
-        //     if (boxSprite) {
-        //         boxSprite.color = new Color(
-        //             data.grayColor.r,
-        //             data.grayColor.g,
-        //             data.grayColor.b,
-        //             data.grayColor.a
-        //         );
-        //     }
-
-        //     this.fillNodes.push(box);
-
-        //     // 初始化 Pixel 组件
-        //     const boxTs = box.getComponent(ZSTSB_Pixel);
-        //     const mapData = ZSTSB_GameData.Instance.getMapDataByName(this.curMapID, this.curBuildingName);
-
-        //     if (mapData.fillArr !== null) {
-        //         boxTs?.initData(
-        //             new Color(
-        //                 data.originalColor.r,
-        //                 data.originalColor.g,
-        //                 data.originalColor.b,
-        //                 data.originalColor.a
-        //             ),
-        //             data.colorIndex,
-        //             mapData.fillArr[data.i * this.widthNum + data.j]
-        //         );
-        //     } else {
-        //         boxTs?.initData(
-        //             new Color(
-        //                 data.originalColor.r,
-        //                 data.originalColor.g,
-        //                 data.originalColor.b,
-        //                 data.originalColor.a
-        //             ),
-        //             data.colorIndex
-        //         );
-        //     }
-
-        //     this.posNodeMap.get(data.colorIndex.toString())?.push(box);
-        //     this.PixelPoolCtrl.usePixel(box);
-        // }
-
-        // 预先获取常用组件引用以减少重复查询
-        // const targetChildren = Target.children;
-        // const targetChildrenLength = targetChildren.length;
-
-        // for (const data of batch) {
-        //     const box = this.PixelPoolCtrl.getPixelFromPool();
-
-        //     // 优化节点添加方式
-        //     box.parent = Target;
-        //     box.position = data.position;
-
-        //     // 优化组件获取和颜色设置
-        //     const imageNode = box.getChildByName("图片");
-        //     if (imageNode) {
-        //         const sprite = imageNode.getComponent(Sprite);
-        //         if (sprite) {
-        //             sprite.color = new Color(
-        //                 data.grayColor.r,
-        //                 data.grayColor.g,
-        //                 data.grayColor.b,
-        //                 data.grayColor.a
-        //             );
-        //         }
-        //     }
-
-        //     this.fillNodes.push(box);
-
-        //     // 初始化 Pixel 组件
-        //     const boxTs = box.getComponent(ZSTSB_Pixel);
-        //     const mapData = ZSTSB_GameData.Instance.getMapDataByName(this.curMapID, this.curBuildingName);
-
-        //     if (mapData.fillArr !== null) {
-        //         boxTs?.initData(
-        //             new Color(
-        //                 data.originalColor.r,
-        //                 data.originalColor.g,
-        //                 data.originalColor.b,
-        //                 data.originalColor.a
-        //             ),
-        //             data.colorIndex,
-        //             mapData.fillArr[data.i * this.widthNum + data.j]
-        //         );
-        //     } else {
-        //         boxTs?.initData(
-        //             new Color(
-        //                 data.originalColor.r,
-        //                 data.originalColor.g,
-        //                 data.originalColor.b,
-        //                 data.originalColor.a
-        //             ),
-        //             data.colorIndex
-        //         );
-        //     }
-
-        //     // 优化节点添加到颜色组
-        //     const colorGroup = this.posNodeMap.get(data.colorIndex.toString());
-        //     if (colorGroup) {
-        //         colorGroup.push(box);
-        //     }
-
-        //     this.PixelPoolCtrl.usePixel(box);
-        // }
-
-        // 批量处理前预获取常用引用
+        // 批量处理前预获取常量引用
         const fillNodes = this.fillNodes;
         const posNodeMap = this.posNodeMap;
         const pixelPoolCtrl = this.PixelPoolCtrl;
@@ -1144,7 +1166,7 @@ export class ZSTSB_GameMgr extends Component {
                         ),
                         data.colorIndex,
                         // mapData.fillArr[data.i * this.widthNum + data.j]
-                        fillArr[fillNodes.length]
+                        fillArr[fillNodes.length - 1]
                     );
                 } else {
                     boxTs.initData(
@@ -1160,13 +1182,6 @@ export class ZSTSB_GameMgr extends Component {
                     );
                 }
             }
-
-            // // 优化组件获取和颜色设置
-            // if (sprite && data?.grayColor) {
-            //     sprite.color.set(data.grayColor.r, data.grayColor.g, data.grayColor.b, data.grayColor.a);
-            // }
-
-            // sprite.node. position = data.position;
 
             // 优化节点添加到颜色组
             colorGroup = posNodeMap.get(data.colorIndex.toString());
@@ -1184,42 +1199,107 @@ export class ZSTSB_GameMgr extends Component {
     heightNum: number = 0;
     async loadImagePixelData(imageAsset: ImageAsset): Promise<void> {
         return new Promise((resolve, reject) => {
-            const img = new Image();
-            img.onload = () => {
-                const canvas = document.createElement('canvas');
-                canvas.width = img.width;
-                canvas.height = img.height;
+            // 检查运行平台
+            const isHarmonyOS = (sys.os === sys.OS.OPENHARMONY);
+            const isAndroid = (sys.os === sys.OS.ANDROID);
 
-                const ctx = canvas.getContext('2d');
-                if (!ctx) {
-                    reject(new Error('无法获取canvas 2D上下文'));
-                    return;
-                }
+            console.log(`当前运行平台: ${sys.os}, 是否鸿蒙系统: ${isHarmonyOS}, 是否Android: ${isAndroid}`);
 
-                ctx.drawImage(img, 0, 0);
-                const imageData = ctx.getImageData(0, 0, img.width, img.height);
-                const data = imageData.data;
+            const texture = new Texture2D();
+            texture.image = imageAsset;
 
-                this.convertTo2DArray(data, img.width, img.height);
-                this.widthNum = img.width;
-                this.heightNum = img.height;
+            const data = this.readPixels(texture);
+
+            if (data) {
+                console.log(data);
+                const clampedData = new Uint8ClampedArray(data.buffer); // 转换为 Uint8ClampedArray
+                this.convertTo2DArray(clampedData, texture.width, texture.height);
+                this.widthNum = texture.width;
+                this.heightNum = texture.height;
+
                 resolve();
-            };
+            }
 
-            img.onerror = () => {
-                reject(new Error('图片加载失败'));
-            };
+            // const img = new Image();
 
-            img.src = imageAsset.nativeUrl;
+            // img.src = imageAsset.nativeUrl;
+
+            // img.onload = () => {
+            //     try {
+            //         const canvas = document.createElement('canvas');
+            //         canvas.width = img.width;
+            //         canvas.height = img.height;
+
+            //         const ctx = canvas.getContext('2d');
+            //         if (!ctx) {
+            //             reject(new Error('无法获取canvas 2D上下文'));
+            //             return;
+            //         }
+
+            //         // 绘制图像
+            //         ctx.drawImage(img, 0, 0);
+            //         // 获取图像数据
+            //         const imageData = ctx.getImageData(0, 0, img.width, img.height);
+            //         const data = imageData.data;
+
+            //         console.log(data);
+
+            //         this.convertTo2DArray(data, img.width, img.height);
+            //         this.widthNum = img.width;
+            //         this.heightNum = img.height;
+
+            //         // 清理资源
+            //         ctx.clearRect(0, 0, canvas.width, canvas.height);
+            //         // canvas.remove();
+
+            //         resolve();
+            //     } catch (error) {
+            //         reject(error);
+            //     } finally {
+            //         // 清理图像引用
+            //         img.onload = null;
+            //         img.onerror = null;
+            //     }
+            // };
+
+            // img.onerror = () => {
+            //     img.onload = null;
+            //     img.onerror = null;
+            //     reject(new Error('图片加载失败'));
+            // };
+
         });
     }
 
-    //将图片转化为二维数组
+    readPixels(texture: Texture2D, x = 0, y = 0, width?: number, height?: number): Uint8Array | null {
+        const gfxTexture = texture.getGFXTexture();
+        if (!gfxTexture) return null;
+
+        width = width || texture.width;
+        height = height || texture.height;
+        const buffer = new Uint8Array(width * height * 4); // RGBA格式
+
+        const region = new gfx.BufferTextureCopy();
+        region.texExtent.width = width;
+        region.texExtent.height = height;
+        region.texOffset.x = x;
+        region.texOffset.y = y;
+
+        try {
+            director.root?.device.copyTextureToBuffers(gfxTexture, [buffer], [region]);
+            return buffer;
+        } catch (error) {
+            console.error("读取纹理像素失败:", error);
+            return null;
+        }
+    }
+
     private convertTo2DArray(
         pixelData: Uint8ClampedArray,
         width: number,
         height: number
     ): void {
+        console.log(33333);
 
         // 预分配整个数组以避免动态扩容
         this.pixelData2D = new Array(height);
@@ -1253,15 +1333,33 @@ export class ZSTSB_GameMgr extends Component {
         return this.pixelData2D;
     }
 
+    // 重用像素数据数组
+    private resetPixelData2D() {
+        // 更彻底地清理二维数组
+        if (this.pixelData2D) {
+            for (let i = 0; i < this.pixelData2D.length; i++) {
+                if (this.pixelData2D[i]) {
+                    // 清空每一行
+                    this.pixelData2D[i].length = 0;
+                }
+            }
+            // 清空主数组
+            this.pixelData2D.length = 0;
+        }
+
+        // 设置为null以便垃圾回收
+        this.pixelData2D = null;
+    }
+
     printPixelDataSample(sampleWidth: number = 5, sampleHeight: number = 5): void {
-        console.log('像素数据采样 (前' + sampleWidth + 'x' + sampleHeight + '像素):');
+        // console.log('像素数据采样 (前' + sampleWidth + 'x' + sampleHeight + '像素):');
         for (let y = 0; y < Math.min(sampleHeight, this.pixelData2D.length); y++) {
             let rowStr = '行 ' + y + ': ';
             for (let x = 0; x < Math.min(sampleWidth, this.pixelData2D[y].length); x++) {
                 const pixel = this.pixelData2D[y][x];
                 rowStr += `RGBA(${pixel.r},${pixel.g},${pixel.b},${pixel.a}) `;
             }
-            console.log(rowStr);
+            // console.log(rowStr);
         }
     }
 
@@ -1279,6 +1377,5 @@ export class ZSTSB_GameMgr extends Component {
         if (this.selectNodeRoot) {
             this.selectNode.worldPosition = this.selectNodeRoot.worldPosition;
         }
-
     }
 }

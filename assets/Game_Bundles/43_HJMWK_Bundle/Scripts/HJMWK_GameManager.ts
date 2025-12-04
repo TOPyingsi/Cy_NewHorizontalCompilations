@@ -143,7 +143,12 @@ export class HJMWK_GameManager extends Component {
                 });
                 break;
             case "返回":
-                UIManager.ShowPanel(Panel.LoadingPanel, [DataManager.GetGameDataByName("校园摸金"), "XYMJ_Start"]);
+                ProjectEventManager.emit(ProjectEvent.返回主页按钮事件, () => {
+                    UIManager.ShowPanel(Panel.LoadingPanel, GameManager.StartScene, () => {
+                        ProjectEventManager.emit(ProjectEvent.返回主页, "哈基米挖矿");
+                    });
+                });
+                // UIManager.ShowPanel(Panel.LoadingPanel, [DataManager.GetGameDataByName("校园摸金"), "XYMJ_Start"]);
                 break;
         }
     }

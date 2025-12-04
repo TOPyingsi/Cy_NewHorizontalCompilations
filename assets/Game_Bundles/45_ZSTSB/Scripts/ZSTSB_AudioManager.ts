@@ -40,6 +40,16 @@ export class ZSTSB_AudioManager extends Component {
             }
         }
     }
+
+    playIron() {
+        for (let clip of this.clips) {
+            if (clip.name === "熨斗" && !this.sfxAudio.playing) {
+                this.sfxAudio.clip = clip;
+                this.sfxAudio.play();
+                break;
+            }
+        }
+    }
 }
 
 

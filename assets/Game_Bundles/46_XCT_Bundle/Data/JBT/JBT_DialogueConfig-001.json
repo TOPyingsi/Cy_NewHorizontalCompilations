@@ -1,0 +1,1476 @@
+[
+    {
+        "day": 1,
+        "customers": [
+            {
+                "id": 101,
+                "avatar": "学生",
+                "order": {
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2,
+                        "percentage": 0,
+                        "rotateCount": 0
+                    },
+                    "鸡蛋": {
+                        "type": "鸡蛋类",
+                        "need": 1,
+                        "count": 1,
+                        "percentage": 0,
+                        "rotateCount": 0.7
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "抱歉",
+                                "action": "拒绝",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我来一个加葱花和鸡蛋的煎饼，不要沙拉酱"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "这是我吃过的最好的煎饼，谢谢！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你放了${}，我不要这个配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没放，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放得太少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}刷得太多了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没摊均匀，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "谢谢给我多加这么多${}，这是我吃过最好吃的煎饼！"
+                    },
+                    {
+                        "id": 8,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "做得太慢了，我不要了！"
+                    }
+                ]
+            },
+            {
+                "id": 102,
+                "avatar": "便衣",
+                "order": {
+                    "调味酱": {
+                        "type": "涂抹类",
+                        "need": 1,
+                        "count": 1,
+                        "percentage": 80,
+                        "rotateCount": 0
+                    },
+                    "香菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "我想要一个甜煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "做不了",
+                                "action": "结束对话",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是甜面酱多一点的经典煎饼"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "这是我吃过的最好的煎饼，谢谢！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你放了${}，我不要这个配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没放，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放得太少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}刷得太多了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没摊均匀，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "谢谢给我多加这么多${}，这是我吃过最好吃的煎饼！"
+                    },
+                    {
+                        "id": 8,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "做得太慢了，我不要了！"
+                    }
+                ]
+            },
+            {
+                "id": 101,
+                "avatar": "外卖员",
+                "order": {},
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "可以",
+                                "action": "开展外卖业务",
+                                "nextSegment": 2
+                            },
+                            {
+                                "text": "没兴趣呢",
+                                "action": "下一段对话",
+                                "nextSegment": 3
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "你好，有没有兴趣开展外卖业务，订单量会暴增哦！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "好的，已为您开通外卖业务，用这台机子就可接外卖订单啦，祝您生意兴隆！"
+                    },
+                    {
+                        "id": 3,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "好吧，我下次再来看看，祝你生意兴隆！"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "拿去吧",
+                                "action": "递餐",
+                                "nextSegment": 1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你好，我来取外卖订单！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "送达",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "那我出发了！"
+                    }
+                ]
+            },
+            {
+                "id": 101,
+                "avatar": "学生",
+                "order": {
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2,
+                        "percentage": 0,
+                        "rotateCount": 0
+                    },
+                    "鸡蛋": {
+                        "type": "鸡蛋类",
+                        "need": 1,
+                        "count": 1,
+                        "percentage": 0,
+                        "rotateCount": 0.7
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "抱歉",
+                                "action": "拒绝",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我来一个加葱花和鸡蛋的煎饼，不要沙拉酱"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "这是我吃过的最好的煎饼，谢谢！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你放了${}，我不要这个配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没放，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放得太少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}刷得太多了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没摊均匀，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "谢谢给我多加这么多${}，这是我吃过最好吃的煎饼！"
+                    },
+                    {
+                        "id": 8,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "做得太慢了，我不要了！"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "customers": [
+            {
+                "id": 101,
+                "avatar": "外卖员",
+                "order": {},
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "可以",
+                                "action": "开展外卖业务",
+                                "nextSegment": 2
+                            },
+                            {
+                                "text": "没兴趣呢",
+                                "action": "下一段对话",
+                                "nextSegment": 3
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "你好，有没有兴趣开展外卖业务，订单量会暴增哦！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "好的，已为您开通外卖业务，用这台机子就可接外卖订单啦，祝您生意兴隆！"
+                    },
+                    {
+                        "id": 3,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "好吧，我下次再来看看，祝你生意兴隆！"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "拿去吧",
+                                "action": "递餐",
+                                "nextSegment": 1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你好，我来取外卖订单！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "送达",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "那我出发了！"
+                    }
+                ]
+            },
+            {
+                "id": 101,
+                "avatar": "学生",
+                "order": {
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2,
+                        "percentage": 0,
+                        "rotateCount": 0
+                    },
+                    "鸡蛋": {
+                        "type": "鸡蛋类",
+                        "need": 1,
+                        "count": 1,
+                        "percentage": 0,
+                        "rotateCount": 0.7
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "抱歉",
+                                "action": "拒绝",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我来一个加葱花和鸡蛋的煎饼，不要沙拉酱"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "这是我吃过的最好的煎饼，谢谢！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你放了${}，我不要这个配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没放，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放得太少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}刷得太多了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没摊均匀，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "谢谢给我多加这么多${}，这是我吃过最好吃的煎饼！"
+                    },
+                    {
+                        "id": 8,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "做得太慢了，我不要了！"
+                    }
+                ]
+            },
+            {
+                "id": 102,
+                "avatar": "便衣",
+                "order": {
+                    "调味酱": {
+                        "type": "涂抹类",
+                        "need": 1,
+                        "count": 1,
+                        "percentage": 80,
+                        "rotateCount": 0
+                    },
+                    "香菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "我想要一个甜煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "做不了",
+                                "action": "结束对话",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是甜面酱多一点的经典煎饼"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "这是我吃过的最好的煎饼，谢谢！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你放了${}，我不要这个配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没放，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放得太少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}刷得太多了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没摊均匀，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "谢谢给我多加这么多${}，这是我吃过最好吃的煎饼！"
+                    },
+                    {
+                        "id": 8,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "做得太慢了，我不要了！"
+                    }
+                ]
+            },
+            {
+                "id": 101,
+                "avatar": "外卖员",
+                "order": {},
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "可以",
+                                "action": "开展外卖业务",
+                                "nextSegment": 2
+                            },
+                            {
+                                "text": "没兴趣呢",
+                                "action": "下一段对话",
+                                "nextSegment": 3
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "你好，有没有兴趣开展外卖业务，订单量会暴增哦！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "好的，已为您开通外卖业务，用这台机子就可接外卖订单啦，祝您生意兴隆！"
+                    },
+                    {
+                        "id": 3,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "好吧，我下次再来看看，祝你生意兴隆！"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "拿去吧",
+                                "action": "递餐",
+                                "nextSegment": 1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你好，我来取外卖订单！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "送达",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "那我出发了！"
+                    }
+                ]
+            },
+            {
+                "id": 101,
+                "avatar": "学生",
+                "order": {
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2,
+                        "percentage": 0,
+                        "rotateCount": 0
+                    },
+                    "鸡蛋": {
+                        "type": "鸡蛋类",
+                        "need": 1,
+                        "count": 1,
+                        "percentage": 0,
+                        "rotateCount": 0.7
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "抱歉",
+                                "action": "拒绝",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我来一个加葱花和鸡蛋的煎饼，不要沙拉酱"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "这是我吃过的最好的煎饼，谢谢！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你放了${}，我不要这个配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没放，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放得太少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}刷得太多了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没摊均匀，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "谢谢给我多加这么多${}，这是我吃过最好吃的煎饼！"
+                    },
+                    {
+                        "id": 8,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "做得太慢了，我不要了！"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 3,
+        "customers": [
+            {
+                "id": 101,
+                "avatar": "包租婆",
+                "order": {
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2,
+                        "percentage": 0,
+                        "rotateCount": 0
+                    },
+                    "鸡蛋": {
+                        "type": "鸡蛋类",
+                        "need": 1,
+                        "count": 1,
+                        "percentage": 0,
+                        "rotateCount": 0.7
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "抱歉",
+                                "action": "拒绝",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我来一个加葱花和鸡蛋的煎饼，不要沙拉酱"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "这是我吃过的最好的煎饼，谢谢！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你放了${}，我不要这个配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没放，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放得太少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}刷得太多了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没摊均匀，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "谢谢给我多加这么多${}，这是我吃过最好吃的煎饼！"
+                    },
+                    {
+                        "id": 8,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "做得太慢了，我不要了！"
+                    }
+                ]
+            },
+            {
+                "id": 102,
+                "avatar": "美女",
+                "order": {
+                    "调味酱": {
+                        "type": "涂抹类",
+                        "need": 1,
+                        "count": 1,
+                        "percentage": 80,
+                        "rotateCount": 0
+                    },
+                    "香菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "我想要一个甜煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "做不了",
+                                "action": "结束对话",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是甜面酱多一点的经典煎饼"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 0,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "这是我吃过的最好的煎饼，谢谢！"
+                    },
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你放了${}，我不要这个配料！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没放，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}放得太少了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}刷得太多了，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "${}没摊均匀，这是我吃过最差的煎饼"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "谢谢给我多加这么多${}，这是我吃过最好吃的煎饼！"
+                    },
+                    {
+                        "id": 8,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "做得太慢了，我不要了！"
+                    }
+                ]
+            }
+        ]
+    }
+]

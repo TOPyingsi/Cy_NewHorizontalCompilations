@@ -1,0 +1,146 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "923c4982-98e0-4a60-aa6c-1b8fa437ddc4",
+  "files": [],
+  "subMetas": {
+    "79054": {
+      "importer": "gltf-material",
+      "uuid": "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@79054",
+      "displayName": "",
+      "id": "79054",
+      "name": "tianhuaban.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d0944": {
+      "importer": "gltf-mesh",
+      "uuid": "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@d0944",
+      "displayName": "",
+      "id": "d0944",
+      "name": "tianhuaban1.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 12
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "47bf3": {
+      "importer": "gltf-embeded-image",
+      "uuid": "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@47bf3",
+      "displayName": "",
+      "id": "47bf3",
+      "name": "tianhuaban_1.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e501c": {
+      "importer": "texture",
+      "uuid": "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@e501c",
+      "displayName": "",
+      "id": "e501c",
+      "name": "tianhuaban_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@47bf3"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "19e7c": {
+      "importer": "gltf-scene",
+      "uuid": "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@19e7c",
+      "displayName": "",
+      "id": "19e7c",
+      "name": "tianhuaban.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "tianhuaban_1",
+        "uri": "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@47bf3"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@d0944"
+      ],
+      "skeletons": [],
+      "textures": [
+        "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@e501c"
+      ],
+      "materials": [
+        "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@79054"
+      ],
+      "scenes": [
+        "923c4982-98e0-4a60-aa6c-1b8fa437ddc4@19e7c"
+      ]
+    }
+  }
+}

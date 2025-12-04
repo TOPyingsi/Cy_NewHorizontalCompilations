@@ -60,10 +60,11 @@ export class ZSTSB_Loading extends Component {
         if (process >= 1) {
             this.scheduleOnce(() => {
                 this.closeUI();
-            }, 0.5);
+            }, 0.7);
         }
         sprite.fillRange = process;
 
+        console.log(process);
     }
 }
 

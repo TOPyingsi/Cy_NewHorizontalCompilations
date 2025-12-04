@@ -67,24 +67,61 @@ export class ZSTSB_ParticlePool extends Component {
     }
 
     recycleParticle() {
-        const batchSize = 100; // 每批处理100个节点
 
-        // 取出一批节点进行处理
-        const particlebatch = this.usedParticles.splice(0, Math.min(batchSize, this.usedParticles.length));
+        const batchSize = 50; // 与 PixelPool 保持一致的批处理大小
+        const maxPoolSize = 100; // 控制粒子对象池的最大大小
 
-        // 处理当前批次的节点
-        for (let particle of particlebatch) {
-            this.returnParticleToPool(particle);
-        }
 
-        // 如果还有剩余节点需要处理，则在下一帧继续处理
+        const processBatch = () => {
+            // 批量处理
+            const particleBatch = this.usedParticles.splice(0, Math.min(batchSize, this.usedParticles.length));
+
+            // 处理当前批次的节点
+            for (let particle of particleBatch) {
+                // 控制对象池大小，避免无限增长
+                if (this.particlePool.length < maxPoolSize) {
+                    particle.node.active = false; // 确保粒子系统停止并隐藏
+                    this.particlePool.push(particle);
+                } else {
+                    // 对象池已满，销毁多余的对象
+                    particle.node.destroy();
+                }
+            }
+
+            // 如果还有剩余节点需要处理，则在下一帧继续处理
+            if (this.usedParticles.length > 0) {
+                // 使用 setTimeout 而不是 scheduleOnce 以获得更精确的控制
+                setTimeout(processBatch, 0);
+            } else {
+                console.log("粒子回收完成");
+            }
+        };
+
+        // 如果有待处理的粒子，开始处理批次
         if (this.usedParticles.length > 0) {
-            this.scheduleOnce(() => {
-                this.recycleParticle();
-            }, 0.01);
+            processBatch();
         } else {
             console.log("粒子回收完成");
         }
+
+        // const batchSize = 100; // 每批处理100个节点
+
+        // // 取出一批节点进行处理
+        // const particlebatch = this.usedParticles.splice(0, Math.min(batchSize, this.usedParticles.length));
+
+        // // 处理当前批次的节点
+        // for (let particle of particlebatch) {
+        //     this.returnParticleToPool(particle);
+        // }
+
+        // // 如果还有剩余节点需要处理，则在下一帧继续处理
+        // if (this.usedParticles.length > 0) {
+        //     this.scheduleOnce(() => {
+        //         this.recycleParticle();
+        //     }, 0.01);
+        // } else {
+        //     console.log("粒子回收完成");
+        // }
     }
 }
 

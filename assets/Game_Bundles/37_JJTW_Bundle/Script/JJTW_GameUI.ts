@@ -144,6 +144,9 @@ export class JJTW_GameUI extends Component {
         // ProjectEventManager.emit(ProjectEvent.初始化更多模式按钮, this.more);
         // JJTW_DataManager.Instance.isGameStart = true;
 
+        this.deadPanel.active = false;
+        this.winPanel.active = false;
+
         ProjectEventManager.emit(ProjectEvent.弹出窗口, "尖叫逃亡");
     }
 

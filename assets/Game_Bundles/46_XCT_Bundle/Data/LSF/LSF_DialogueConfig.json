@@ -1,0 +1,5652 @@
+[
+    {
+        "day": 1,
+        "customers": [
+            {
+                "id": 101,
+                "avatar": "学生",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上好",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说明下？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份经典螺蛳粉，赶时间上课呢"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，加个咸鸭蛋，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 102,
+                "avatar": "便衣",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，老样子，加个咸鸭蛋"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，加个咸鸭蛋，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 103,
+                "avatar": "体育",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "管够",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体些？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来碗粉，记得多放点盐"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，盐要多放点，加个咸鸭蛋，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 104,
+                "avatar": "包租婆",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 0,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份经典款，调味放一点点盐就行了，酱油就不用加了，咸鸭蛋要两个"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点盐，别放酱油，加2个咸鸭蛋，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 105,
+                "avatar": "上班族",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说清楚些",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "赶时间上班，来碗粉，酱油多放一点，拜托快点老板！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，酱油多放一点加个咸鸭蛋，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 106,
+                "avatar": "非主流",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 3
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体些？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，粉煮透点，加3个咸鸭蛋，酱油也给我多加点，够味才够潮"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点盐，多滴两滴酱油，加3个咸鸭蛋，最后撒上葱花"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "customers": [
+            {
+                "id": 201,
+                "avatar": "上班族",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "我考虑一下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "老板，旁边这猫一直看着我，估计饿了，月底了，我可没东西给它吃，老板来领养它吧！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥意思",
+                                "action": "下一段对话",
+                                "nextSegment": 3
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "不领养小心它偷你东西吃，注意防着点！对了，我的粉，就不要咸鸭蛋了"
+                    },
+                    {
+                        "id": 3,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，直接撒上葱花！"
+                    }
+                ]
+            },
+            {
+                "id": 202,
+                "avatar": "学生",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 0
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说明下？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，细粉多煮会儿，加份青菜，酱油别加，怕胖"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的细粉，撒点盐，加份青菜，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 203,
+                "avatar": "包租婆",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 0
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "不加葱花",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份排骨汤底的宽粉，放酸笋提味，别放葱花啊，加葱花涨你房租！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，加份酸笋"
+                    }
+                ]
+            },
+            {
+                "id": 204,
+                "avatar": "便衣",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体些？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "经典搭配，加酸笋，"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，加份咸鸭蛋和酸笋，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 205,
+                "avatar": "美女",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 0
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "马上好",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说清楚些",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "要份细粉，加个煎蛋和青菜，酱油不用了，清淡点，谢谢啦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点盐，加份煎蛋和青菜，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 206,
+                "avatar": "非主流",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "保证够味！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体些？",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅打底，酸笋和酱油都多整点，越够味越潮，懂不"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，加份酸笋，最后撒上葱花"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 3,
+        "customers": [
+            {
+                "id": 101,
+                "avatar": "外卖员",
+                "order": {},
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "可以",
+                                "action": "开展外卖业务",
+                                "nextSegment": 2
+                            },
+                            {
+                                "text": "啥意思",
+                                "action": "下一段对话",
+                                "nextSegment": 3
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "你好，有没有兴趣开通外卖业务，免费赠送这个机子，开通外卖功能后，订单量会暴增哦！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "离开",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "好的，机子就放在这了，随时可以开通，我是您的专属外卖员，期待合作！"
+                    },
+                    {
+                        "id": 3,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开展外卖业务",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是机子放在你这，随时都可开通的意思，开通后就可以，用这台机子接外卖订单啦！"
+                    }
+                ],
+                "endDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "拿去吧",
+                                "action": "递餐",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "你好，我来取外卖订单！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "",
+                                "action": "送达",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": false,
+                        "text": "那我出发了！"
+                    }
+                ]
+            },
+            {
+                "id": 302,
+                "avatar": "非主流",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说一遍",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份番茄锅煮细粉，多放小米辣，加点醋，再来个煎蛋和青菜，要够味！"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅当汤底，煮细粉，放小米辣、醋，加煎蛋和青菜，就这么简单"
+                    }
+                ]
+            },
+            {
+                "id": 303,
+                "avatar": "学生",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥?",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，玉米排骨锅煮宽粉，放个咸鸭蛋，撒点葱花、盐和鸡精，谢谢啦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨锅煮宽粉，加咸鸭蛋、葱花、盐和鸡精，简单点就行"
+                    }
+                ]
+            },
+            {
+                "id": 304,
+                "avatar": "便衣",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说一次",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮细粉，加叉烧肉和木耳，放酱油和盐，味道适中就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用番茄锅煮细粉，加入叉烧肉、木耳，再放酱和盐调味"
+                    }
+                ]
+            },
+            {
+                "id": 305,
+                "avatar": "包租婆",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 0
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥意思",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮宽粉，放酸笋、酱、盐，再加份青菜，别放葱花啊，不然涨你房租"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨锅煮宽粉，加酸笋、酱、盐和青菜，记住别放葱花"
+                    }
+                ]
+            },
+            {
+                "id": 306,
+                "avatar": "美女",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说一遍",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮细粉，撒点葱花、盐和鸡精，加个煎蛋，清淡点哦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用番茄锅煮细粉，放葱花、盐、鸡精，再加个煎蛋，味道淡一点"
+                    }
+                ]
+            },
+            {
+                "id": 307,
+                "avatar": "便衣",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "收到",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么?",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮宽粉，加咸鸭蛋、酸笋、酱和盐，快点做，我赶时间"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮宽粉，放入咸鸭蛋、酸笋，再加酱和盐调味"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 4,
+        "customers": [
+            {
+                "id": 401,
+                "avatar": "非主流",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥玩意儿",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅搞起，宽粉配牛肉，多整点小米辣和醋，够味才潮"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上整",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是番茄锅底煮宽粉，放片牛肉，撒上小米辣、醋、葱花和鸡精"
+                    }
+                ]
+            },
+            {
+                "id": 402,
+                "avatar": "学生",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥样的",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨汤底的细粉，加青菜、煎蛋和腐竹，清淡点就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨锅底煮细粉，放青菜、煎蛋和腐竹，撒点盐和葱花"
+                    }
+                ]
+            },
+            {
+                "id": 403,
+                "avatar": "便衣",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮方便面，加叉烧肉和木耳，再来点酱和酸笋"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用玉米排骨锅底煮方便面，放叉烧肉、木耳，加酱、盐和酸笋，就这样"
+                    }
+                ]
+            },
+            {
+                "id": 404,
+                "avatar": "包租婆",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮宽粉，加咸鸭蛋和青菜，调味别少了，不然涨你房租"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上好",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅底煮宽粉，放咸鸭蛋、青菜，撒盐、酱和葱花，赶紧的"
+                    }
+                ]
+            },
+            {
+                "id": 405,
+                "avatar": "美女",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "生菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨汤底的细粉，加牛肉和生菜，清淡营养点哦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用玉米排骨锅底煮细粉，放牛肉和生菜，撒点盐、鸡精和葱花就好"
+                    }
+                ]
+            },
+            {
+                "id": 406,
+                "avatar": "便衣",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "收到",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮宽粉，加木耳和腐竹，多放小米辣，够味"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅底煮宽粉，放木耳、腐竹，加小米辣、酱和葱花，就这么做"
+                    }
+                ]
+            },
+            {
+                "id": 407,
+                "avatar": "体育",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体要啥",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮方便面，加牛肉、煎蛋和青菜，多来点料，管饱"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅底煮方便面，放牛肉、煎蛋、青菜，撒盐和鸡精，量大点"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 5,
+        "customers": [
+            {
+                "id": 501,
+                "avatar": "学生",
+                "order": {
+                    "番茄排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说一遍",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，来份细粉，加青菜和煎蛋，少盐多醋，再来点葱花"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨锅煮细粉，放一份青菜和一个煎蛋，盐放点儿，加点醋，最后撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 502,
+                "avatar": "包租婆",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥玩意儿",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我来份够辣的宽粉，加酸笋、小米辣和腐竹"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用红油辣锅煮宽粉，放酸笋、小米辣和腐竹，加点酱油和盐，少了料小心我涨你房租"
+                    }
+                ]
+            },
+            {
+                "id": 503,
+                "avatar": "便衣",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份番茄锅的方便面，加牛肉和木耳，放点盐和鸡精，最后撒葱花"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅底煮方便面，加一份牛肉和木耳，适量盐和鸡精调味，出锅前撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 504,
+                "avatar": "上班族",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，玉米排骨锅煮细粉，加叉烧肉、青菜和咸鸭蛋，放酱和盐"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "很快好",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用玉米排骨锅煮细粉，加入叉烧肉、青菜，放适量酱和盐，最后加上半个咸鸭蛋"
+                    }
+                ]
+            },
+            {
+                "id": 505,
+                "avatar": "体育",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸豆角": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "收到",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份宽粉，玉米排骨锅的，加牛肉、煎蛋和酸豆角，多放点盐和鸡精"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮宽粉，加一份牛肉、一个煎蛋和酸豆角，盐和鸡精多放些，我运动量大需要补充"
+                    }
+                ]
+            },
+            {
+                "id": 506,
+                "avatar": "美女",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小寿司": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "具体点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "老板，番茄锅煮细粉，加青菜和木耳，少盐多醋，再来点小寿司"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上好",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用番茄锅煮细粉，放青菜和木耳，盐少放，多加点醋，最后搭配几个小寿司"
+                    }
+                ]
+            },
+            {
+                "id": 507,
+                "avatar": "非主流",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "潮得很",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥意思",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份够劲的，红油油辣辣锅煮方便面，加小米辣、酸笋和煎蛋，酱多放点，够味才潮"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "必须潮",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油红油辣锅煮方便面，多放小米辣和酸笋，加个煎蛋，酱使劲放，盐适量，这味道才够味够潮，懂不"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 6,
+        "customers": [
+            {
+                "id": 601,
+                "avatar": "美女",
+                "order": {
+                    "番茄排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "来份玉米排骨锅宽粉，加点咸蛋、青菜和酱料",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "一份玉米排骨锅煮宽粉，放些葱花、咸鸭蛋、酱、盐和青菜，味道丰富点哦"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是用玉米排骨锅做汤底煮宽粉，要放1份葱花、1份咸鸭蛋、1份酱、1份盐和1份青菜，都不能少呀"
+                    }
+                ]
+            },
+            {
+                "id": 602,
+                "avatar": "便衣",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "番茄锅细粉，加牛肉腐竹和调味",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮细粉，放牛肉、腐竹，加点盐、鸡精和葱花提味"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用番茄锅做汤底煮细粉，放1份牛肉、1份腐竹、1份盐、1份鸡精和1份葱花，都放齐了"
+                    }
+                ]
+            },
+            {
+                "id": 603,
+                "avatar": "学生",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "红油辣锅方便面，加煎蛋酸笋和调料",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮方便面，放个煎蛋，加点酸笋、小米辣，再放点盐和醋"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是红油辣锅汤底煮方便面，放1份煎蛋、1份酸笋、1份小米辣、1份盐和1份醋，要够味"
+                    }
+                ]
+            },
+            {
+                "id": 604,
+                "avatar": "包租婆",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "碱面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "蒜蓉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "玉米排骨锅碱面，加叉烧木耳和酱料",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮碱面，放几片叉烧肉，放点木耳，加酱、盐和蒜蓉，味道要足"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用玉米排骨锅做汤底煮碱面，放1份叉烧肉、1份木耳、1份酱、1份盐和1份蒜蓉，一样都不能少"
+                    }
+                ]
+            },
+            {
+                "id": 605,
+                "avatar": "非主流",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "泡菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸豆角": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "番茄锅宽粉，加泡菜酸豆角煎蛋和调料",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮宽粉，放泡菜、酸豆角，加个煎蛋，再来点盐和醋"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅锅煮宽粉，放1份泡菜、1份酸豆角、1份煎蛋、1份盐和1份醋，混搭才够味"
+                    }
+                ]
+            },
+            {
+                "id": 606,
+                "avatar": "体育",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "玉米排骨排骨锅锅排骨排骨锅锅细粉，加牛肉青菜咸蛋和调味",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮细粉，多加点牛肉和青菜，放个咸鸭蛋，加盐和鸡精提鲜"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅汤底汤底煮细粉，放1份牛肉、1份青菜、1份咸鸭蛋、1份盐和1份鸡精，要管饱"
+                    }
+                ]
+            },
+            {
+                "id": 607,
+                "avatar": "上班族",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "玉米排骨锅方便面，加叉烧腐竹和酱料",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮方便面，放点叉烧肉和腐竹，加酱、盐和葱花，快点做"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用玉米排骨锅煮汤底煮方便面，放1份叉烧肉、1份腐竹、1份酱、1份盐和1份葱花，赶时间呢"
+                    }
+                ]
+            },
+            {
+                "id": 608,
+                "avatar": "便衣",
+                "order": {
+                    "红油锅锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "碱面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "玉米排骨锅碱面，加木耳青菜酸笋和调味",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮碱面，放木耳、青菜和酸笋，加点盐和鸡精"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅汤底煮碱面，放1份木耳、1份青菜、1份酸笋、1份盐和1份鸡精，味道要正"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 7,
+        "customers": [
+            {
+                "id": 701,
+                "avatar": "体育",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "拉面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说一遍",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "来份玉米排骨锅的面，多加点肉和青菜，调味足点"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就要玉米排骨锅打底，放拉面，加牛肉、青菜，再撒上盐、鸡精和葱花，赶紧的，练完饿坏了"
+                    }
+                ]
+            },
+            {
+                "id": 702,
+                "avatar": "包租婆",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥玩意儿",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "给我来份辣锅宽粉，放些腐竹木耳，多搁点辣子和酱，再滴点醋"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮宽粉，里面加腐竹、木耳，撒上小米辣和酱，最后滴几滴醋，少放了东西小心我扣你房租"
+                    }
+                ]
+            },
+            {
+                "id": 703,
+                "avatar": "上班族",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好的",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说下",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅细粉，加个煎蛋和青菜，正常调味就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上好",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用番茄锅煮细粉，放一个煎蛋和青菜，撒上盐、葱花和鸡精，快点做，我赶时间上班"
+                    }
+                ]
+            },
+            {
+                "id": 704,
+                "avatar": "美女",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "泡菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "蒜蓉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅方便面，加点叉烧肉和泡菜，放蒜蓉、酱和醋，味道清淡点"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用菌菇锅煮方便面，放几片叉烧肉和泡菜，撒上蒜蓉、酱，再滴点醋，不要太咸哦"
+                    }
+                ]
+            },
+            {
+                "id": 705,
+                "avatar": "学生",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "碱面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸豆角": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥配料",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅碱面，加个咸鸭蛋和酸豆角，正常放盐葱鸡精"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮碱面，放一个咸鸭蛋，加点酸豆角，撒上盐、葱花和鸡精，要吃饱点"
+                    }
+                ]
+            },
+            {
+                "id": 706,
+                "avatar": "便衣",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "拉面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说一遍",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅拉面，放牛肉和木耳，多放辣和酱，少点盐"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮拉面，加牛肉片和木耳，撒上小米辣、酱，盐少放一点，快点做"
+                    }
+                ]
+            },
+            {
+                "id": 707,
+                "avatar": "非主流",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "炸鸡块": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "蒜蓉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "OK",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥情况",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅方便面，加炸鸡块和酸笋，放蒜蓉、醋和酱，要够味"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就整",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮方便面，放几块炸鸡块和酸笋，撒上蒜蓉，滴点醋，再抹点酱，味道要独特点"
+                    }
+                ]
+            },
+            {
+                "id": 708,
+                "avatar": "便衣",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "收到",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅宽粉，加青菜和腐竹，调味正常就行"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上好",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用菌菇锅煮宽粉，放青菜和腐竹，撒上盐、鸡精和葱花，快点做，不要耽误事"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 8,
+        "customers": [
+            {
+                "id": 801,
+                "avatar": "便衣",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "来份玉米排骨锅宽粉，多加点酸笋和叉烧肉",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮宽粉，放葱花、咸鸭蛋、酱、盐，再加上酸笋和叉烧肉"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是用玉米排骨锅煮宽粉，然后依次放上葱花、一个咸鸭蛋、适量的酱和盐，再加入酸笋和叉烧肉各一份"
+                    }
+                ]
+            },
+            {
+                "id": 802,
+                "avatar": "包租婆",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "蒜蓉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "红油辣锅细粉，多放辣和牛肉",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮细粉，加小米辣、蒜蓉、盐、鸡精，再放青菜和牛肉"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用红油辣锅煮细粉，放小米辣、蒜蓉提味，加适量盐和鸡精，再加入青菜和牛肉各一份"
+                    }
+                ]
+            },
+            {
+                "id": 803,
+                "avatar": "美女",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "拉面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "番茄锅拉面，加煎蛋和腐竹，少盐",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮拉面，放葱花、醋、盐，加煎蛋、木耳和腐竹"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用番茄锅煮拉面，放上葱花，滴点醋，加少量盐，再加入一个煎蛋、木耳和腐竹各一份"
+                    }
+                ]
+            },
+            {
+                "id": 804,
+                "avatar": "上班族",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "烤肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸豆角": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "菌菇锅方便面，加牛肉和烤肠，快点",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅煮方便面，放盐、鸡精，加青菜、牛肉、烤肠和酸豆角"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用菌菇锅煮方便面，加入适量盐和鸡精，再放上青菜、牛肉、烤肠和酸豆角各一份"
+                    }
+                ]
+            },
+            {
+                "id": 805,
+                "avatar": "学生",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "碱面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小寿司": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "泡菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "玉米排骨锅碱面，加煎蛋和小寿司",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅煮碱面，放葱花、酱、盐，加煎蛋、小寿司和泡菜"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用玉米排骨锅煮碱面，放上葱花，加适量酱和盐，再加入一个煎蛋、小寿司和泡菜各一份"
+                    }
+                ]
+            },
+            {
+                "id": 806,
+                "avatar": "体育",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "炸鸡块": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎香肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "红油辣锅宽粉，多放肉和辣",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮宽粉，加小米辣、盐，放牛肉、炸鸡块、煎香肠和辣条"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用红油辣锅煮宽粉，加入小米辣和适量盐，再放上牛肉、炸鸡块、煎香肠和辣条各一份"
+                    }
+                ]
+            },
+            {
+                "id": 807,
+                "avatar": "非主流",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "拉面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小寿司": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "番茄锅拉面，加酸笋和辣条，够味点",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮拉面，放醋、酱，加酸笋、叉烧肉、小寿司和辣条"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用番茄锅煮拉面，滴点醋，加适量酱，再加入酸笋、叉烧肉、小寿司和辣条各一份"
+                    }
+                ]
+            },
+            {
+                "id": 808,
+                "avatar": "便衣",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "蒜蓉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "菌菇锅细粉，多放蒜蓉和青菜",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅煮细粉，放葱花、蒜蓉、盐、鸡精，加木耳和青菜"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用菌菇锅煮细粉，放上葱花和蒜蓉，加适量盐和鸡精，再加入木耳和青菜各一份"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "day": 9,
+        "customers": [
+            {
+                "id": 901,
+                "avatar": "外卖员",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "什么",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "经典搭配，加酸笋，多放料"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来！",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "就是玉米排骨汤底煮的宽粉，撒点酱油、盐，加份咸鸭蛋和酸笋，最后撒上葱花和青菜"
+                    }
+                ]
+            },
+            {
+                "id": 902,
+                "avatar": "学生",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "拉面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "火腿肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "泡菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅拉面，加煎蛋和青菜，多放醋"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用番茄锅煮拉面，放个煎蛋、一把青菜、一根火腿肠，加点醋和鸡精，再来点泡菜提味"
+                    }
+                ]
+            },
+            {
+                "id": 903,
+                "avatar": "包租婆",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "蒜蓉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅宽粉，多放肉和辣"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮宽粉，放几片牛肉、腐竹、木耳，多加小米辣和蒜蓉，少放点盐就行"
+                    }
+                ]
+            },
+            {
+                "id": 904,
+                "avatar": "美女",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅细粉，加叉烧肉和青菜，清淡点"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "用菌菇锅煮细粉，放几片叉烧肉、一些青菜，加半个咸鸭蛋，少放点酱，撒点葱花和鸡精"
+                    }
+                ]
+            },
+            {
+                "id": 905,
+                "avatar": "体育",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "管够",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅方便面，双煎蛋加牛肉"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨汤底煮方便面，放两个煎蛋、几片牛肉、一把青菜，加点盐和酱，最后撒葱花"
+                    }
+                ]
+            },
+            {
+                "id": 906,
+                "avatar": "便衣",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "碱面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸豆角": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说一遍",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅碱面，加酸笋酸豆角"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮碱面，放酸笋、酸豆角、几片叉烧肉，加点盐和醋，再来点小米辣"
+                    }
+                ]
+            },
+            {
+                "id": 907,
+                "avatar": "上班族",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "拉面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎香肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "快好了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅拉面，加煎香肠和青菜"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮拉面，放一根煎香肠、一些青菜和木耳，加点酱和盐，最后撒葱花"
+                    }
+                ]
+            },
+            {
+                "id": 908,
+                "avatar": "非主流",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "炸鸡块": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "泡菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "够潮",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥配方",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅方便面，加炸鸡块和辣条"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就整",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅煮方便面，放几块炸鸡块、一包辣条、一些泡菜，加点盐和醋，撒点葱花"
+                    }
+                ]
+            },
+            {
+                "id": 909,
+                "avatar": "便衣",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "收到",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅宽粉，加牛肉和腐竹"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨汤底煮宽粉，放几片牛肉、腐竹、青菜，加点酱和盐，最后撒葱花"
+                    }
+                ]
+            },
+            {
+                "id": 910,
+                "avatar": "非主流",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "拉面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "烤肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "蒜蓉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "够味",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "咋做",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅拉面，加烤肠和酸笋"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮拉面，放一根烤肠、酸笋，多加小米辣和蒜蓉，加点盐和醋"
+                    }
+                ]
+            },
+            {
+                "id": 911,
+                "avatar": "体育",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 2
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "管饱",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "说清楚",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅细粉，双煎蛋加牛肉"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮细粉，放两个煎蛋、几片牛肉、一把青菜，加点盐和酱，撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 912,
+                "avatar": "学生",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小寿司": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅方便面，加小寿司和青菜"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅煮方便面，放几个小寿司、一些青菜，加半个咸鸭蛋，加点盐、醋和鸡精"
+                    }
+                ]
+            },
+            {
+                "id": 913,
+                "avatar": "非主流",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "碱面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "炸鸡块": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸豆角": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "够劲",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥配料",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅碱面，加炸鸡块和辣条"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮碱面，放几块炸鸡块、辣条、酸豆角，加点盐和小米辣，撒点葱花"
+                    }
+                ]
+            },
+            {
+                "id": 914,
+                "avatar": "包租婆",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "叉烧肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "腐竹": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 0,
+                        "count": 0
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "知道了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "别放啥",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅宽粉，加叉烧肉，别放葱花"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨汤底煮宽粉，放叉烧肉、腐竹、木耳，加点酱和盐，记住千万别放葱花"
+                    }
+                ]
+            },
+            {
+                "id": 915,
+                "avatar": "美女",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "拉面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小寿司": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "咸鸭蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "鸡精": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "没问题",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅拉面，加青菜和小寿司"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "这就做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮拉面，放些青菜、几个小寿司，加半个咸鸭蛋，加点盐、醋和鸡精"
+                    }
+                ]
+            },
+            {
+                "id": 916,
+                "avatar": "学生",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "细粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "烤肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅细粉，加煎蛋和烤肠"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅煮细粉，放一个煎蛋、一根烤肠、一些青菜，加点盐和酱，撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 917,
+                "avatar": "便衣",
+                "order": {
+                    "红油辣锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "牛肉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸笋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酸豆角": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "小米辣": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "明白",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "详细点",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅宽粉，加牛肉和酸笋"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上做",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "红油辣锅煮宽粉，放几片牛肉、酸笋、酸豆角，加点盐和小米辣，撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 918,
+                "avatar": "上班族",
+                "order": {
+                    "玉米排骨锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "方便面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎香肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "木耳": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "酱": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "快好了",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再说说",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨锅方便面，加煎香肠和青菜"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "玉米排骨汤底煮方便面，放一根煎香肠、一些青菜和木耳，加点酱和盐，撒上葱花"
+                    }
+                ]
+            },
+            {
+                "id": 919,
+                "avatar": "非主流",
+                "order": {
+                    "菌菇锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "碱面": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "炸鸡块": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "泡菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "辣条": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "够潮",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "啥配方",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅碱面，加炸鸡块和辣条"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上来",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "菌菇锅煮碱面，放几块炸鸡块、泡菜、辣条，加点盐和醋，撒点葱花"
+                    }
+                ]
+            },
+            {
+                "id": 920,
+                "avatar": "学生",
+                "order": {
+                    "番茄锅": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "宽粉": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "煎蛋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "烤肠": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "青菜": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "盐": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "醋": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    },
+                    "葱花": {
+                        "type": "撒料类",
+                        "need": 1,
+                        "count": 1
+                    }
+                },
+                "startDialogs": [
+                    {
+                        "id": 1,
+                        "buttons": [
+                            {
+                                "text": "好嘞",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            },
+                            {
+                                "text": "再讲讲",
+                                "action": "下一段对话",
+                                "nextSegment": 2
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅宽粉，加煎蛋和烤肠"
+                    },
+                    {
+                        "id": 2,
+                        "buttons": [
+                            {
+                                "text": "马上弄",
+                                "action": "开始制作",
+                                "nextSegment": -1
+                            }
+                        ],
+                        "checkStock": true,
+                        "text": "番茄锅煮宽粉，放一个煎蛋、一根烤肠、一些青菜，加点盐和醋，撒上葱花"
+                    }
+                ]
+            }
+        ]
+    }
+]

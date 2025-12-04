@@ -28,8 +28,12 @@ export class ZSTSB_MapBtn extends Component {
     }
 
     Complete(name: string) {
+        this.buildingName = name;
+
         let sprite = this.getComponent(Sprite);
         sprite.grayscale = false;
+
+        this.node.on(NodeEventType.TOUCH_END, this.touchEnd, this);
     }
 
     touchEnd() {

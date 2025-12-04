@@ -531,41 +531,6 @@ export class JJTW_PlayerController extends Component {
     }
 
 
-
-
-    // Dig() {
-    //     if (this.elc == 0) return DiggingAHoleCV_GameUI.Instance.ShowNeedElc();
-    //     this.elc--;
-    //     DiggingAHoleCV_GameUI.Instance.ShowElc();
-    //     this.node.children[0].children[0].getComponent(Animation).play();
-    //     let ray = new geometry.Ray;
-    //     let camera = this.node.children[0].getComponent(Camera);
-    //     let v = v3();
-    //     this.UICamera.worldToScreen(this.point.getWorldPosition(), v);
-    //     camera.screenPointToRay(v.x, v.y, ray);
-    //     if (PhysicsSystem.instance.raycastClosest(ray, 0xffffffff, 3)) {
-    //         console.log(PhysicsSystem.instance.raycastClosestResult.collider.getMask());
-    //         if (PhysicsSystem.instance.raycastClosestResult.collider.getGroup() == 1 << 19) {
-    //             let cube = PhysicsSystem.instance.raycastClosestResult.collider.node;
-    //             let group = cube.parent.parent.getComponent(DiggingAHoleCV_CubeGroup);
-    //             group.Dig(cube);
-    //         }
-    //         else if (PhysicsSystem.instance.raycastClosestResult.collider.getGroup() == 1 << 20) {
-    //             let num = 0;
-    //             for (let i = 0; i < this.treasures.length; i++) {
-    //                 const element = this.treasures[i];
-    //                 num += element;
-    //             }
-    //             if (num >= (40 + 10 * parseInt(localStorage.getItem("DAHCV_Fill")))) return DiggingAHoleCV_GameUI.Instance.FullPack();
-    //             let trea = PhysicsSystem.instance.raycastClosestResult.collider.node;
-    //             let group = trea.parent.parent.getComponent(DiggingAHoleCV_CubeGroup);
-    //             group.DigTreasure(trea);
-    //             DiggingAHoleCV_Audio.Instance.PlayAudio("trea");
-    //         }
-    //     }
-    // }
-
-
     onTriggerEnter(event: ITriggerEvent) {
         // 检测到障碍物（墙壁/障碍）
         const colliderGroup = event.otherCollider.node.getComponent(JJTW_ColliderGroupNumber);

@@ -1,0 +1,76 @@
+{
+    "外卖员": {
+        "id": 101,
+        "avatar": "外卖员",
+        "order": {},
+        "startDialogs": [
+            {
+                "id": 1,
+                "buttons": [
+                    {
+                        "text": "可以",
+                        "action": "开展外卖业务",
+                        "nextSegment": 2
+                    },
+                    {
+                        "text": "没兴趣呢",
+                        "action": "下一段对话",
+                        "nextSegment": 3
+                    }
+                ],
+                "checkStock": true,
+                "text": "你好，有没有兴趣开展外卖业务，订单量会暴增哦！"
+            },
+            {
+                "id": 2,
+                "buttons": [
+                    {
+                        "text": "",
+                        "action": "离开",
+                        "nextSegment": -1
+                    }
+                ],
+                "checkStock": true,
+                "text": "好的，已为您开通外卖业务，用这台机子就可接外卖订单啦，祝您生意兴隆！"
+            },
+            {
+                "id": 3,
+                "buttons": [
+                    {
+                        "text": "好的",
+                        "action": "离开",
+                        "nextSegment": -1
+                    }
+                ],
+                "checkStock": true,
+                "text": "好吧，我下次再来看看，祝你生意兴隆！"
+            }
+        ],
+        "endDialogs": [
+            {
+                "id": 1,
+                "buttons": [
+                    {
+                        "text": "拿去吧",
+                        "action": "递餐",
+                        "nextSegment": 2
+                    }
+                ],
+                "checkStock": false,
+                "text": "你好，我来取外卖订单！"
+            },
+            {
+                "id": 2,
+                "buttons": [
+                    {
+                        "text": "",
+                        "action": "送达",
+                        "nextSegment": -1
+                    }
+                ],
+                "checkStock": false,
+                "text": "那我出发了！"
+            }
+        ]
+    }
+}
