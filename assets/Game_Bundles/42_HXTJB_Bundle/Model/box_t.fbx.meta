@@ -1,0 +1,172 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "07b85240-1643-4021-aa89-5f7124dfc6ce",
+  "files": [],
+  "subMetas": {
+    "59536": {
+      "importer": "gltf-scene",
+      "uuid": "07b85240-1643-4021-aa89-5f7124dfc6ce@59536",
+      "displayName": "",
+      "id": "59536",
+      "name": "box_t.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b8162": {
+      "importer": "gltf-mesh",
+      "uuid": "07b85240-1643-4021-aa89-5f7124dfc6ce@b8162",
+      "displayName": "",
+      "id": "b8162",
+      "name": "pCube1.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 12
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "07b85240-1643-4021-aa89-5f7124dfc6ce@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "07b85240-1643-4021-aa89-5f7124dfc6ce@b8162"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "07b85240-1643-4021-aa89-5f7124dfc6ce@8d883"
+      ],
+      "scenes": [
+        "07b85240-1643-4021-aa89-5f7124dfc6ce@59536"
+      ]
+    },
+    "materials": {
+      "07b85240-1643-4021-aa89-5f7124dfc6ce@8d883": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5
+          },
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 141,
+              "g": 54,
+              "b": 54,
+              "a": 249
+            },
+            "albedoScale": 0.800000011920929,
+            "alphaThreshold": 0.52
+          },
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

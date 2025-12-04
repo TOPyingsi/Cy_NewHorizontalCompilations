@@ -1,0 +1,463 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "attack2",
+    "_objFlags": 0,
+    "__editorExtras__": {
+      "embeddedPlayerGroups": []
+    },
+    "_native": "",
+    "sample": 60,
+    "speed": 1,
+    "wrapMode": 1,
+    "enableTrsBlending": false,
+    "_duration": 2.683333333333333,
+    "_hash": 500763545,
+    "_tracks": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_exoticAnimation": null,
+    "_events": [
+      {
+        "frame": 0.25,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.25,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 0.25,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.25,
+        "func": "AudioPlay",
+        "params": [
+          "Gman激光"
+        ]
+      },
+      {
+        "frame": 0.25,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.3333333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.3333333333333333,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 0.4166666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.4166666666666667,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 0.5,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.5,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 0.5833333333333334,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.5833333333333334,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 0.6666666666666666,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.6666666666666666,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 0.75,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.75,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 0.8333333333333334,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.8333333333333334,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 0.9166666666666666,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.9166666666666666,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 1,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 1.0833333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.0833333333333333,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 1.1666666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.1666666666666667,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 1.25,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.25,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 1.3333333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.3333333333333333,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 1.4166666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.4166666666666667,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 1.5,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.5,
+        "func": "Hit",
+        "params": [
+          10
+        ]
+      },
+      {
+        "frame": 2.25,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 2.25,
+        "func": "Hit",
+        "params": [
+          100
+        ]
+      },
+      {
+        "frame": 2.25,
+        "func": "AudioPlay",
+        "params": [
+          "刀攻击"
+        ]
+      },
+      {
+        "frame": 2.6666666666666665,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 2.6666666666666665,
+        "func": "AttackEnd",
+        "params": []
+      }
+    ],
+    "_embeddedPlayers": []
+  },
+  {
+    "__type__": "cc.animation.ObjectTrack",
+    "_binding": {
+      "__type__": "cc.animation.TrackBinding",
+      "path": {
+        "__id__": 2
+      },
+      "proxy": null
+    },
+    "_channel": {
+      "__id__": 4
+    }
+  },
+  {
+    "__type__": "cc.animation.TrackPath",
+    "_paths": [
+      {
+        "__id__": 3
+      },
+      "spriteFrame"
+    ]
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.Channel",
+    "_curve": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.ObjectCurve",
+    "_times": [
+      0,
+      0.08333333333333333,
+      0.16666666666666666,
+      0.25,
+      0.3333333333333333,
+      0.4166666666666667,
+      0.5,
+      0.5833333333333334,
+      0.6666666666666666,
+      0.75,
+      0.8333333333333334,
+      0.9166666666666666,
+      1,
+      1.0833333333333333,
+      1.1666666666666667,
+      1.25,
+      1.3333333333333333,
+      1.4166666666666667,
+      1.5,
+      1.5833333333333333,
+      1.6666666666666667,
+      1.75,
+      1.8333333333333333,
+      1.9166666666666667,
+      2,
+      2.0833333333333335,
+      2.1666666666666665,
+      2.25,
+      2.3333333333333335,
+      2.4166666666666665,
+      2.5,
+      2.6666666666666665
+    ],
+    "_values": [
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@d95c5",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@64010",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@b2794",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@24fdd",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@4b2e2",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@87bc0",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@c8217",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@4250e",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@77100",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@db40e",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@115f0",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@62593",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@fed62",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@f9f62",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@0dc6b",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@02612",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@d8060",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@15bf4",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@802b0",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@b2794",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cc876a03-6cc7-4f25-93d9-dd15bede005a@64010",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@13f8c",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@1af52",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@699d8",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@58cf4",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@7169b",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@3560c",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@af438",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@44ffd",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@7056a",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@13f8c",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0a85e1a-1a6e-4d61-b370-42fdd803e3ed@13f8c",
+        "__expectedType__": "cc.SpriteFrame"
+      }
+    ]
+  }
+]

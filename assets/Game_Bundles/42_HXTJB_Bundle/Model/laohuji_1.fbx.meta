@@ -1,0 +1,146 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "5c849068-2704-48e6-811a-27a9f42711cf",
+  "files": [],
+  "subMetas": {
+    "af147": {
+      "importer": "gltf-mesh",
+      "uuid": "5c849068-2704-48e6-811a-27a9f42711cf@af147",
+      "displayName": "",
+      "id": "af147",
+      "name": "polySurface42.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 528
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43c71": {
+      "importer": "gltf-embeded-image",
+      "uuid": "5c849068-2704-48e6-811a-27a9f42711cf@43c71",
+      "displayName": "",
+      "id": "43c71",
+      "name": "file1.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "5c849068-2704-48e6-811a-27a9f42711cf@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "5c849068-2704-48e6-811a-27a9f42711cf@43c71"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b1467": {
+      "importer": "gltf-material",
+      "uuid": "5c849068-2704-48e6-811a-27a9f42711cf@b1467",
+      "displayName": "",
+      "id": "b1467",
+      "name": "blinn1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9145d": {
+      "importer": "gltf-scene",
+      "uuid": "5c849068-2704-48e6-811a-27a9f42711cf@9145d",
+      "displayName": "",
+      "id": "9145d",
+      "name": "laohuji_1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "5c849068-2704-48e6-811a-27a9f42711cf@43c71"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "5c849068-2704-48e6-811a-27a9f42711cf@af147"
+      ],
+      "skeletons": [],
+      "textures": [
+        "5c849068-2704-48e6-811a-27a9f42711cf@d20e9"
+      ],
+      "materials": [
+        "5c849068-2704-48e6-811a-27a9f42711cf@b1467"
+      ],
+      "scenes": [
+        "5c849068-2704-48e6-811a-27a9f42711cf@9145d"
+      ]
+    }
+  }
+}

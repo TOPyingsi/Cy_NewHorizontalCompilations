@@ -1,0 +1,214 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "2c9ca833-c975-40b8-828a-48d1757a74ee",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "e07e5": {
+      "importer": "gltf-mesh",
+      "uuid": "2c9ca833-c975-40b8-828a-48d1757a74ee@e07e5",
+      "displayName": "",
+      "id": "e07e5",
+      "name": "Shovel.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 4614
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "2c9ca833-c975-40b8-828a-48d1757a74ee@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Take 001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.375
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "2c9ca833-c975-40b8-828a-48d1757a74ee@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 2
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7d6ab": {
+      "importer": "texture",
+      "uuid": "2c9ca833-c975-40b8-828a-48d1757a74ee@7d6ab",
+      "displayName": "",
+      "id": "7d6ab",
+      "name": "base_color_texture.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/33_DiggingAHole-Prison_Bundle/models/Shovel_Shovel_BaseColor.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "75fa1": {
+      "importer": "texture",
+      "uuid": "2c9ca833-c975-40b8-828a-48d1757a74ee@75fa1",
+      "displayName": "",
+      "id": "75fa1",
+      "name": "roughness_texture.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/33_DiggingAHole-Prison_Bundle/models/Shovel_Shovel_Roughness.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c061e": {
+      "importer": "gltf-material",
+      "uuid": "2c9ca833-c975-40b8-828a-48d1757a74ee@c061e",
+      "displayName": "",
+      "id": "c061e",
+      "name": "Shovel.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "03959": {
+      "importer": "gltf-scene",
+      "uuid": "2c9ca833-c975-40b8-828a-48d1757a74ee@03959",
+      "displayName": "",
+      "id": "03959",
+      "name": "chanz.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "base_color_texture",
+        "uri": "db://assets/Game_Bundles/33_DiggingAHole-Prison_Bundle/models/Shovel_Shovel_BaseColor.jpg"
+      },
+      {
+        "name": "roughness_texture",
+        "uri": "db://assets/Game_Bundles/33_DiggingAHole-Prison_Bundle/models/Shovel_Shovel_Roughness.jpg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.375,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Take 001",
+            "from": 0,
+            "to": 0.375,
+            "wrapMode": 0,
+            "previousId": "73b7f"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "2c9ca833-c975-40b8-828a-48d1757a74ee@e07e5"
+      ],
+      "skeletons": [
+        "2c9ca833-c975-40b8-828a-48d1757a74ee@438fe"
+      ],
+      "textures": [
+        "2c9ca833-c975-40b8-828a-48d1757a74ee@7d6ab",
+        "2c9ca833-c975-40b8-828a-48d1757a74ee@75fa1"
+      ],
+      "materials": [
+        "2c9ca833-c975-40b8-828a-48d1757a74ee@c061e"
+      ],
+      "scenes": [
+        "2c9ca833-c975-40b8-828a-48d1757a74ee@03959"
+      ]
+    }
+  }
+}

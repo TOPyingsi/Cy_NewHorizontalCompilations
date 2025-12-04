@@ -1,0 +1,146 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "84448230-bf29-408b-8a95-77912fc09a4f",
+  "files": [],
+  "subMetas": {
+    "3f4b4": {
+      "importer": "gltf-mesh",
+      "uuid": "84448230-bf29-408b-8a95-77912fc09a4f@3f4b4",
+      "displayName": "",
+      "id": "3f4b4",
+      "name": "Cylinder_003.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 208
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "01a0b": {
+      "importer": "gltf-embeded-image",
+      "uuid": "84448230-bf29-408b-8a95-77912fc09a4f@01a0b",
+      "displayName": "",
+      "id": "01a0b",
+      "name": "贴图 #51.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "18c1c": {
+      "importer": "texture",
+      "uuid": "84448230-bf29-408b-8a95-77912fc09a4f@18c1c",
+      "displayName": "",
+      "id": "18c1c",
+      "name": "贴图 #51.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "84448230-bf29-408b-8a95-77912fc09a4f@01a0b"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "01563": {
+      "importer": "gltf-material",
+      "uuid": "84448230-bf29-408b-8a95-77912fc09a4f@01563",
+      "displayName": "",
+      "id": "01563",
+      "name": "Material #304.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8e30a": {
+      "importer": "gltf-scene",
+      "uuid": "84448230-bf29-408b-8a95-77912fc09a4f@8e30a",
+      "displayName": "",
+      "id": "8e30a",
+      "name": "cube_Cylinder_003.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "贴图 #51",
+        "uri": "84448230-bf29-408b-8a95-77912fc09a4f@01a0b"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "84448230-bf29-408b-8a95-77912fc09a4f@3f4b4"
+      ],
+      "skeletons": [],
+      "textures": [
+        "84448230-bf29-408b-8a95-77912fc09a4f@18c1c"
+      ],
+      "materials": [
+        "84448230-bf29-408b-8a95-77912fc09a4f@01563"
+      ],
+      "scenes": [
+        "84448230-bf29-408b-8a95-77912fc09a4f@8e30a"
+      ]
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "78e4c8c3-4015-456f-9069-1de690470fb2",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "70762": {
+      "importer": "gltf-material",
+      "uuid": "78e4c8c3-4015-456f-9069-1de690470fb2@70762",
+      "displayName": "",
+      "id": "70762",
+      "name": "blinn2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "baedf": {
+      "importer": "gltf-mesh",
+      "uuid": "78e4c8c3-4015-456f-9069-1de690470fb2@baedf",
+      "displayName": "",
+      "id": "baedf",
+      "name": "police.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 8896
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "78e4c8c3-4015-456f-9069-1de690470fb2@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "running.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "1f586": {
+      "importer": "gltf-animation",
+      "uuid": "78e4c8c3-4015-456f-9069-1de690470fb2@1f586",
+      "displayName": "",
+      "id": "1f586",
+      "name": "idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 1.0416666666666667,
+          "to": 3.75
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "78e4c8c3-4015-456f-9069-1de690470fb2@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 34
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8fb9e": {
+      "importer": "texture",
+      "uuid": "78e4c8c3-4015-456f-9069-1de690470fb2@8fb9e",
+      "displayName": "",
+      "id": "8fb9e",
+      "name": "base_color_texture2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/33_DiggingAHole-Prison_Bundle/models/狱警/police_men_packed0_diffuse.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9336f": {
+      "importer": "gltf-scene",
+      "uuid": "78e4c8c3-4015-456f-9069-1de690470fb2@9336f",
+      "displayName": "",
+      "id": "9336f",
+      "name": "police_DZ.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "base_color_texture2",
+        "uri": "db://assets/Game_Bundles/33_DiggingAHole-Prison_Bundle/models/狱警/police_men_packed0_diffuse.jpg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 3.75,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "running",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2,
+            "previousId": "73b7f",
+            "fps": 24
+          },
+          {
+            "name": "idle",
+            "from": 1.0416666666666667,
+            "to": 3.75,
+            "wrapMode": 2,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "1f586"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "78e4c8c3-4015-456f-9069-1de690470fb2@baedf"
+      ],
+      "skeletons": [
+        "78e4c8c3-4015-456f-9069-1de690470fb2@438fe"
+      ],
+      "textures": [
+        "78e4c8c3-4015-456f-9069-1de690470fb2@8fb9e"
+      ],
+      "materials": [
+        "78e4c8c3-4015-456f-9069-1de690470fb2@70762"
+      ],
+      "scenes": [
+        "78e4c8c3-4015-456f-9069-1de690470fb2@9336f"
+      ]
+    }
+  }
+}

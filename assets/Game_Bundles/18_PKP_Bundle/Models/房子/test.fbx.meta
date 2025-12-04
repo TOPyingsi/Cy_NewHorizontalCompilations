@@ -1,0 +1,162 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "71b9f8b7-398d-4489-a98d-a01f101cfafa",
+  "files": [],
+  "subMetas": {
+    "99380": {
+      "importer": "gltf-material",
+      "uuid": "71b9f8b7-398d-4489-a98d-a01f101cfafa@99380",
+      "displayName": "",
+      "id": "99380",
+      "name": "Material.001.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "09513": {
+      "importer": "gltf-mesh",
+      "uuid": "71b9f8b7-398d-4489-a98d-a01f101cfafa@09513",
+      "displayName": "",
+      "id": "09513",
+      "name": "Cube.018.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 2369
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cf1a7": {
+      "importer": "gltf-mesh",
+      "uuid": "71b9f8b7-398d-4489-a98d-a01f101cfafa@cf1a7",
+      "displayName": "",
+      "id": "cf1a7",
+      "name": "Cube.011.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 2369
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7d6ab": {
+      "importer": "texture",
+      "uuid": "71b9f8b7-398d-4489-a98d-a01f101cfafa@7d6ab",
+      "displayName": "",
+      "id": "7d6ab",
+      "name": "base_color_texture.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/18_PKP_Bundle/Models/房子/domik_test_Material_color.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1043e": {
+      "importer": "gltf-material",
+      "uuid": "71b9f8b7-398d-4489-a98d-a01f101cfafa@1043e",
+      "displayName": "",
+      "id": "1043e",
+      "name": "Material.002.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b2c6e": {
+      "importer": "gltf-scene",
+      "uuid": "71b9f8b7-398d-4489-a98d-a01f101cfafa@b2c6e",
+      "displayName": "",
+      "id": "b2c6e",
+      "name": "test.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "base_color_texture",
+        "uri": "db://assets/Game_Bundles/18_PKP_Bundle/Models/房子/domik_test_Material_color.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "71b9f8b7-398d-4489-a98d-a01f101cfafa@09513",
+        "71b9f8b7-398d-4489-a98d-a01f101cfafa@cf1a7"
+      ],
+      "skeletons": [],
+      "textures": [
+        "71b9f8b7-398d-4489-a98d-a01f101cfafa@7d6ab"
+      ],
+      "materials": [
+        "71b9f8b7-398d-4489-a98d-a01f101cfafa@99380",
+        "71b9f8b7-398d-4489-a98d-a01f101cfafa@1043e"
+      ],
+      "scenes": [
+        "71b9f8b7-398d-4489-a98d-a01f101cfafa@b2c6e"
+      ]
+    }
+  }
+}

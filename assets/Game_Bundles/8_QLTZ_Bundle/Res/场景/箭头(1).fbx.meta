@@ -1,0 +1,191 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7df9d370-afbc-47f4-b429-3c7b397e62e9",
+  "files": [],
+  "subMetas": {
+    "2885f": {
+      "importer": "gltf-mesh",
+      "uuid": "7df9d370-afbc-47f4-b429-3c7b397e62e9@2885f",
+      "displayName": "",
+      "id": "2885f",
+      "name": "TEMPORARY_IMPORT_NAMESPACE___:pCube1_0S.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 376
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "7df9d370-afbc-47f4-b429-3c7b397e62e9@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/8_QLTZ_Bundle/Res/场景/道具座椅/color.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b1467": {
+      "importer": "gltf-material",
+      "uuid": "7df9d370-afbc-47f4-b429-3c7b397e62e9@b1467",
+      "displayName": "",
+      "id": "b1467",
+      "name": "blinn1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2ac1d": {
+      "importer": "gltf-scene",
+      "uuid": "7df9d370-afbc-47f4-b429-3c7b397e62e9@2ac1d",
+      "displayName": "",
+      "id": "2ac1d",
+      "name": "箭头(1).prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "db://assets/Game_Bundles/8_QLTZ_Bundle/Res/场景/道具座椅/color.jpg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "7df9d370-afbc-47f4-b429-3c7b397e62e9@2885f"
+      ],
+      "skeletons": [],
+      "textures": [
+        "7df9d370-afbc-47f4-b429-3c7b397e62e9@d20e9"
+      ],
+      "materials": [
+        "7df9d370-afbc-47f4-b429-3c7b397e62e9@b1467"
+      ],
+      "scenes": [
+        "7df9d370-afbc-47f4-b429-3c7b397e62e9@2ac1d"
+      ]
+    },
+    "materials": {
+      "7df9d370-afbc-47f4-b429-3c7b397e62e9@b1467": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "a3cd009f-0ab0-420d-9278-b9fdab939bbc",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "7df9d370-afbc-47f4-b429-3c7b397e62e9@d20e9",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 0,
+              "g": 255,
+              "b": 112,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

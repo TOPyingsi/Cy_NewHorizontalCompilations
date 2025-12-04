@@ -1,0 +1,191 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "eb979d24-5b35-480c-8b2e-d53fb775e522",
+  "files": [],
+  "subMetas": {
+    "25893": {
+      "importer": "gltf-mesh",
+      "uuid": "eb979d24-5b35-480c-8b2e-d53fb775e522@25893",
+      "displayName": "",
+      "id": "25893",
+      "name": "pCube2.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 12
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "70762": {
+      "importer": "gltf-material",
+      "uuid": "eb979d24-5b35-480c-8b2e-d53fb775e522@70762",
+      "displayName": "",
+      "id": "70762",
+      "name": "blinn2.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "612f0": {
+      "importer": "gltf-embeded-image",
+      "uuid": "eb979d24-5b35-480c-8b2e-d53fb775e522@612f0",
+      "displayName": "",
+      "id": "612f0",
+      "name": "file4.image",
+      "userData": {
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "a562b": {
+      "importer": "texture",
+      "uuid": "eb979d24-5b35-480c-8b2e-d53fb775e522@a562b",
+      "displayName": "",
+      "id": "a562b",
+      "name": "file3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/20_DiggingAHoleCV_Bundle/models/方块/n泥土/grass_block_side.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "91dcf": {
+      "importer": "texture",
+      "uuid": "eb979d24-5b35-480c-8b2e-d53fb775e522@91dcf",
+      "displayName": "",
+      "id": "91dcf",
+      "name": "file4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "eb979d24-5b35-480c-8b2e-d53fb775e522@612f0"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "55b43": {
+      "importer": "gltf-material",
+      "uuid": "eb979d24-5b35-480c-8b2e-d53fb775e522@55b43",
+      "displayName": "",
+      "id": "55b43",
+      "name": "lambert3.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b2796": {
+      "importer": "gltf-scene",
+      "uuid": "eb979d24-5b35-480c-8b2e-d53fb775e522@b2796",
+      "displayName": "",
+      "id": "b2796",
+      "name": "niutu.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file3",
+        "uri": "db://assets/Game_Bundles/20_DiggingAHoleCV_Bundle/models/方块/n泥土/grass_block_side.png"
+      },
+      {
+        "name": "file4",
+        "uri": "eb979d24-5b35-480c-8b2e-d53fb775e522@612f0"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "eb979d24-5b35-480c-8b2e-d53fb775e522@25893"
+      ],
+      "skeletons": [],
+      "textures": [
+        "eb979d24-5b35-480c-8b2e-d53fb775e522@a562b",
+        "eb979d24-5b35-480c-8b2e-d53fb775e522@91dcf"
+      ],
+      "materials": [
+        "eb979d24-5b35-480c-8b2e-d53fb775e522@55b43",
+        "eb979d24-5b35-480c-8b2e-d53fb775e522@70762"
+      ],
+      "scenes": [
+        "eb979d24-5b35-480c-8b2e-d53fb775e522@b2796"
+      ]
+    }
+  }
+}

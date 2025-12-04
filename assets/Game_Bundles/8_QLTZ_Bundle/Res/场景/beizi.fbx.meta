@@ -1,0 +1,179 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "38466076-cb48-40e9-8ef5-85b1fc191474",
+  "files": [],
+  "subMetas": {
+    "8200b": {
+      "importer": "gltf-mesh",
+      "uuid": "38466076-cb48-40e9-8ef5-85b1fc191474@8200b",
+      "displayName": "",
+      "id": "8200b",
+      "name": "biezi.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 300
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0119d": {
+      "importer": "gltf-material",
+      "uuid": "38466076-cb48-40e9-8ef5-85b1fc191474@0119d",
+      "displayName": "",
+      "id": "0119d",
+      "name": "blinn4.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d93dc": {
+      "importer": "gltf-scene",
+      "uuid": "38466076-cb48-40e9-8ef5-85b1fc191474@d93dc",
+      "displayName": "",
+      "id": "d93dc",
+      "name": "beizi.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "38466076-cb48-40e9-8ef5-85b1fc191474@8200b"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "38466076-cb48-40e9-8ef5-85b1fc191474@0119d"
+      ],
+      "scenes": [
+        "38466076-cb48-40e9-8ef5-85b1fc191474@d93dc"
+      ]
+    },
+    "materials": {
+      "38466076-cb48-40e9-8ef5-85b1fc191474@0119d": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 1,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5
+          },
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 162,
+              "g": 162,
+              "b": 162,
+              "a": 120
+            },
+            "albedoScale": 0.800000011920929,
+            "shininessExponent": 6.311790938168236,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 188,
+              "g": 188,
+              "b": 188,
+              "a": 255
+            }
+          },
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

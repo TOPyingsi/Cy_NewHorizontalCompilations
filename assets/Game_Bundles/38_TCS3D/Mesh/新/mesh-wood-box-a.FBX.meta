@@ -1,0 +1,226 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d383d16b-e7fb-495a-bbf6-9c076f9012ce",
+  "files": [],
+  "subMetas": {
+    "e62c8": {
+      "importer": "gltf-mesh",
+      "uuid": "d383d16b-e7fb-495a-bbf6-9c076f9012ce@e62c8",
+      "displayName": "",
+      "id": "e62c8",
+      "name": "wood-box-a.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 12
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "12e89": {
+      "importer": "texture",
+      "uuid": "d383d16b-e7fb-495a-bbf6-9c076f9012ce@12e89",
+      "displayName": "",
+      "id": "12e89",
+      "name": "贴图 #116.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/38_TCS3D/Mesh/新/weathered_brown_planks_diff_1k.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2e5b8": {
+      "importer": "gltf-material",
+      "uuid": "d383d16b-e7fb-495a-bbf6-9c076f9012ce@2e5b8",
+      "displayName": "",
+      "id": "2e5b8",
+      "name": "Material #160.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2a3a7": {
+      "importer": "gltf-scene",
+      "uuid": "d383d16b-e7fb-495a-bbf6-9c076f9012ce@2a3a7",
+      "displayName": "",
+      "id": "2a3a7",
+      "name": "mesh-wood-box-a.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "贴图 #116",
+        "uri": "db://assets/Game_Bundles/38_TCS3D/Mesh/新/weathered_brown_planks_diff_1k.jpg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "d383d16b-e7fb-495a-bbf6-9c076f9012ce@e62c8"
+      ],
+      "skeletons": [],
+      "textures": [
+        "d383d16b-e7fb-495a-bbf6-9c076f9012ce@12e89"
+      ],
+      "materials": [
+        "d383d16b-e7fb-495a-bbf6-9c076f9012ce@2e5b8"
+      ],
+      "scenes": [
+        "d383d16b-e7fb-495a-bbf6-9c076f9012ce@2a3a7"
+      ]
+    },
+    "materials": {
+      "d383d16b-e7fb-495a-bbf6-9c076f9012ce@2e5b8": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 202,
+              "g": 202,
+              "b": 202,
+              "a": 255
+            },
+            "mainTexture": {
+              "__uuid__": "d383d16b-e7fb-495a-bbf6-9c076f9012ce@12e89",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

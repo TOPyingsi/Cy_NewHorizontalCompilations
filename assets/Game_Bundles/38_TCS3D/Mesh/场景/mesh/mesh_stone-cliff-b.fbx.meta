@@ -1,0 +1,146 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "56762bfc-9585-4398-acf1-556a72e00e2a",
+  "files": [],
+  "subMetas": {
+    "93284": {
+      "importer": "gltf-mesh",
+      "uuid": "56762bfc-9585-4398-acf1-556a72e00e2a@93284",
+      "displayName": "",
+      "id": "93284",
+      "name": "stone-cliff-b.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 98
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "38c43": {
+      "importer": "gltf-embeded-image",
+      "uuid": "56762bfc-9585-4398-acf1-556a72e00e2a@38c43",
+      "displayName": "",
+      "id": "38c43",
+      "name": "贴图 #94.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ed1b5": {
+      "importer": "texture",
+      "uuid": "56762bfc-9585-4398-acf1-556a72e00e2a@ed1b5",
+      "displayName": "",
+      "id": "ed1b5",
+      "name": "贴图 #94.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "56762bfc-9585-4398-acf1-556a72e00e2a@38c43"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c3529": {
+      "importer": "gltf-material",
+      "uuid": "56762bfc-9585-4398-acf1-556a72e00e2a@c3529",
+      "displayName": "",
+      "id": "c3529",
+      "name": "Material #138.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e307d": {
+      "importer": "gltf-scene",
+      "uuid": "56762bfc-9585-4398-acf1-556a72e00e2a@e307d",
+      "displayName": "",
+      "id": "e307d",
+      "name": "mesh_stone-cliff-b.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "贴图 #94",
+        "uri": "56762bfc-9585-4398-acf1-556a72e00e2a@38c43"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "56762bfc-9585-4398-acf1-556a72e00e2a@93284"
+      ],
+      "skeletons": [],
+      "textures": [
+        "56762bfc-9585-4398-acf1-556a72e00e2a@ed1b5"
+      ],
+      "materials": [
+        "56762bfc-9585-4398-acf1-556a72e00e2a@c3529"
+      ],
+      "scenes": [
+        "56762bfc-9585-4398-acf1-556a72e00e2a@e307d"
+      ]
+    }
+  }
+}

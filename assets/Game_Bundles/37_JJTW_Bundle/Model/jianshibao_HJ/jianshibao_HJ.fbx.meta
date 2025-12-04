@@ -1,0 +1,252 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "8247b": {
+      "importer": "gltf-mesh",
+      "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a@8247b",
+      "displayName": "",
+      "id": "8247b",
+      "name": "jsbb.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 6264
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "walk.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 0.4954268292682927
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "1f586": {
+      "importer": "gltf-animation",
+      "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a@1f586",
+      "displayName": "",
+      "id": "1f586",
+      "name": "idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 2.0015243902439024,
+          "to": 2.741361788617886
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "cf367": {
+      "importer": "gltf-animation",
+      "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a@cf367",
+      "displayName": "",
+      "id": "cf367",
+      "name": "end.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 3.415142276422764,
+          "to": 4.875
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 32
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/37_JJTW_Bundle/Model/jianshibao_HJ/tex/jsbb_albedometal.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "03859": {
+      "importer": "gltf-material",
+      "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a@03859",
+      "displayName": "",
+      "id": "03859",
+      "name": "jsbb.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5b8d4": {
+      "importer": "gltf-scene",
+      "uuid": "1b44db89-3a72-447f-8305-ba0d34402e9a@5b8d4",
+      "displayName": "",
+      "id": "5b8d4",
+      "name": "jianshibao_HJ.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "db://assets/Game_Bundles/37_JJTW_Bundle/Model/jianshibao_HJ/tex/jsbb_albedometal.jpg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 4.875,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "walk",
+            "from": 0,
+            "to": 0.4954268292682927,
+            "wrapMode": 2,
+            "previousId": "73b7f",
+            "fps": 24
+          },
+          {
+            "name": "idle",
+            "from": 2.0015243902439024,
+            "to": 2.741361788617886,
+            "wrapMode": 2,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "1f586"
+          },
+          {
+            "name": "end",
+            "from": 3.415142276422764,
+            "to": 4.875,
+            "wrapMode": 2,
+            "speed": 1,
+            "previousId": "cf367"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "1b44db89-3a72-447f-8305-ba0d34402e9a@8247b"
+      ],
+      "skeletons": [
+        "1b44db89-3a72-447f-8305-ba0d34402e9a@438fe"
+      ],
+      "textures": [
+        "1b44db89-3a72-447f-8305-ba0d34402e9a@d20e9"
+      ],
+      "materials": [
+        "1b44db89-3a72-447f-8305-ba0d34402e9a@03859"
+      ],
+      "scenes": [
+        "1b44db89-3a72-447f-8305-ba0d34402e9a@5b8d4"
+      ]
+    }
+  }
+}

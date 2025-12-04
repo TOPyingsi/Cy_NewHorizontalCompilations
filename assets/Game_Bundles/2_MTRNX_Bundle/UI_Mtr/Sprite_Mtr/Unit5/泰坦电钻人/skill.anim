@@ -1,0 +1,194 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "skill",
+    "_objFlags": 0,
+    "__editorExtras__": {
+      "embeddedPlayerGroups": []
+    },
+    "_native": "",
+    "sample": 60,
+    "speed": 1,
+    "wrapMode": 1,
+    "enableTrsBlending": false,
+    "_duration": 1.0833333333333333,
+    "_hash": 500763545,
+    "_tracks": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_exoticAnimation": null,
+    "_events": [
+      {
+        "frame": 0.6,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.6,
+        "func": "Hit",
+        "params": [
+          70
+        ]
+      },
+      {
+        "frame": 0.6833333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.6833333333333333,
+        "func": "Hit",
+        "params": [
+          70
+        ]
+      },
+      {
+        "frame": 0.7666666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.7666666666666667,
+        "func": "Hit",
+        "params": [
+          70
+        ]
+      },
+      {
+        "frame": 0.85,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.85,
+        "func": "Hit",
+        "params": [
+          70
+        ]
+      },
+      {
+        "frame": 0.9333333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.9333333333333333,
+        "func": "Hit",
+        "params": [
+          70
+        ]
+      },
+      {
+        "frame": 1.0666666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.0666666666666667,
+        "func": "SkillEnd",
+        "params": []
+      }
+    ],
+    "_embeddedPlayers": [],
+    "_additiveSettings": {
+      "__id__": 6
+    },
+    "_auxiliaryCurveEntries": []
+  },
+  {
+    "__type__": "cc.animation.ObjectTrack",
+    "_binding": {
+      "__type__": "cc.animation.TrackBinding",
+      "path": {
+        "__id__": 2
+      },
+      "proxy": null
+    },
+    "_channel": {
+      "__id__": 4
+    }
+  },
+  {
+    "__type__": "cc.animation.TrackPath",
+    "_paths": [
+      {
+        "__id__": 3
+      },
+      "spriteFrame"
+    ]
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.Channel",
+    "_curve": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.ObjectCurve",
+    "_times": [
+      0,
+      0.11666666666666667,
+      0.23333333333333334,
+      0.35,
+      0.4666666666666667,
+      0.5833333333333334,
+      0.7166666666666667,
+      0.8333333333333334,
+      0.95,
+      1.0666666666666667
+    ],
+    "_values": [
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@b6f0e",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@b9580",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@6d549",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@7fdab",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@2968d",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@d1a69",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@253cf",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@fe559",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@7c7aa",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d0d1e282-9399-4268-8d4d-2cdf99e1d8e7@805c1",
+        "__expectedType__": "cc.SpriteFrame"
+      }
+    ]
+  },
+  {
+    "__type__": "cc.AnimationClipAdditiveSettings",
+    "enabled": false,
+    "refClip": null
+  }
+]

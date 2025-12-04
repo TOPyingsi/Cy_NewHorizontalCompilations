@@ -1,0 +1,146 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d8d24f19-ef5c-4636-bca4-ee845f30fab0",
+  "files": [],
+  "subMetas": {
+    "a1982": {
+      "importer": "gltf-mesh",
+      "uuid": "d8d24f19-ef5c-4636-bca4-ee845f30fab0@a1982",
+      "displayName": "",
+      "id": "a1982",
+      "name": "BrokenPillar_a.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 68
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1928f": {
+      "importer": "gltf-embeded-image",
+      "uuid": "d8d24f19-ef5c-4636-bca4-ee845f30fab0@1928f",
+      "displayName": "",
+      "id": "1928f",
+      "name": "贴图 #82.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1f447": {
+      "importer": "texture",
+      "uuid": "d8d24f19-ef5c-4636-bca4-ee845f30fab0@1f447",
+      "displayName": "",
+      "id": "1f447",
+      "name": "贴图 #82.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d8d24f19-ef5c-4636-bca4-ee845f30fab0@1928f"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ccba7": {
+      "importer": "gltf-material",
+      "uuid": "d8d24f19-ef5c-4636-bca4-ee845f30fab0@ccba7",
+      "displayName": "",
+      "id": "ccba7",
+      "name": "Material #126.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e252e": {
+      "importer": "gltf-scene",
+      "uuid": "d8d24f19-ef5c-4636-bca4-ee845f30fab0@e252e",
+      "displayName": "",
+      "id": "e252e",
+      "name": "mesh_BrokenPillar_a.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "贴图 #82",
+        "uri": "d8d24f19-ef5c-4636-bca4-ee845f30fab0@1928f"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "d8d24f19-ef5c-4636-bca4-ee845f30fab0@a1982"
+      ],
+      "skeletons": [],
+      "textures": [
+        "d8d24f19-ef5c-4636-bca4-ee845f30fab0@1f447"
+      ],
+      "materials": [
+        "d8d24f19-ef5c-4636-bca4-ee845f30fab0@ccba7"
+      ],
+      "scenes": [
+        "d8d24f19-ef5c-4636-bca4-ee845f30fab0@e252e"
+      ]
+    }
+  }
+}

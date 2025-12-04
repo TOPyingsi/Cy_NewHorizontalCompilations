@@ -1,0 +1,189 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "missleattack",
+    "_objFlags": 0,
+    "__editorExtras__": {
+      "embeddedPlayerGroups": []
+    },
+    "_native": "",
+    "sample": 60,
+    "speed": 1,
+    "wrapMode": 1,
+    "enableTrsBlending": false,
+    "_duration": 1.4333333333333333,
+    "_hash": 500763545,
+    "_tracks": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_exoticAnimation": null,
+    "_events": [
+      {
+        "frame": 0.08333333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.08333333333333333,
+        "func": "Shoot",
+        "params": []
+      },
+      {
+        "frame": 0.08333333333333333,
+        "func": "AudioPlay",
+        "params": [
+          "特大号爆炸"
+        ]
+      },
+      {
+        "frame": 1.4166666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.4166666666666667,
+        "func": "WeaponAttackEnd",
+        "params": []
+      }
+    ],
+    "_embeddedPlayers": []
+  },
+  {
+    "__type__": "cc.animation.ObjectTrack",
+    "_binding": {
+      "__type__": "cc.animation.TrackBinding",
+      "path": {
+        "__id__": 2
+      },
+      "proxy": null
+    },
+    "_channel": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.animation.TrackPath",
+    "_paths": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 4
+      },
+      "spriteFrame"
+    ]
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "火箭弹1 (1)"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.Channel",
+    "_curve": {
+      "__id__": 6
+    }
+  },
+  {
+    "__type__": "cc.ObjectCurve",
+    "_times": [
+      0,
+      0.08333333333333333,
+      0.16666666666666666,
+      0.25,
+      0.3333333333333333,
+      0.4166666666666667,
+      0.5,
+      0.5833333333333334,
+      0.6666666666666666,
+      0.75,
+      0.8333333333333334,
+      0.9166666666666666,
+      1,
+      1.0833333333333333,
+      1.1666666666666667,
+      1.25,
+      1.3333333333333333,
+      1.4166666666666667
+    ],
+    "_values": [
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@2598f",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@e27df",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@d2d05",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@2ebfe",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@d2c42",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@ea72c",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@0e57d",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@1db85",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@55793",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@b4b10",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@1a54e",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@faa51",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@93593",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@d2197",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@2745c",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@3a09e",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@70cd9",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "21c97323-218d-489c-8488-29195847faca@7c685",
+        "__expectedType__": "cc.SpriteFrame"
+      }
+    ]
+  }
+]

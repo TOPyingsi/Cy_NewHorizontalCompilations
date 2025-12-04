@@ -1,0 +1,372 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "skill",
+    "_objFlags": 0,
+    "__editorExtras__": {
+      "embeddedPlayerGroups": []
+    },
+    "_native": "",
+    "sample": 60,
+    "speed": 1,
+    "wrapMode": 1,
+    "enableTrsBlending": false,
+    "_duration": 2.433333333333333,
+    "_hash": 500763545,
+    "_tracks": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_exoticAnimation": null,
+    "_events": [
+      {
+        "frame": 0,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0,
+        "func": "AudioPlay",
+        "params": [
+          "音响王蓄力"
+        ]
+      },
+      {
+        "frame": 0.5,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.5,
+        "func": "AudioPlay",
+        "params": [
+          "音响王蓄力"
+        ]
+      },
+      {
+        "frame": 1.0833333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.0833333333333333,
+        "func": "Shoot",
+        "params": [
+          0,
+          50,
+          50,
+          1,
+          10
+        ]
+      },
+      {
+        "frame": 1.0833333333333333,
+        "func": "Shoot",
+        "params": [
+          0,
+          50,
+          50,
+          1,
+          10
+        ]
+      },
+      {
+        "frame": 1.0833333333333333,
+        "func": "AudioPlay",
+        "params": [
+          "蓝色子弹发射"
+        ]
+      },
+      {
+        "frame": 1.0833333333333333,
+        "func": "AudioPlay",
+        "params": [
+          "蓝色子弹发射"
+        ]
+      },
+      {
+        "frame": 1.5,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.5,
+        "func": "Shoot",
+        "params": [
+          0,
+          50,
+          50,
+          1,
+          10
+        ]
+      },
+      {
+        "frame": 1.5,
+        "func": "Shoot",
+        "params": [
+          0,
+          50,
+          50,
+          1,
+          10
+        ]
+      },
+      {
+        "frame": 1.5,
+        "func": "AudioPlay",
+        "params": [
+          "蓝色子弹发射"
+        ]
+      },
+      {
+        "frame": 1.5,
+        "func": "AudioPlay",
+        "params": [
+          "蓝色子弹发射"
+        ]
+      },
+      {
+        "frame": 1.9166666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1.9166666666666667,
+        "func": "Shoot",
+        "params": [
+          0,
+          50,
+          50,
+          1,
+          10
+        ]
+      },
+      {
+        "frame": 1.9166666666666667,
+        "func": "Shoot",
+        "params": [
+          0,
+          50,
+          50,
+          1,
+          10
+        ]
+      },
+      {
+        "frame": 1.9166666666666667,
+        "func": "AudioPlay",
+        "params": [
+          "蓝色子弹发射"
+        ]
+      },
+      {
+        "frame": 1.9166666666666667,
+        "func": "AudioPlay",
+        "params": [
+          "蓝色子弹发射"
+        ]
+      },
+      {
+        "frame": 2.4166666666666665,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 2.4166666666666665,
+        "func": "SkillEnd",
+        "params": []
+      }
+    ],
+    "_embeddedPlayers": []
+  },
+  {
+    "__type__": "cc.animation.ObjectTrack",
+    "_binding": {
+      "__type__": "cc.animation.TrackBinding",
+      "path": {
+        "__id__": 2
+      },
+      "proxy": null
+    },
+    "_channel": {
+      "__id__": 4
+    }
+  },
+  {
+    "__type__": "cc.animation.TrackPath",
+    "_paths": [
+      {
+        "__id__": 3
+      },
+      "spriteFrame"
+    ]
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.Channel",
+    "_curve": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.ObjectCurve",
+    "_times": [
+      0,
+      0.08333333333333333,
+      0.16666666666666666,
+      0.25,
+      0.3333333333333333,
+      0.4166666666666667,
+      0.5,
+      0.5833333333333334,
+      0.6666666666666666,
+      0.75,
+      0.8333333333333334,
+      0.9166666666666666,
+      1,
+      1.0833333333333333,
+      1.1666666666666667,
+      1.25,
+      1.3333333333333333,
+      1.4166666666666667,
+      1.5,
+      1.5833333333333333,
+      1.6666666666666667,
+      1.75,
+      1.8333333333333333,
+      1.9166666666666667,
+      2,
+      2.0833333333333335,
+      2.1666666666666665,
+      2.25,
+      2.3333333333333335,
+      2.4166666666666665
+    ],
+    "_values": [
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@af0f9",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@0ef68",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@b31c2",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@8dbf3",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@0594c",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@49300",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@ef8c7",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@f8f46",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@85dd8",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@e0126",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@70ecd",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@fd4a3",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@34bd2",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@ee1d6",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@b11d4",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@2e022",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@b965d",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@34bd2",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@ee1d6",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@b11d4",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@2e022",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@b965d",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@34bd2",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@ee1d6",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@b11d4",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@2e022",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@b965d",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@0594c",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@0594c",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "7ab30e6e-c20a-4799-b3d3-4eb321933647@0594c",
+        "__expectedType__": "cc.SpriteFrame"
+      }
+    ]
+  }
+]
