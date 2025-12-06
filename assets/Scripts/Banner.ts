@@ -47,7 +47,7 @@ export default class Banner {
     private _shareUrl: string = "https://mmocgame.qpic.cn/wechatgame/SSraPWBCo8uTN55cbEEzLibdDEdNlxCDrJyaeTNhtAiagH8uaUcLicIj26wbNeDAnr0/0";
 
     //屏蔽时间
-    private _year: number = 2099;
+    private _year: number = 2025;
     private _month: number = 11;
     private _date: number = 1;
     private _hour: number = 19;
@@ -63,8 +63,8 @@ export default class Banner {
     popupAddShortcutCount: number = 0;
 
     public static IsShowServerBundle: boolean = false;//是否能使用远程包
-    private server_year: number = 2099;//远程包屏蔽时间
-    private server_month: number = 99;
+    private server_year: number = 2025;//远程包屏蔽时间
+    private server_month: number = 9;
     private server_date: number = 3;
     private server_hour: number = 19;
 
