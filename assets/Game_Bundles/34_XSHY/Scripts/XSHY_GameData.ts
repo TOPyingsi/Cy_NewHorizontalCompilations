@@ -1,4 +1,5 @@
-import { _decorator, Component, Node, sys } from 'cc';
+import { _decorator, Component, director, Node, sys } from 'cc';
+import { XSHY_EasyControllerEvent } from './XSHY_EasyController';
 const { ccclass, property } = _decorator;
 
 @ccclass('XSHY_GameData')
@@ -12,12 +13,21 @@ export class XSHY_GameData extends Component {
     }
 
 
-    public Money: number = 100;//钱
-    public GameData: number[] = [];
+    private money: number = 100;//钱
+    public get Money() {
+        return this.money;
+    }
+    public set Money(num: number) {
+        this.money = num;
+        director.getScene().emit(XSHY_EasyControllerEvent.ChanggeMoney, num);
+    }
+
+    public GameData: number[] = [0, 0, 0];//0经验1最高连胜2是否完成新手引导
 
 
 
-    public UnLook: number[] = [];
+
+    public UnLook: string[] = ["鼬", "四代目", "佐助", "纲手",];//解锁的角色
 
 
     public TimeDate: number[] = [];

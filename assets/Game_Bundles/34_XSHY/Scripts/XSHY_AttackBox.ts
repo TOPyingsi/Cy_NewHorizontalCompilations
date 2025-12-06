@@ -1,11 +1,17 @@
 import { _decorator, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, v2, v3, Vec2 } from 'cc';
 import { XSHY_Unit } from './XSHY_Unit';
+import { XSHY_AudioManager } from './XSHY_AudioManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('XSHY_AttackBox')
 export class XSHY_AttackBox extends Component {
+    @property()
+    AudioName: string = "击中";
+
+
     public Attack: number = 0;//伤害
     public Attacknode: Node = null;//攻击者节点
+
 
     private Pos: Vec2 = v2(0, 0);
     private boxPos: Vec2[] = [];
@@ -27,7 +33,11 @@ export class XSHY_AttackBox extends Component {
     //造成伤害
     AttackHurt(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         if (otherCollider && otherCollider.node != this.Attacknode) {//是敌人
-            otherCollider.node.getComponent(XSHY_Unit).Hurt(this.Attack)
+            if (otherCollider.node.getComponent(XSHY_Unit).Hurt(this.Attack)) {
+                if (this.AudioName != "") {
+                    XSHY_AudioManager.globalAudioPlay(this.AudioName);
+                }
+            }
         }
     }
     Show() {

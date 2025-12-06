@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Prefab, SpriteFrame } from 'cc';
+import { _decorator, Component, Node, Prefab, Sprite, SpriteFrame } from 'cc';
 import { BundleManager } from '../../../Scripts/Framework/Managers/BundleManager';
 const { ccclass, property } = _decorator;
 
@@ -13,6 +13,12 @@ export class XSHY_incident extends Component {
                 }
                 resolve && resolve(data);
             })
+        })
+    }
+
+    public static LoadSpriteFrameToSprite(Path: string, sprite: Sprite) {
+        XSHY_incident.LoadSprite(Path).then((sp: SpriteFrame) => {
+            sprite.spriteFrame = sp;
         })
     }
 

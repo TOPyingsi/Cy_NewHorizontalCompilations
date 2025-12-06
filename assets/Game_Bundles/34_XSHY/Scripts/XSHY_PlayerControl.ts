@@ -1,18 +1,19 @@
 import { _decorator, Component, Node, RigidBody2D, tween, v2, v3, Vec2 } from 'cc';
 import { XSHY_EasyController, XSHY_EasyControllerEvent } from './XSHY_EasyController';
 import { XSHY_Unit } from './XSHY_Unit';
+import { XSHY_GameManager } from './XSHY_GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('XSHY_PlayerControl')
 export class XSHY_PlayerControl extends Component {
-
-
     private Unit: XSHY_Unit = null;
     start() {
         this.Unit = this.node.getComponent(XSHY_Unit);
         XSHY_EasyController.on(XSHY_EasyControllerEvent.MOVEMENT, this.onMovement, this);
         XSHY_EasyController.on(XSHY_EasyControllerEvent.MOVEMENT_STOP, this.onMovementRelease, this);
         XSHY_EasyController.on(XSHY_EasyControllerEvent.ATTACK, this.ONAttack, this);
+        XSHY_EasyController.on(XSHY_EasyControllerEvent.SKILL, this.Skill, this);
+        XSHY_EasyController.on(XSHY_EasyControllerEvent.TongLing, this.TongLing, this);
     }
     //拖动摇杆
     onMovement(degree: number, offset: number) {
@@ -27,16 +28,19 @@ export class XSHY_PlayerControl extends Component {
     //抬起摇杆
     onMovementRelease() {
         this.Unit.StopMove();
-
     }
-
     //按下攻击按键
     ONAttack() {
         this.Unit.AttackClick();
     }
-
-
-
+    //按下技能键
+    Skill(num: number) {
+        this.Unit.SkillClick(num);
+    }
+    //按下通灵键
+    TongLing() {
+        this.Unit.TongLing(XSHY_GameManager.SkillData[XSHY_GameManager.PlayerID]);
+    }
     //位移
     displacement(pos: Vec2, time: number) {
         tween(this.node)
