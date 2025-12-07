@@ -13,7 +13,7 @@ export enum BannerMode {
 }
 
 export default class Banner {
-    static Mode: BannerMode = BannerMode.测试包;
+    static Mode: BannerMode = BannerMode.正式包;
     static RegionMask: boolean = false;//地区判断.true为有广告，false为无广告（不需要再此处手动修改，所有广告修改前往BannerManager）
     static IsYB: boolean = false;//是否为阴包，阴包没游戏，黑包情况默认阳包
     static TimeMask: boolean = false;//时间判断.true为有广告，false为无广告
@@ -30,9 +30,9 @@ export default class Banner {
 
     private _appId: string = "115216107";
 
-    private _videoId: string = "l9tqvdw7u2";
-    private _customId: string = "i5ys6albth";
-    private _bannerId: string = "c2wgr7y495";
+    private _videoId: string = "64ce5c97d95140509b3369ae87ce5e35";
+    private _customId: string = "a65fa5905ece47da852ea87f09d6bd71";
+    private _bannerId: string = "8f6d20dcacf24140afa24a20b3189b25";
 
 
     //微信
@@ -47,9 +47,9 @@ export default class Banner {
     private _shareUrl: string = "https://mmocgame.qpic.cn/wechatgame/SSraPWBCo8uTN55cbEEzLibdDEdNlxCDrJyaeTNhtAiagH8uaUcLicIj26wbNeDAnr0/0";
 
     //屏蔽时间
-    private _year: number = 2099;
-    private _month: number = 11;
-    private _date: number = 1;
+    private _year: number = 2025;
+    private _month: number = 12;
+    private _date: number = 11;
     private _hour: number = 19;
 
     nativeAd = null;

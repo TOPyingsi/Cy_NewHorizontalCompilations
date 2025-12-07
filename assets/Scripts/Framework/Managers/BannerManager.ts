@@ -136,13 +136,13 @@ export class BannerManager extends Component {
     }
     //策略2(王勇VR黑包)
     public StrategyMode2 = {
-        首次主场景策略: [],
+        首次主场景策略: [[BannerType.二次原], [BannerType.宝箱]],
         游戏开始策略: [[BannerType.原生], [BannerType.Banner]],
         游戏结束策略: [[BannerType.原生], [BannerType.Banner]],
         弹出窗口策略: [],
         页面转换策略: [],
         返回主页策略: [[BannerType.Banner]],
-        其他策略: []//其他策略是指30s自弹，20s自弹，5分钟自弹宝箱等事件（不要将这些事件填入其他策略中反复调用）
+        其他策略: [[BannerType.四十秒自弹原生], [BannerType.三十五秒自弹添加桌面]]//其他策略是指30s自弹，20s自弹，5分钟自弹宝箱等事件（不要将这些事件填入其他策略中反复调用）
     }
     //策略3(深圳正常包)
     public StrategyMode3 = {
