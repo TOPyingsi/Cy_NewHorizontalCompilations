@@ -15,9 +15,9 @@ export class MTRNX_GameDate extends Component {
     public TimeDate: number[] = [2023, 11, 2, 1];//0年1月2日3是否可以签到
     public Money: number = 1000;
     public Debris: number = 100;//碎片
-    public PlayerDate: number[] = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];//0未解锁，1以及代表等级
+    public PlayerDate: number[] = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];//0未解锁，1以及代表等级
     public MiniGameUnLook: boolean[] = [false, false, false, false, false, false, false, false, false, false];//小游戏模式是否解锁
-    public CurrentSelect: number = 0;
+    public CurrentSelect: number = 4;
     public HpLevel: number = 0;//血量升级等级
     public partnerUnLook: number[] = [0, 0, 0, 0, 0, 0];//伙伴0未解锁
     public selectPartner: number = -1;//当前携带伙伴，-1表未携带

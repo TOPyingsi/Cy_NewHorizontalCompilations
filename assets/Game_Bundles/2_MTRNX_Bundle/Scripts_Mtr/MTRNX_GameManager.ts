@@ -438,6 +438,7 @@ export class MTRNX_GameManager extends Component {
             this.enemyPoint -= MTRNX_Constant.MTTypePointCost[this.enemy];
             console.log("当前难度：" + this.EnemyDifficultyLevel);
             MTRNX_ResourceUtil.LoadPrefab("Unit/" + MTRNX_MTType[this.enemy]).then((prefab: Prefab) => {
+                if (!this.node.isValid) return;
                 let pre = instantiate(prefab);
                 pre.setParent(this.GameNode.getChildByName("敌方单位"));
                 if (MTRNX_GameManager.GameMode == MTRNX_GameMode.Massacre) {
@@ -458,6 +459,7 @@ export class MTRNX_GameManager extends Component {
         // if (this.enemyPoint >= Constant.MTTypePointCost[this.enemies[1][num]]) {
         // this.enemyPoint -= Constant.MTTypePointCost[this.enemies[1][num]];
         MTRNX_ResourceUtil.LoadPrefab("Unit/" + MTRNX_MTType[this.enemies[1][num]]).then((prefab: Prefab) => {
+            if (!this.node.isValid) return;
             instantiate(prefab).setParent(this.GameNode.getChildByName("敌方单位"));
         });
         this.enemies[1].splice(num, 1);
@@ -467,6 +469,7 @@ export class MTRNX_GameManager extends Component {
     //boss模式生成boss
     CreateBoss() {
         MTRNX_ResourceUtil.LoadPrefab("Boss/" + MTRNX_ChallengePanel.BossName).then((prefab: Prefab) => {
+            if (!this.node.isValid) return;
             instantiate(prefab).setParent(this.GameNode.getChildByName("敌方单位"));
         })
     }

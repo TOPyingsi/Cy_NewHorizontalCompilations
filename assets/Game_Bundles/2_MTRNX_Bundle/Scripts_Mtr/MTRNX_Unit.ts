@@ -10,6 +10,7 @@ import { MTRNX_PoolManager } from './Utils/MTRNX_PoolManager';
 import { MTRNX_BloodLabel_Mtr } from './UI/MTRNX_BloodLabel_Mtr';
 import { MTRNX_GameDate } from './MTRNX_GameDate';
 import { MTRNX_EasyController, MTRNX_EasyControllerEvent } from './MTRNX_EasyController';
+import { UIManager } from '../../../Scripts/Framework/Managers/UIManager';
 const { ccclass, property } = _decorator;
 const { Ray } = geometry;
 const outRay = new geometry.Ray();
@@ -487,6 +488,11 @@ export class MTRNX_Unit extends Component {
         if (!this._animation?.getState("dead").isPlaying) {
             this._animation?.play("dead");
         }
+        if (Math.random() * 10 < 0.2) {
+            MTRNX_GameManager.Key += 1;
+            UIManager.ShowTip("获得钥匙*1");
+        }
+
         if (this.IsEnemy) MTRNX_AudioManager.AudioClipPlay("马桶死亡");
     }
     //死亡帧事件
