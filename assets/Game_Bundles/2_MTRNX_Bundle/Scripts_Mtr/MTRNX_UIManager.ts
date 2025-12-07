@@ -21,6 +21,7 @@ export enum MTRNX_Panel {
     SuperShop = "Prefabs/UI/MTRNX_SuperShop",
     LotteryPanel = "Prefabs/UI/MTRNX_LotteryPanel",
     acquireMoneyPanel = "Prefabs/UI/MTRNX_acquireMoneyPanel",
+    acquireDebrisPanel = "Prefabs/UI/MTRNX_acquireDebrisPanel",
     evolutionPanel = "Prefabs/UI/MTRNX_evolutionPanel",
     limitPanel = "Prefabs/UI/MTRNX_limitPanel",
     SeletGamePanel = "Prefabs/UI/MTRNX_SeletGamePanel",

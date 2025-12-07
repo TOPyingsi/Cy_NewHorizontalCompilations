@@ -66,6 +66,7 @@ export class MTRNX_limitPanel extends Component {
             }
         } else {
             MTRNX_UIManager.HopHint("抽奖需要角色碎片*" + shopdata.Debris_price);
+            MTRNX_UIManager.Instance.ShowPanel(MTRNX_Panel.acquireDebrisPanel);
         }
     }
     //点击切换

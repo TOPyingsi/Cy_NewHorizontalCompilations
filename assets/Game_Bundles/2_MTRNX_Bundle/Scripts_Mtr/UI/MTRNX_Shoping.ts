@@ -9,7 +9,7 @@ const { ccclass, property } = _decorator;
 
 @ccclass('MTRNX_Shoping')
 export class MTRNX_Shoping extends Component {
-    public Names: string[] = ["木棍人", "奈氪鲨", "鹿人"];
+    public Names: string[] = ["兔子", "木棍人", "奈氪鲨"];
     private Islogding: boolean = false;
     //初始化商店
     Show() {

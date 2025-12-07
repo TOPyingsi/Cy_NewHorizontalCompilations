@@ -31,9 +31,9 @@ export class MTRNX_DialogPanel_Mtr extends Component {
         this.dialogData = data;
         this.tip.node.active = false;
 
-        BundleManager.LoadSpriteFrame("2_MTRNX_Bundle", `Icons/Speaker_${this.dialogData.Speaker}`).then((sp: SpriteFrame) => {
-            this.dialogSp.spriteFrame = sp;
-        })
+        // BundleManager.LoadSpriteFrame("2_MTRNX_Bundle", `Icons/Speaker_${this.dialogData.Speaker}`).then((sp: SpriteFrame) => {
+        //     this.dialogSp.spriteFrame = sp;
+        // })
 
         this.charactorLb.string = this.dialogData.Speaker;
         this.nowText = this.dialogData.Desc[0];
