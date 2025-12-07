@@ -24,15 +24,15 @@ export default class Banner {
 
     //健康忠告
     static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
-    static License: string = `登记号：2025SA0184732`;                         //登记号
+    static License: string = `登记号：2025SA0184731`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
-    private _appId: string = "300123128";
+    private _appId: string = "300123126";
 
-    private _videoId: string = "1995101468065529856";
-    private _customId: string = "1995101351114571776";
-    private _bannerId: string = "1995101251084615680";
+    private _videoId: string = "1995100469996945408";
+    private _customId: string = "1995100363233034240";
+    private _bannerId: string = "1995100260763303936";
 
 
     //微信
