@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "E:/Desktop/Ad_network/鸿蒙证书/Harmony.p12",
+          "storePassword": "00000018755AD6784B7200795444506872A75B4DE93E007FEF1BF78EDE2AC043ACE4F606E26D407F",
+          "keyAlias": "harmony",
+          "keyPassword": "000000188EB8F4EFF6F8F8AEF4F96967562893C7D2CA4790E8C9D077ABFD55270586D3DD2720D4B7",
+          "signAlg": "SHA256withECDSA",
+          "profile": "E:/Desktop/Ad_network/game-repository/AI山海经集卡/鸿蒙/AI山海经集卡Debug.p7b",
+          "certpath": "E:/Desktop/Ad_network/鸿蒙证书/鸿蒙调试证书.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

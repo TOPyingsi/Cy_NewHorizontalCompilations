@@ -1,0 +1,102 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:entry_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone"
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.VIBRATE"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.ACCELEROMETER"
+      },
+      {
+        "name": "ohos.permission.GYROSCOPE"
+      },
+      {
+        "name": "ohos.permission.APP_TRACKING_CONSENT",
+        "reason": "$string:reason",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      }
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:MainAbility_desc",
+        "orientation": "auto_rotation_landscape",
+        "icon": "$media:app_icon",
+        "label": "$string:MainAbility_label",
+        "startWindowIcon": "$media:app_icon",
+        "removeMissionAfterTerminate": true,
+        "startWindowBackground": "$color:white",
+        "supportWindowMode": [
+          "fullscreen"
+        ],
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": [
+      {
+        "name": "client_id",
+        "value": "6917588768295090061"
+      },
+      {
+        "name": "app_id",
+        "value": "6917588768295090061"
+      },
+      {
+        "name": "ad_id_reward",
+        "value": "u92vhjharp"
+      },
+      {
+        "name": "ad_id_interstitial",
+        "value": "u1q5bwlaeq"
+      },
+      {
+        "name": "ad_id_splash",
+        "value": "f3qx3pesw8"
+      },
+      {
+        "name": "ad_id_banner",
+        "value": "testw6vs28auh3"
+      },
+      {
+        "name": "user_agreement_url",
+        "value": "https://legal.cloud.huawei.com.cn/terms/scope/huawei/ads-hmos/privacy-statement.htm?&code=CN&language=zh-CN&branchid=0&contenttag=default"
+      },
+      {
+        "name": "privacy_url",
+        "value": "http://8.134.78.43/cy/CY.html"
+      }
+    ]
+  }
+}
