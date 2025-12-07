@@ -94,6 +94,7 @@ export class MTRNX_SuperShop extends Component {
                 this.Show();
             } else {
                 MTRNX_UIManager.HopHint("角色碎片不足！需要角色碎片*" + shopdata.Debris_price);
+                MTRNX_UIManager.Instance.ShowPanel(MTRNX_Panel.acquireDebrisPanel);
             }
         } else {
             MTRNX_UIManager.HopHint("你已经拥有改单位了！");
