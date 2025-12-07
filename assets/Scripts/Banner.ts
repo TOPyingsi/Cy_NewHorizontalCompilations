@@ -13,7 +13,7 @@ export enum BannerMode {
 }
 
 export default class Banner {
-    static Mode: BannerMode = BannerMode.正式包;
+    static Mode: BannerMode = BannerMode.黑包;
     static RegionMask: boolean = false;//地区判断.true为有广告，false为无广告（不需要再此处手动修改，所有广告修改前往BannerManager）
     static IsYB: boolean = false;//是否为阴包，阴包没游戏，黑包情况默认阳包
     static TimeMask: boolean = false;//时间判断.true为有广告，false为无广告
@@ -28,11 +28,11 @@ export default class Banner {
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
-    private _appId: string = "300123128";
+    private _appId: string = "300123127";
 
-    private _videoId: string = "1995101468065529856";
-    private _customId: string = "1995101351114571776";
-    private _bannerId: string = "1995101251084615680";
+    private _videoId: string = "1995101043705643008";
+    private _customId: string = "1995100921370378240";
+    private _bannerId: string = "1995100775496679424";
 
 
     //微信
@@ -49,7 +49,7 @@ export default class Banner {
     //屏蔽时间
     private _year: number = 2025;
     private _month: number = 12;
-    private _date: number = 9;
+    private _date: number = 4;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -65,7 +65,7 @@ export default class Banner {
     public static IsShowServerBundle: boolean = true;//是否能使用远程包
     private server_year: number = 2025;//远程包屏蔽时间
     private server_month: number = 12;
-    private server_date: number = 9;
+    private server_date: number = 4;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
