@@ -76,6 +76,13 @@ export class XGTS_Constant {
             LevelRequirements: [0, 12],
             TimeLimit: "30:00",
             MapName: "XGTS_Lv_7"
+        },
+        仙界: {
+            Name: "仙界",
+            EntryCosts: [0, 120000],
+            LevelRequirements: [0, 12],
+            TimeLimit: "30:00",
+            MapName: "XGTS_Lv_8"
         }
     }
 

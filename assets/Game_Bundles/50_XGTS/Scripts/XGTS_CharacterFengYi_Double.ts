@@ -21,6 +21,7 @@ import { UIManager } from 'db://assets/Scripts/Framework/Managers/UIManager';
 import XGTS_CharacterEnemy from './XGTS_CharacterEnemy';
 import XGTS_HPBar from './UI/XGTS_HPBar';
 import XGTS_CameraController from './XGTS_CameraController';
+import { XGTS_GameData } from './XGTS_GameData';
 
 const v3_0 = v3();
 
@@ -64,10 +65,10 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
     private enemyCheckTimer: number = 0;
     private nearestEnemyDistance: number = Infinity;
 
-    private dirX:number;
-    private dirY:number;
-    private dirRate:number;
-    private isStopMove:boolean = false;
+    private dirX: number;
+    private dirY: number;
+    private dirRate: number;
+    private isStopMove: boolean = false;
 
 
     isEnemy: boolean = false;
@@ -99,21 +100,21 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
         this.isDie = true;
         this.UnrigistEvent();
 
-        if(this.playerNum == 1){
+        if (this.playerNum == 1) {
             XGTS_CameraController.Instance.player1 = null;
         }
-        else{
+        else {
             XGTS_CameraController.Instance.player2 = null;
         }
 
-        let playerNode :Node;
-        if( XGTS_GameManager.Instance.playerNodes.length == 2){
+        let playerNode: Node;
+        if (XGTS_GameManager.Instance.playerNodes.length == 2) {
             playerNode = XGTS_GameManager.Instance.playerNodes[this.playerNum - 1];
             XGTS_GameManager.Instance.playerNodes.splice(this.playerNum - 1, 1);
         }
-        else{
+        else {
             playerNode = XGTS_GameManager.Instance.playerNodes[0];
-            XGTS_GameManager.Instance.playerNodes.splice(0,1);
+            XGTS_GameManager.Instance.playerNodes.splice(0, 1);
         }
 
         playerNode.getComponents(Collider2D).forEach((collider) => {
@@ -125,26 +126,26 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
 
         // playerNode.destroy();
         let player = null;
-         if( XGTS_GameManager.Instance.players.length == 2){
+        if (XGTS_GameManager.Instance.players.length == 2) {
             player = XGTS_GameManager.Instance.players[this.playerNum - 1];
             XGTS_GameManager.Instance.players.splice(this.playerNum - 1, 1);
         }
-        else{
+        else {
             player = XGTS_GameManager.Instance.players[0];
             XGTS_GameManager.Instance.players.splice(0, 1);
         }
 
-        if(XGTS_GameManager.Instance.playerNodes.length == 0){
+        if (XGTS_GameManager.Instance.playerNodes.length == 0) {
             XGTS_GameManager.IsGameOver = true;
         }
 
-      
+
         this.scheduleOnce(() => {
             XGTS_DataManager.PlayerDatas[this.playerNum].ClearBackpack();
-            if(XGTS_GameManager.Instance.playerNodes.length == 0){
+            if (XGTS_GameManager.Instance.playerNodes.length == 0) {
                 XGTS_UIManager.Instance.ShowPanel(XGTS_Constant.Panel.GameOverPanel, [false, XGTS_LvManager.Instance.matchData]);
             }
-            if(player){
+            if (player) {
                 player.destroy();
             }
         }, 2);
@@ -166,8 +167,11 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
         this.HP = 900;
 
         this.magazineProgress = NodeUtil.GetNode("bullet", this.node).getComponent(ProgressBar);
-            this.magazineProgress.progress = 1;
-        
+        this.magazineProgress.progress = 1;
+        this.MaxHP = 900 + XGTS_GameData.Instance.AddHp;
+        this.HP = 900 + XGTS_GameData.Instance.AddHp;
+        this.speed = this.speed * (1 + (XGTS_GameData.Instance.AddSpeed / 100));
+        this.maxSpeed = this.maxSpeed * (1 + (XGTS_GameData.Instance.AddSpeed / 100));
     }
 
     start() {
@@ -190,12 +194,12 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
             else if (XGTS_DataManager.PlayerDatas[this.playerNum].Weapon_Pistol) gun = XGTS_DataManager.PlayerDatas[this.playerNum].Weapon_Pistol;
         }
 
-        if (gun){
+        if (gun) {
             this.SetGun(gun);
             // this.weapon.WeaponData.Ammo.Count = this.weapon.WeaponData.Clip;
             let ammoType = XGTS_DataManager.PlayerDatas[this.playerNum].GetFirstAmmoType()
             let ammoData = XGTS_DataManager.PlayerDatas[this.playerNum].GetAmmoByType(ammoType, this.weapon.WeaponData.Clip);
-             this.weapon.WeaponData.Ammo = ammoData;
+            this.weapon.WeaponData.Ammo = ammoData;
             // this.weapon.WeaponData.Ammo.Count = ammoData.Count;
             // if (ammoData) {
             //     XGTS_GameManager.Instance.player.Reload(() => {
@@ -215,7 +219,7 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
             // } else {
             //     UIManager.ShowTip(`没有弹药`);
             // }
-        } 
+        }
         else this.SetMeelee();
 
         this.SetEquipment(helmet, bodyArmor, backpack);
@@ -229,7 +233,7 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
         this.dirRate = rate;
         this.isStopMove = false;
         if (XGTS_GameManager.IsGameOver) return;
-            // 处理 X 方向限制：如果限制且当前移动会让距离拉远（根据相机中点判断方向）
+        // 处理 X 方向限制：如果限制且当前移动会让距离拉远（根据相机中点判断方向）
         if (this.restrictX) {
             const playerPos = this.node.worldPosition;
             // 判断玩家当前移动方向是否会让与相机中点在 X 方向拉远
@@ -264,7 +268,7 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
     update(dt) {
         if (XGTS_GameManager.IsGameOver || this.isDie) return;
         super.update(dt);
-        
+
         // 自动攻击逻辑
         if (this.autoAttack) {
             this.checkEnemies(dt);
@@ -342,7 +346,7 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
         }
 
         // let bulletCount = this.gun.Type == XGTW_ItemType[XGTW_ItemType.霰弹枪] ? 5 : 1;
-          // let bulletCount = this.gun.Type == XGTW_ItemType[XGTW_ItemType.霰弹枪] ? 5 : 1;
+        // let bulletCount = this.gun.Type == XGTW_ItemType[XGTW_ItemType.霰弹枪] ? 5 : 1;
         let bulletCount = 1;
 
         this.weapon.WeaponData.Ammo.Count -= 1;
@@ -375,7 +379,7 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
     // 新增进度条更新方法
     private UpdateMagazineProgress() {
         if (this.magazineProgress) {
-            this.magazineProgress.progress =    this.weapon.WeaponData.Ammo.Count / this.weapon.WeaponData.Clip;
+            this.magazineProgress.progress = this.weapon.WeaponData.Ammo.Count / this.weapon.WeaponData.Clip;
         }
     }
 
@@ -386,10 +390,10 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
 
     //     this.reloading = true;
     //     this.StopFire();
-        
+
     //     XGTS_AudioManager.Instance.PlaySFX(XGTS_Audio.Reload);
     //     this.PlayAni(1, PlayerAniState.Reload, false);
-        
+
     //     // 换弹完成回调（新增逻辑）
     //     this.scheduleOnce(() => {
     //         this.currentMagazine = this.maxMagazine;
@@ -402,16 +406,16 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
     // 修改停止射击逻辑
     StopFire() {
         super.StopFire();
-        
-                
+
+
         // 重置武器角度为水平方向（0度），同时保持与玩家朝向一致
         this.gunBone.rotation = 0;
-        
+
         // 如果是近战武器，也重置攻击方向
         if (this.useMelee) {
             this.fireDir = this.character.scale.x > 0 ? v2(1, 0) : v2(-1, 0);
         }
-    
+
         // 弹夹打空自动换弹（新增）
         if (this.currentMagazine <= 0) {
             this.Reload();
@@ -475,16 +479,16 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
         const { restrictX, restrictY, midPoint } = data;
         // 这里根据限制条件，调整玩家移动逻辑，比如修改移动方向的计算等
         // 示例：如果限制 X 方向移动，在 SetDir 时对 X 方向做特殊处理，这里简单示意标记限制状态
-        if(!this.isStopMove){
+        if (!this.isStopMove) {
             let lastRestrictX = this.restrictX;
             let lastRestrictY = this.restrictY;
 
-            this.restrictX = restrictX; 
+            this.restrictX = restrictX;
             this.restrictY = restrictY;
             this.cameraMidPoint = midPoint;
             // let needChange = false;
-            if( lastRestrictX !== restrictX || lastRestrictY !== restrictY){
-                this.SetDir(this.dirX,this.dirY,this.dirRate)
+            if (lastRestrictX !== restrictX || lastRestrictY !== restrictY) {
+                this.SetDir(this.dirX, this.dirY, this.dirRate)
             }
             // if( lastRestrictX !== restrictX || lastRestrictY !== restrictY){
             //     needChange = true;
@@ -493,12 +497,12 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
 
     }
 
-        private enemies: XGTS_CharacterController[] = [];
+    private enemies: XGTS_CharacterController[] = [];
     private _enemyIndex: number = 0;
     private enemiesPerFrame: number = 5;
     private _isSearching: boolean = false;
-    private nearestEnemy:Node = null;
-    private currentTargetDistance:number = 0;
+    private nearestEnemy: Node = null;
+    private currentTargetDistance: number = 0;
     /**
      * 检测范围内的敌人，只在指定间隔执行以节省性能
      */
@@ -507,9 +511,9 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
 
         // this.enemyCheckTimer += dt;
         // if (this.enemyCheckTimer < this.enemyCheckInterval) return;
-        
+
         // this.enemyCheckTimer = 0;
-    
+
         this.findNearestEnemy();
     }
 
@@ -517,21 +521,21 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
      * 寻找范围内最近的敌人
      */
     private findNearestEnemy() {
-       
+
         const playerPos = this.node.worldPosition;
-    
+
         // 计算本帧要处理的敌人范围
         let startIndex
 
-        if(!this._isSearching){
-             // 获取场景中所有敌人
-            this.enemies = XGTS_LvManager.Instance.Game.getComponentsInChildren(XGTS_CharacterController).filter((item)=>item.isEnemy && item.node.active );
-            startIndex =0;
+        if (!this._isSearching) {
+            // 获取场景中所有敌人
+            this.enemies = XGTS_LvManager.Instance.Game.getComponentsInChildren(XGTS_CharacterController).filter((item) => item.isEnemy && item.node.active);
+            startIndex = 0;
             this._isSearching = true;
             this.nearestEnemyDistance = Infinity;
             // this.currentTarget = null;
         }
-        else{
+        else {
             startIndex = this._enemyIndex;
         }
 
@@ -550,8 +554,8 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
             // 先比较x轴距离
             const xDistance = Math.abs(playerPos.x - enemyPos.x);
             if (xDistance > this.attackRange) continue;
-        
-        
+
+
             const results = PhysicsSystem2D.instance.raycast(
                 playerPos,
                 enemyPos,
@@ -559,7 +563,7 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
             );
 
             // 如果射线检测到障碍物且不是敌人，则跳过该目标
-            if (results && results.length > 0 && 
+            if (results && results.length > 0 &&
                 results[0].collider.group !== XGTS_Constant.Group.Enemy) {
                 continue;
             }
@@ -567,19 +571,19 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
 
             // 计算距离
             const distance = Vec3.distance(playerPos, enemy.node.worldPosition);
-            
+
             // 检查是否在攻击范围内
-            const inRange = this.useMelee 
-                ? distance <= this.meleeCheckDistance 
+            const inRange = this.useMelee
+                ? distance <= this.meleeCheckDistance
                 : distance <= this.attackRange;
-            
+
             // 更新最近的敌人
             if (inRange && distance < this.nearestEnemyDistance) {
                 this.nearestEnemyDistance = distance;
                 this.nearestEnemy = enemy.node;
             }
         }
-            // 更新索引，如果处理完所有敌人则重置
+        // 更新索引，如果处理完所有敌人则重置
         if (endIndex >= this.enemies.length) {
             this._enemyIndex = 0;
             this._isSearching = false;
@@ -606,21 +610,21 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
             this.StopFire();
             return;
         }
-        
+
         // 确保目标仍然有效
         if (!this.currentTarget.active || this.currentTarget.getComponent(XGTS_CharacterController).isDie) {
             this.currentTarget = null;
             this.StopFire();
             return;
         }
-        
+
         // 计算目标方向并设置武器朝向
         const targetDir = new Vec2(
             this.currentTarget.worldPosition.x - this.node.worldPosition.x,
             this.currentTarget.worldPosition.y - this.node.worldPosition.y
         ).normalize();
         this.SetGunDir(targetDir);
-        
+
         // 根据武器类型执行攻击
         if (this.useMelee) {
             // 近战武器：在范围内时攻击
@@ -708,22 +712,22 @@ export default class XGTS_CharacterFengYi_Double extends XGTS_CharacterControlle
 
     protected RigistEvent(): void {
         EventManager.Scene.on(XGTS_Constant.Event.MOVEMENT + "_" + this.playerNum, this.SetDir, this);
-        EventManager.Scene.on(XGTS_Constant.Event.MOVEMENT_STOP + "_" +  this.playerNum, this.StopMove, this);
+        EventManager.Scene.on(XGTS_Constant.Event.MOVEMENT_STOP + "_" + this.playerNum, this.StopMove, this);
         EventManager.Scene.on(XGTS_Constant.Event.SET_ATTACK_DIR, this.SetGunDir, this);
         EventManager.Scene.on(XGTS_Constant.Event.FIRE_START, this.Fire, this);
         EventManager.Scene.on(XGTS_Constant.Event.FIRE_STOP, this.StopFire, this);
-        EventManager.Scene.on(XGTS_Constant.Event.REFRESH_EUIP + "_" +  this.playerNum,  this.RefreshEquip, this);
+        EventManager.Scene.on(XGTS_Constant.Event.REFRESH_EUIP + "_" + this.playerNum, this.RefreshEquip, this);
 
         EventManager.Scene.on(XGTS_Constant.Event.RESTRICT_PLAYER_MOVEMENT, this.HandleMovementRestriction, this);
     }
 
     protected UnrigistEvent(): void {
-        EventManager.Scene.off(XGTS_Constant.Event.MOVEMENT + "_" +  this.playerNum, this.SetDir, this);
-        EventManager.Scene.off(XGTS_Constant.Event.MOVEMENT_STOP + "_" +  this.playerNum, this.StopMove, this);
+        EventManager.Scene.off(XGTS_Constant.Event.MOVEMENT + "_" + this.playerNum, this.SetDir, this);
+        EventManager.Scene.off(XGTS_Constant.Event.MOVEMENT_STOP + "_" + this.playerNum, this.StopMove, this);
         EventManager.Scene.off(XGTS_Constant.Event.SET_ATTACK_DIR, this.SetGunDir, this);
         EventManager.Scene.off(XGTS_Constant.Event.FIRE_START, this.Fire, this);
         EventManager.Scene.off(XGTS_Constant.Event.FIRE_STOP, this.StopFire, this);
-        EventManager.Scene.off(XGTS_Constant.Event.REFRESH_EUIP + "_" +  this.playerNum, this.RefreshEquip, this);
+        EventManager.Scene.off(XGTS_Constant.Event.REFRESH_EUIP + "_" + this.playerNum, this.RefreshEquip, this);
         EventManager.Scene.off(XGTS_Constant.Event.RESTRICT_PLAYER_MOVEMENT, this.HandleMovementRestriction, this);
     }
 }

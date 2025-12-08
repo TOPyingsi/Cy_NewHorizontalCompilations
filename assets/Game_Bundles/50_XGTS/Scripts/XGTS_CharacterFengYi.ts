@@ -18,6 +18,7 @@ import { Tools } from 'db://assets/Scripts/Framework/Utils/Tools';
 import { XGTS_UIManager } from './UI/XGTS_UIManager';
 import { XGTS_Audio, XGTS_AudioManager } from './XGTS_AudioManager';
 import { UIManager } from 'db://assets/Scripts/Framework/Managers/UIManager';
+import { XGTS_GameData } from './XGTS_GameData';
 
 const v3_0 = v3();
 
@@ -69,7 +70,10 @@ export default class XGTS_CharacterFengYi extends XGTS_CharacterController {
         this.AddSpineListener();
         this.RigistEvent();
 
-        this.HP = 600;
+        this.MaxHP = 600 + XGTS_GameData.Instance.AddHp;
+        this.HP = 600 + XGTS_GameData.Instance.AddHp;
+        this.speed = this.speed * (1 + (XGTS_GameData.Instance.AddSpeed / 100));
+        this.maxSpeed = this.maxSpeed * (1 + (XGTS_GameData.Instance.AddSpeed / 100));
     }
 
     start() {
@@ -91,12 +95,10 @@ export default class XGTS_CharacterFengYi extends XGTS_CharacterController {
             else if (XGTS_DataManager.PlayerDatas[0].Weapon_Secondary) gun = XGTS_DataManager.PlayerDatas[0].Weapon_Secondary;
             else if (XGTS_DataManager.PlayerDatas[0].Weapon_Pistol) gun = XGTS_DataManager.PlayerDatas[0].Weapon_Pistol;
         }
-
         if (gun) {
             this.SetGun(gun);
         }
         else this.SetMeelee();
-
         this.SetEquipment(helmet, bodyArmor, backpack);
     }
 
