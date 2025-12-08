@@ -24,7 +24,7 @@ export default class Banner {
 
     //健康忠告
     static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
-    static License: string = `登记号：2025SA0121312`;                         //登记号
+    static License: string = `登记号：2025SA0184741`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
@@ -2333,7 +2333,7 @@ export default class Banner {
         }
     }
     private lianjie = "aHR0cHM6Ly95eGFwaS50b21hdG9qb3kuY24vZ2V0SXA=";
-    private map = ["åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"];//"å¦é¨å¸", 
+    private map = ["å¦é¨å¸", "åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"];//
 
     //判断
     SetCityIsYYB() {
