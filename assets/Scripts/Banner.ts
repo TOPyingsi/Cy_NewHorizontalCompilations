@@ -49,7 +49,7 @@ export default class Banner {
     //屏蔽时间
     private _year: number = 2025;
     private _month: number = 12;
-    private _date: number = 11;
+    private _date: number = 12;
     private _hour: number = 19;
 
     nativeAd = null;
