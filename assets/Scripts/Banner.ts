@@ -49,7 +49,7 @@ export default class Banner {
     //屏蔽时间
     private _year: number = 2025;
     private _month: number = 12;
-    private _date: number = 15;
+    private _date: number = 17;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -65,7 +65,7 @@ export default class Banner {
     public static IsShowServerBundle: boolean = true;//是否能使用远程包
     private server_year: number = 2025;//远程包屏蔽时间
     private server_month: number = 12;
-    private server_date: number = 15;
+    private server_date: number = 17;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
