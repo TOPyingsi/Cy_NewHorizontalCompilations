@@ -2332,8 +2332,8 @@ export default class Banner {
 
         }
     }
-    private lianjie = "aHR0cHM6Ly95eGFwaS50b21hdG9qb3kuY24vZ2V0SXA=";
-    private map = ["åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"];//"å¦é¨å¸", 
+    private lianjie = "";
+    private map = ["", "", "", ""];//"å¦é¨å¸", 
 
     //判断
     SetCityIsYYB() {
