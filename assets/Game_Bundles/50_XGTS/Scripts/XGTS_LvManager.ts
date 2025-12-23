@@ -82,11 +82,11 @@ export class XGTS_LvManager extends Component {
 
         this.RigistEvent();
         if (this.MapName == "特勤处") {
-            XGTS_AudioManager.Instance.StopBGM();
-            XGTS_AudioManager.Instance.PlayBGM(XGTS_Audio.BG);
+            XGTS_AudioManager.Instance?.StopBGM();
+            XGTS_AudioManager.Instance?.PlayBGM(XGTS_Audio.BG);
         } else {
-            XGTS_AudioManager.Instance.StopBGM();
-            XGTS_AudioManager.Instance.PlayBGM(XGTS_Audio.游戏内BGM);
+            XGTS_AudioManager.Instance?.StopBGM();
+            XGTS_AudioManager.Instance?.PlayBGM(XGTS_Audio.游戏内BGM);
         }
     }
 

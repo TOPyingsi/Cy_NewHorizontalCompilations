@@ -77,6 +77,7 @@ export default class XGTS_CharacterEnemy extends XGTS_CharacterController {
         this.isDie = true;
         this.PlayAni(0, PlayerAniState.Dead, false);
         XGTS_LvManager.Instance.matchData.KilledPE++;
+        director.getScene().emit("怪物死亡");
     }
 
     InitDeadBox() {
@@ -99,10 +100,10 @@ export default class XGTS_CharacterEnemy extends XGTS_CharacterController {
 
 
         // 获取所有存活玩家（双人模式）
-        const players = XGTS_GameManager.IsDoubleMode 
-        ? XGTS_GameManager.Instance.playerNodes
-            .filter(node => node.active && node.getComponent(XGTS_CharacterController).HP > 0)
-        : [XGTS_GameManager.Instance.player?.node].filter(Boolean);
+        const players = XGTS_GameManager.IsDoubleMode
+            ? XGTS_GameManager.Instance.playerNodes
+                .filter(node => node.active && node.getComponent(XGTS_CharacterController).HP > 0)
+            : [XGTS_GameManager.Instance.player?.node].filter(Boolean);
         if (players.length === 0) return;
 
         let nearestDistance = Infinity;
@@ -112,7 +113,7 @@ export default class XGTS_CharacterEnemy extends XGTS_CharacterController {
         for (const playerNode of players) {
             const playerPos = playerNode.worldPosition;
             const distance = Vec3.distance(this.node.worldPosition, playerPos);
-            
+
             // 射线检测障碍物
             const results = PhysicsSystem2D.instance.raycast(
                 this.node.worldPosition,
@@ -121,7 +122,7 @@ export default class XGTS_CharacterEnemy extends XGTS_CharacterController {
             );
 
             // 判断是否可见（第一个碰撞体是玩家）
-            if (results && results.length > 0 && 
+            if (results && results.length > 0 &&
                 results[0].collider.node.getComponent(RigidBody2D).group === XGTS_Constant.Group.Player) {
                 if (distance < nearestDistance) {
                     nearestDistance = distance;
@@ -137,7 +138,7 @@ export default class XGTS_CharacterEnemy extends XGTS_CharacterController {
             return;
         }
 
-        if (nearestPlayer.getWorldPosition().clone().subtract(this.node.getWorldPosition().clone()).length() > 3000 || this.lostTargetTimer > this.lostTargetTime){
+        if (nearestPlayer.getWorldPosition().clone().subtract(this.node.getWorldPosition().clone()).length() > 3000 || this.lostTargetTimer > this.lostTargetTime) {
             this.StopFire();
             // this.StopChasing();`
             // this.StopMove();
@@ -145,7 +146,7 @@ export default class XGTS_CharacterEnemy extends XGTS_CharacterController {
             return;
         }
 
-        this.results = PhysicsSystem2D.instance.raycast(this.node.worldPosition,nearestPlayer.worldPosition, ERaycast2DType.Closest);
+        this.results = PhysicsSystem2D.instance.raycast(this.node.worldPosition, nearestPlayer.worldPosition, ERaycast2DType.Closest);
 
         if (this.results && this.results.length >= 1 && this.results[0].collider.node.getComponent(RigidBody2D).group == XGTS_Constant.Group.Player) {
             const target: Node = this.results[0].collider.node;
