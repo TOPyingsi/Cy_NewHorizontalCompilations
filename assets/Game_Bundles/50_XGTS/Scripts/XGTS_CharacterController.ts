@@ -14,6 +14,7 @@ import { XGTS_LvManager } from './XGTS_LvManager';
 import { XGTS_FloatingText } from './UI/XGTS_FloatingText';
 import { XGTS_DataManager } from './XGTS_DataManager';
 import { XGTS_Audio, XGTS_AudioManager } from './XGTS_AudioManager';
+import { XGTS_GameData } from './XGTS_GameData';
 const { ccclass, property } = _decorator;
 
 const v3_0 = v3();
@@ -94,6 +95,9 @@ export default class XGTS_CharacterController extends Component {
 
         this.SetAniMix(PlayerAniState.Idle, PlayerAniState.Move);
         this.SetAniMix(PlayerAniState.Hit, PlayerAniState.Shoot);
+
+
+
     }
 
     SetAniMix(anim1: string, anim2: string) {

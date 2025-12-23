@@ -180,6 +180,13 @@ export default class XGTS_SelectMapPanel extends PanelBase {
                 this.difficulty = 0;
                 this.ShowInfoPanel(true);
                 break;
+            case "仙界":
+                if (this.mapInfo == XGTS_Constant.MapInfo.仙界) return;
+                this.ShowMap(event.target.position.clone());
+                this.mapInfo = XGTS_Constant.MapInfo.仙界;
+                this.difficulty = 0;
+                this.ShowInfoPanel(true);
+                break;
             case "RegularButton":
                 this.difficulty = 0;
                 this.RefreshPanel();
