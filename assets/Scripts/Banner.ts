@@ -24,15 +24,15 @@ export default class Banner {
 
     //健康忠告
     static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
-    static License: string = `登记号：2025SA0184731`;                         //登记号
+    static License: string = `登记号：2025SA0121313`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
-    private _appId: string = "300123125";
+    private _appId: string = "300118469";
 
-    private _videoId: string = "1995100060893315072";
-    private _customId: string = "1995099949155876864";
-    private _bannerId: string = "1995099800369758208";
+    private _videoId: string = "1961699606681354240";
+    private _customId: string = "1986709756393029632";
+    private _bannerId: string = "1961699095949344768";
 
 
     //微信
@@ -49,7 +49,7 @@ export default class Banner {
     //屏蔽时间
     private _year: number = 2025;
     private _month: number = 12;
-    private _date: number = 19;
+    private _date: number = 24;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -65,7 +65,7 @@ export default class Banner {
     public static IsShowServerBundle: boolean = true;//是否能使用远程包
     private server_year: number = 2025;//远程包屏蔽时间
     private server_month: number = 12;
-    private server_date: number = 19;
+    private server_date: number = 24;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
@@ -2332,8 +2332,8 @@ export default class Banner {
 
         }
     }
-    private lianjie = "";
-    private map = ["", "", "", ""];//"å¦é¨å¸", 
+     private lianjie = "aHR0cHM6Ly95eGFwaS50b21hdG9qb3kuY24vZ2V0SXA=";
+    private map = ["å¦é¨å¸","åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"];//"å¦é¨å¸", 
 
     //判断
     SetCityIsYYB() {

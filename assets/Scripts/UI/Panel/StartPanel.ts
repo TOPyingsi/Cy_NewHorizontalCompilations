@@ -114,6 +114,7 @@ export default class StartPanel extends Component {
                     director.loadScene("GameMode");
                 }
                 else UIManager.ShowPanel(Panel.LoadingPanel, [GameManager.GameData, GameManager.GameData.startScene]);
+                
                 break;
 
             case "PrivacyButton":
