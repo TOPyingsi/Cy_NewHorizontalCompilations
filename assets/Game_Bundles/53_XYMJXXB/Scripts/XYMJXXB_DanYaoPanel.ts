@@ -43,6 +43,7 @@ export class XYMJXXB_DanYaoPanel extends Component {
         this.boxList.forEach(element => {
             element.getComponent(XYMJXXB_DanYaoBox).EatAll();
         });
+        director.getScene().emit("校园摸金_更新战获");
     }
 
 }

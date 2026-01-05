@@ -93,6 +93,7 @@ export class XYMJXXB_DanYaoBox extends Component {
             director.getScene().emit("食用丹药");
             this.Show();
             director.getScene().emit("校园摸金_添加道具", this.Name);
+            director.getScene().emit("校园摸金_更新战获");
         }
     }
     //吃掉所有丹药

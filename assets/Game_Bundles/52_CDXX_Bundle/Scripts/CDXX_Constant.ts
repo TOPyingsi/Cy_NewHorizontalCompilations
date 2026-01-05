@@ -230,10 +230,10 @@ export enum CDXX_BG {
 export const CDXX_TJZL: Map<CDXX_BG, number> = new Map([
     [CDXX_BG.凡界_下层, 1],
     [CDXX_BG.凡界_上层, 100],
-    [CDXX_BG.灵界_下层, 10000],
-    [CDXX_BG.灵界_上层, 1000000],
-    [CDXX_BG.仙界_下层, 100000000],
-    [CDXX_BG.仙界_上层, 10000000000],
+    [CDXX_BG.灵界_下层, 100000],
+    [CDXX_BG.灵界_上层, 10000000],
+    [CDXX_BG.仙界_下层, 1000000000],
+    [CDXX_BG.仙界_上层, 100000000000],
 ])
 
 export enum CDXX_ELIXIR_NAME {
