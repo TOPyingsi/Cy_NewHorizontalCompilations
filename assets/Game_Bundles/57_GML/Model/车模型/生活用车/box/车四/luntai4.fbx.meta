@@ -1,0 +1,146 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "1d88d917-34c6-4d53-ba8d-fd0e4285f420",
+  "files": [],
+  "subMetas": {
+    "76c16": {
+      "importer": "gltf-mesh",
+      "uuid": "1d88d917-34c6-4d53-ba8d-fd0e4285f420@76c16",
+      "displayName": "",
+      "id": "76c16",
+      "name": "Wheel_A.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 592
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1fda3": {
+      "importer": "gltf-embeded-image",
+      "uuid": "1d88d917-34c6-4d53-ba8d-fd0e4285f420@1fda3",
+      "displayName": "",
+      "id": "1fda3",
+      "name": "Map #10.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "0edaf": {
+      "importer": "texture",
+      "uuid": "1d88d917-34c6-4d53-ba8d-fd0e4285f420@0edaf",
+      "displayName": "",
+      "id": "0edaf",
+      "name": "Map #10.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "1d88d917-34c6-4d53-ba8d-fd0e4285f420@1fda3"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "77d08": {
+      "importer": "gltf-material",
+      "uuid": "1d88d917-34c6-4d53-ba8d-fd0e4285f420@77d08",
+      "displayName": "",
+      "id": "77d08",
+      "name": "Wheel.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "045a2": {
+      "importer": "gltf-scene",
+      "uuid": "1d88d917-34c6-4d53-ba8d-fd0e4285f420@045a2",
+      "displayName": "",
+      "id": "045a2",
+      "name": "luntai4.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Map #10",
+        "uri": "1d88d917-34c6-4d53-ba8d-fd0e4285f420@1fda3"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "1d88d917-34c6-4d53-ba8d-fd0e4285f420@76c16"
+      ],
+      "skeletons": [],
+      "textures": [
+        "1d88d917-34c6-4d53-ba8d-fd0e4285f420@0edaf"
+      ],
+      "materials": [
+        "1d88d917-34c6-4d53-ba8d-fd0e4285f420@77d08"
+      ],
+      "scenes": [
+        "1d88d917-34c6-4d53-ba8d-fd0e4285f420@045a2"
+      ]
+    }
+  }
+}
