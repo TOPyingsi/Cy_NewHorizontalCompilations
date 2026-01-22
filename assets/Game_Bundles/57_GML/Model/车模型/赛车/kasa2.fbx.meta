@@ -1,0 +1,143 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "781af271-2a7e-4685-8b84-b85ceb063ebb",
+  "files": [],
+  "subMetas": {
+    "d00ca": {
+      "importer": "gltf-mesh",
+      "uuid": "781af271-2a7e-4685-8b84-b85ceb063ebb@d00ca",
+      "displayName": "",
+      "id": "d00ca",
+      "name": "kasa2.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 3478
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "94acd": {
+      "importer": "texture",
+      "uuid": "781af271-2a7e-4685-8b84-b85ceb063ebb@94acd",
+      "displayName": "",
+      "id": "94acd",
+      "name": "DiffuseColor_Texture2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Game_Bundles/57_GML/Model/车模型/赛车/text/LancerEvo1.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cd5f3": {
+      "importer": "gltf-material",
+      "uuid": "781af271-2a7e-4685-8b84-b85ceb063ebb@cd5f3",
+      "displayName": "",
+      "id": "cd5f3",
+      "name": "blinn3.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8dc86": {
+      "importer": "gltf-material",
+      "uuid": "781af271-2a7e-4685-8b84-b85ceb063ebb@8dc86",
+      "displayName": "",
+      "id": "8dc86",
+      "name": "kasa3.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c2ec0": {
+      "importer": "gltf-scene",
+      "uuid": "781af271-2a7e-4685-8b84-b85ceb063ebb@c2ec0",
+      "displayName": "",
+      "id": "c2ec0",
+      "name": "kasa2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "DiffuseColor_Texture2",
+        "uri": "db://assets/Game_Bundles/57_GML/Model/车模型/赛车/text/LancerEvo1.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "781af271-2a7e-4685-8b84-b85ceb063ebb@d00ca"
+      ],
+      "skeletons": [],
+      "textures": [
+        "781af271-2a7e-4685-8b84-b85ceb063ebb@94acd"
+      ],
+      "materials": [
+        "781af271-2a7e-4685-8b84-b85ceb063ebb@cd5f3",
+        "781af271-2a7e-4685-8b84-b85ceb063ebb@8dc86"
+      ],
+      "scenes": [
+        "781af271-2a7e-4685-8b84-b85ceb063ebb@c2ec0"
+      ]
+    }
+  }
+}

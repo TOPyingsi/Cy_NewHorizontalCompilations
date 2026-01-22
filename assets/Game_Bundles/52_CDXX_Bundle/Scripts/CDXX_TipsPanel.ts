@@ -8,7 +8,6 @@ export class CDXX_TipsPanel extends Component {
     @property(Sprite)
     EnemyIcon: Sprite = null;
 
-
     @property(Sprite)
     DYIcon: Sprite[] = [];
 

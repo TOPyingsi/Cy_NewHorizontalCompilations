@@ -17,7 +17,7 @@ export class CDXX_BattlePanel extends Component {
 
     CurCSZ: sp.Skeleton = null;
     private _curIndex: number = 0;
-    private _curEnemyIndex: number = 0;
+    // private _curEnemyIndex: number = 0;
     protected onEnable(): void {
         this.Show();
         CDXX_EventManager.on(CDXX_MyEvent.CDXX_PAUSE, this.Pause, this);
@@ -32,7 +32,7 @@ export class CDXX_BattlePanel extends Component {
     Show() {
         this._curIndex = Math.floor(CDXX_GameData.Instance.CurMap / 2);
         this.CurCSZ = this.CSZs[this._curIndex];
-        this._curEnemyIndex = this._curIndex * 5 + CDXX_GameData.Instance.CurEnemy;
+        // this._curEnemyIndex = CDXX_GameData.Instance.CurMap * 5 + CDXX_GameData.Instance.CurEnemy;
         for (let i = 0; i < this.Maps.length; i++) {
             this.Maps[i].active = i == this._curIndex;
         }
@@ -45,14 +45,14 @@ export class CDXX_BattlePanel extends Component {
 
     StartCreateEnemy() {
         this.CurCSZ.setAnimation(0, "animation", true);
-        if(this.CurCSZ.timeScale != 0)  this.CreateEnemy();
+        if (this.CurCSZ.timeScale != 0) this.CreateEnemy();
         this.CurCSZ.setCompleteListener(() => {
-          if(this.CurCSZ.timeScale != 0)  this.CreateEnemy();
+            if (this.CurCSZ.timeScale != 0) this.CreateEnemy();
         });
     }
 
     CreateEnemy() {
-        CDXX_EnemyManager.Instance.CreateEnemy(this._curEnemyIndex, this.CurCSZ.node.worldPosition.clone())
+        CDXX_EnemyManager.Instance.CreateEnemy(CDXX_GameData.Instance.CurEnemy, this.CurCSZ.node.worldPosition.clone())
     }
 
     Pause() {

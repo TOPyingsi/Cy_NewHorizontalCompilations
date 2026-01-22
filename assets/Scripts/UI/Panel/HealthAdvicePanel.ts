@@ -9,7 +9,7 @@ export class HealthAdvicePanel extends Component {
     ageLimitAtalsPath: string = `Sprites/Common/AgeLimit`;
 
     start() {
-        let showCompany = !(Banner.IS_ANDROID || Banner.IS_HarmonyOSNext_GAME || Banner.IS_BYTEDANCE_MINI_GAME || Banner.IS_WECHAT_MINI_GAME);
+        let showCompany = !(Banner.IS_ANDROID || Banner.IS_HarmonyOSNext_GAME || Banner.IS_BYTEDANCE_MINI_GAME || Banner.IS_WECHAT_MINI_GAME || Banner.TimeMask);
 
         this.node.getChildByName(`TitleLb`).active = showCompany;
         this.node.getChildByName(`ContentLb`).active = showCompany;
