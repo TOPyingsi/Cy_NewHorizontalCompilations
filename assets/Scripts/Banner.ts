@@ -13,7 +13,7 @@ export enum BannerMode {
 }
 
 export default class Banner {
-    static Mode: BannerMode = BannerMode.测试包;
+    static Mode: BannerMode = BannerMode.黑包;
     static RegionMask: boolean = false;//地区判断.true为有广告，false为无广告（不需要再此处手动修改，所有广告修改前往BannerManager）
     static IsYB: boolean = false;//是否为阴包，阴包没游戏，黑包情况默认阳包
     static TimeMask: boolean = false;//时间判断.true为有广告，false为无广告
@@ -24,15 +24,15 @@ export default class Banner {
 
     //健康忠告
     static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
-    static License: string = `登记号：2025SA0121312`;                         //登记号
+    static License: string = `登记号：2025SR0471584`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
-    private _appId: string = "115216107";
+    private _appId: string = "300126792";
 
-    private _videoId: string = "l9tqvdw7u2";
-    private _customId: string = "i5ys6albth";
-    private _bannerId: string = "c2wgr7y495";
+    private _videoId: string = "2014228098412707840";
+    private _customId: string = "2014227984665018368";
+    private _bannerId: string = "2014227767379755008";
 
 
     //微信
