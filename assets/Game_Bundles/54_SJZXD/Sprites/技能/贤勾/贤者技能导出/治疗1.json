@@ -1,0 +1,51 @@
+{
+"skeleton": {
+	"hash": "oa4pdw/oxJo3LaMZT9lnVxiZ49E",
+	"spine": "3.8.75",
+	"x": -131,
+	"y": 71.59,
+	"width": 263,
+	"height": 525,
+	"images": "./images/",
+	"audio": "D:/2026/修狗三角洲（新）/角色技能-assets/贤者_技能"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "图层 1", "bone": "root", "attachment": "治疗7" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"图层 1": {
+				"治疗1": { "x": 5.81, "y": 120.85, "width": 477, "height": 394 },
+				"治疗2": { "x": 15.1, "y": 168.87, "width": 500, "height": 632 },
+				"治疗3": { "y": 181.77, "width": 516, "height": 676 },
+				"治疗4": { "x": 20.65, "y": 183.23, "width": 552, "height": 704 },
+				"治疗5": { "y": 259.24, "width": 460, "height": 574 },
+				"治疗6": { "x": 0.5, "y": 309.19, "width": 413, "height": 575 },
+				"治疗7": { "x": 0.5, "y": 334.09, "width": 263, "height": 525 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"图层 1": {
+				"attachment": [
+					{ "name": "治疗1" },
+					{ "time": 0.0667, "name": "治疗2" },
+					{ "time": 0.1333, "name": "治疗3" },
+					{ "time": 0.2, "name": "治疗4" },
+					{ "time": 0.2667, "name": "治疗5" },
+					{ "time": 0.3333, "name": "治疗6" },
+					{ "time": 0.4, "name": "治疗7" }
+				]
+			}
+		}
+	}
+}
+}

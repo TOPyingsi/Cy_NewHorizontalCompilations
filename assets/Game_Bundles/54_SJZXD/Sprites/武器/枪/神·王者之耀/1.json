@@ -1,0 +1,234 @@
+{
+"skeleton": {
+	"hash": "o+N/eMcKl9Y1XRjujwS5dJ4nr5Y",
+	"spine": "3.8.75",
+	"x": -668.47,
+	"y": -426.78,
+	"width": 1431.07,
+	"height": 898.87,
+	"images": "./images/",
+	"audio": "D:/2026/修狗三角洲（新）/动画/枪/神·猩红射手"
+},
+"bones": [
+	{ "name": "root" },
+	{
+		"name": "gun",
+		"parent": "root",
+		"length": 511.66,
+		"rotation": 0.98,
+		"x": -157.18,
+		"y": -10.05,
+		"color": "00ffb4ff"
+	},
+	{ "name": "ys", "parent": "gun", "rotation": -2.17, "x": 137.13, "y": -43.64, "color": "00ffb4ff" },
+	{ "name": "zs", "parent": "gun", "rotation": -2.17, "x": 318, "y": -11.7, "color": "e200ffff" },
+	{
+		"name": "qktx",
+		"parent": "gun",
+		"rotation": -4.41,
+		"x": 609.12,
+		"y": 14.92,
+		"scaleX": 1.1605,
+		"scaleY": 1.1605,
+		"color": "00ffb4ff"
+	},
+	{
+		"name": "骨骼",
+		"parent": "gun",
+		"rotation": -0.98,
+		"x": 204.77,
+		"y": 29.21,
+		"scaleX": 2.5464,
+		"scaleY": 2.5464
+	},
+	{
+		"name": "骨骼2",
+		"parent": "gun",
+		"rotation": -0.98,
+		"x": 286.07,
+		"y": 63.23,
+		"scaleX": 2.3336,
+		"scaleY": 2.3336
+	}
+],
+"slots": [
+	{ "name": "qiang", "bone": "gun", "attachment": "qiang" },
+	{ "name": "右手", "bone": "ys", "attachment": "右手" },
+	{ "name": "左手", "bone": "zs", "attachment": "左手" },
+	{ "name": "tx", "bone": "qktx" },
+	{ "name": "qaing3-feng1_0001_2", "bone": "骨骼", "attachment": "qaing3-feng1_0000_4" },
+	{ "name": "tx3-feng2_0001_3", "bone": "骨骼2" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"qiang": {
+				"qiang": { "x": 244.67, "y": -29.3, "rotation": -0.98, "width": 789, "height": 306 }
+			},
+			"tx": {
+				"qk1": { "x": 42.39, "y": 6.87, "rotation": -2.71, "width": 109, "height": 92 },
+				"qk2": { "x": 47.57, "y": 10.88, "width": 116, "height": 104 },
+				"qk3": { "x": 49.33, "y": 9.85, "rotation": -3.19, "width": 105, "height": 112 },
+				"qk4": { "x": 56.22, "y": 7.3, "rotation": -5.64, "width": 90, "height": 116 }
+			},
+			"左手": {
+				"左手": { "x": 2.27, "y": 3.45, "width": 65, "height": 60 }
+			},
+			"qaing3-feng1_0001_2": {
+				"qaing3-feng1_0001_2": { "width": 562, "height": 353 },
+				"qaing3-feng1_0002_1": { "width": 562, "height": 353 },
+				"qaing3-feng1_0000_3": { "width": 562, "height": 353 },
+				"qaing3-feng1_0000_4": { "path": "qaing3-feng1_0000_3", "width": 562, "height": 353 }
+			},
+			"tx3-feng2_0001_3": {
+				"tx3-feng2_0001_3": { "width": 562, "height": 353 },
+				"tx3-feng2_0002_2": { "width": 562, "height": 353 },
+				"tx3-feng2_0003_1": { "width": 562, "height": 353 },
+				"tx3-feng2_0000_4": { "width": 562, "height": 353 }
+			},
+			"右手": {
+				"右手": { "x": 1.99, "y": -0.68, "width": 64, "height": 57 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"slots": {
+			"qaing3-feng1_0001_2": {
+				"attachment": [
+					{ "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.0435, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.0869, "name": "qaing3-feng1_0000_3" },
+					{ "time": 0.1304, "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.1739, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.2174, "name": "qaing3-feng1_0000_3" },
+					{ "time": 0.2608, "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.3043, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.3478, "name": "qaing3-feng1_0000_3" },
+					{ "time": 0.3912, "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.4347, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.4782, "name": "qaing3-feng1_0000_3" },
+					{ "time": 0.5217, "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.5651, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.6086, "name": "qaing3-feng1_0000_3" },
+					{ "time": 0.6521, "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.6955, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.739, "name": "qaing3-feng1_0000_3" },
+					{ "time": 0.7825, "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.826, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.8694, "name": "qaing3-feng1_0000_3" },
+					{ "time": 0.9129, "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.9564, "name": "qaing3-feng1_0001_2" },
+					{ "time": 1, "name": "qaing3-feng1_0002_1" }
+				]
+			}
+		},
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "angle": 0.38, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -1.75, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 3.05, "y": -8.12, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"ys": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"zs": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"qktx": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"骨骼": {
+				"translate": [
+					{ "x": 47.04, "y": -1.43 },
+					{ "time": 0.5, "x": 13.87, "y": -6.19 },
+					{ "time": 1, "x": 47.04, "y": -1.43 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"slots": {
+			"tx": {
+				"attachment": [
+					{ "time": 0.0333, "name": "qk1" },
+					{ "time": 0.0667, "name": "qk2" },
+					{ "time": 0.1, "name": "qk3" },
+					{ "time": 0.1333, "name": "qk4" },
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"qaing3-feng1_0001_2": {
+				"attachment": [
+					{ "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.0526, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.1052, "name": "qaing3-feng1_0000_3" },
+					{ "time": 0.1578, "name": "qaing3-feng1_0002_1" },
+					{ "time": 0.2104, "name": "qaing3-feng1_0001_2" },
+					{ "time": 0.263, "name": "qaing3-feng1_0000_3" }
+				]
+			},
+			"tx3-feng2_0001_3": {
+				"color": [
+					{ "time": 0.2, "color": "ffffffff" },
+					{ "time": 0.2667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "tx3-feng2_0003_1" },
+					{ "time": 0.0702, "name": "tx3-feng2_0002_2" },
+					{ "time": 0.1405, "name": "tx3-feng2_0001_3" },
+					{ "time": 0.2, "name": "tx3-feng2_0000_4" }
+				]
+			}
+		},
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "angle": 0.75, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "x": -30.33, "y": -11.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				]
+			},
+			"骨骼2": {
+				"translate": [
+					{ "x": -178.61, "y": 17 },
+					{ "time": 0.0667, "x": -137.82, "y": 23 },
+					{ "time": 0.1333, "x": -120.84, "y": 30.2 },
+					{ "time": 0.2, "x": 86.73, "y": 31.63 }
+				]
+			},
+			"骨骼": {
+				"translate": [
+					{ "x": 176.3, "y": -3.02 },
+					{ "time": 0.2667, "x": 176.43, "y": 4.54 }
+				]
+			}
+		}
+	}
+}
+}
