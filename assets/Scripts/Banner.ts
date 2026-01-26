@@ -13,7 +13,7 @@ export enum BannerMode {
 }
 
 export default class Banner {
-    static Mode: BannerMode = BannerMode.黑包;
+    static Mode: BannerMode = BannerMode.正式包;
     static RegionMask: boolean = false;//地区判断.true为有广告，false为无广告（不需要再此处手动修改，所有广告修改前往BannerManager）
     static IsYB: boolean = false;//是否为阴包，阴包没游戏，黑包情况默认阳包
     static TimeMask: boolean = false;//时间判断.true为有广告，false为无广告
@@ -47,9 +47,9 @@ export default class Banner {
     private _shareUrl: string = "https://mmocgame.qpic.cn/wechatgame/SSraPWBCo8uTN55cbEEzLibdDEdNlxCDrJyaeTNhtAiagH8uaUcLicIj26wbNeDAnr0/0";
 
     //屏蔽时间
-    private _year: number = 2025;
-    private _month: number = 11;
-    private _date: number = 1;
+    private _year: number = 2026;
+    private _month: number = 1;
+    private _date: number = 2;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -63,9 +63,9 @@ export default class Banner {
     popupAddShortcutCount: number = 0;
 
     public static IsShowServerBundle: boolean = false;//是否能使用远程包
-    private server_year: number = 2025;//远程包屏蔽时间
-    private server_month: number = 9;
-    private server_date: number = 3;
+    private server_year: number = 2026;//远程包屏蔽时间
+    private server_month: number = 1;
+    private server_date: number = 2;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
