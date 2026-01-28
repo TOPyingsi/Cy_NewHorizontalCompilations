@@ -54,8 +54,10 @@ export class SJZXD_PlayerSkeleton extends Component {
         if (SJZXD_GameData.Instance.GameData[3] == 0) {//显示皮肤
             this.PlayerSkeleton.setSkin(SJZXD_Constant.getSkinNameByName(SJZXD_GameData.Instance.Skin).SkeletonName);
             //隐藏插槽
-            this.PlayerSkeleton.setSlotTexture("toukui", new Texture2D());
-            this.PlayerSkeleton.setSlotTexture("fangdanyi", new Texture2D());
+            SJZXD_Incident.LoadTexture2D("Sprites/防具/无").then((Tx2d: Texture2D) => {
+                this.PlayerSkeleton.setSlotTexture("toukui", Tx2d);
+                this.PlayerSkeleton.setSlotTexture("fangdanyi", Tx2d);
+            })
         } else {//显示装备
             this.PlayerSkeleton.setSkin("juese");
             SJZXD_Incident.LoadTexture2D("Sprites/防具/" + SJZXD_GameData.Instance.PlayerData[1]).then((Tx2d: Texture2D) => {

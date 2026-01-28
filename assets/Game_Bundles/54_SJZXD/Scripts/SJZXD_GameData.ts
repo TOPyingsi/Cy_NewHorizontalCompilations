@@ -10,6 +10,9 @@ export class SJZXD_GameData extends Component {
     public static get Instance(): SJZXD_GameData {
         if (!this._instance) {
             this.ReadDate();
+            this._instance.schedule(() => {
+                SJZXD_GameData.DateSave();
+            }, 5)
         }
         return this._instance;
     }

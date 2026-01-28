@@ -80,10 +80,10 @@ export class SJZXD_PlayerControl extends Component {
         //干员加成
         let Agentdata = SJZXD_Constant.getAgentDataByName(SJZXD_GameData.Instance.AgentSelect);
         let AgentLevel: number = SJZXD_GameData.Instance.GetAgentLevelByName(SJZXD_GameData.Instance.AgentSelect);
-        this.UnitData.Hp = 500 + (Agentdata.生命 * (1 + AgentLevel));
-        this.UnitData.MaxHp = 500 + (Agentdata.生命 * (1 + AgentLevel));
-        this.UnitData.Attack = 80 + (Agentdata.攻击 * (1 + AgentLevel));
-        this.UnitData.Defensive = 0 + (Agentdata.护甲 * (1 + AgentLevel));
+        this.UnitData.Hp = 500 + (Agentdata.生命 * (1 + AgentLevel * 0.1));
+        this.UnitData.MaxHp = 500 + (Agentdata.生命 * (1 + AgentLevel * 0.1));
+        this.UnitData.Attack = 80 + (Agentdata.攻击 * (1 + AgentLevel * 0.1));
+        this.UnitData.Defensive = 0 + (Agentdata.护甲 * (1 + AgentLevel * 0.1));
         //研究所加成
         this.UnitData.Hp += SJZXD_Constant.LaboratoryLevelData[0][SJZXD_GameData.Instance.LaboratoryLevel[0]];
         this.UnitData.MaxHp += SJZXD_Constant.LaboratoryLevelData[0][SJZXD_GameData.Instance.LaboratoryLevel[0]];

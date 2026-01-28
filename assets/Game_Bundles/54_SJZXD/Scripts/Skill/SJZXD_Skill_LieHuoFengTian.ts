@@ -14,7 +14,7 @@ export class SJZXD_Skill_LieHuoFengTian extends Component {
                 }, (trackEntry.animationEnd - trackEntry.animationStart) * (index * 0.1 + 0.1)); // 在动画10%处触发攻击
             }
             this.scheduleOnce(() => {
-                this.node.destroy();
+                this.node.active = false;
             }, (trackEntry.animationEnd - trackEntry.animationStart));
         });
         this.node.getChildByName("图").getComponent(sp.Skeleton).setAnimation(0, "animation", false);

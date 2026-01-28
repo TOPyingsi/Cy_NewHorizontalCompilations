@@ -20,7 +20,7 @@ export class SJZXD_LoadingPanel extends PanelBase {
             director.loadScene(senceName, () => {
                 this.scheduleOnce(() => {//延迟0.5关闭界面
                     SJZXD_UIManager.Instance.HidePanel(SJZXD_Constant.Panel.LoadingPanel);
-                }, 0.5)
+                }, 1)
             });
             director.preloadScene(senceName, (completedCount: number, totalCount: number, item: any) => {
                 if (this.LoadingFG) {

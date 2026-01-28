@@ -78,7 +78,7 @@ export class SJZXD_Enemy_batman extends Component {    //勤务兵（多点来�
                     tween(this.UnitSkeleton.node.getComponent(UIOpacity)).to(1, { opacity: 0 }).start();
                 }, 1);
                 this.scheduleOnce(() => {
-                    this.node.destroy();
+                    this.node.active = false;
                 }, 2)
                 break;
         }

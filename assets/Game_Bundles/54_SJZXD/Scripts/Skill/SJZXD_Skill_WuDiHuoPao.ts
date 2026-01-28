@@ -14,7 +14,7 @@ export class SJZXD_Skill_WuDiHuoPao extends Component {
                 this.node.getChildByName("AttakckBox").active = true;
                 this.scheduleOnce(() => {
                     this.node.getChildByName("AttakckBox").active = false;
-                    this.node.destroy();
+                    this.node.active = false;
                 }, 0.1)
             }, (trackEntry.animationEnd - trackEntry.animationStart) * 0.8); // 在动画60%处触发攻击
 
