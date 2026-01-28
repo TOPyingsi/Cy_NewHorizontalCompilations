@@ -13,7 +13,7 @@ export enum BannerMode {
 }
 
 export default class Banner {
-    static Mode: BannerMode = BannerMode.正式包;
+    static Mode: BannerMode = BannerMode.黑包;
     static RegionMask: boolean = false;//地区判断.true为有广告，false为无广告（不需要再此处手动修改，所有广告修改前往BannerManager）
     static IsYB: boolean = false;//是否为阴包，阴包没游戏，黑包情况默认阳包
     static TimeMask: boolean = false;//时间判断.true为有广告，false为无广告
@@ -23,16 +23,16 @@ export default class Banner {
     static IsWz: boolean = false;//万总华为策略
 
     //健康忠告
-    static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
+    static Owner: string = `著作权人：海口童趣科技有限公司`;              //著作权人
     static License: string = `登记号：2025SR0471584`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
-    private _appId: string = "300126792";
+    private _appId: string = "300127675";
 
-    private _videoId: string = "2014228098412707840";
-    private _customId: string = "2014227984665018368";
-    private _bannerId: string = "2014227767379755008";
+    private _videoId: string = "2016375879408287744";
+    private _customId: string = "2016375775747768320";
+    private _bannerId: string = "2016375652061937664";
 
 
     //微信
@@ -49,7 +49,7 @@ export default class Banner {
     //屏蔽时间
     private _year: number = 2026;
     private _month: number = 1;
-    private _date: number = 28;
+    private _date: number = 30;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -65,7 +65,7 @@ export default class Banner {
     public static IsShowServerBundle: boolean = false;//是否能使用远程包
     private server_year: number = 2026;//远程包屏蔽时间
     private server_month: number = 1;
-    private server_date: number = 28;
+    private server_date: number = 30;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
