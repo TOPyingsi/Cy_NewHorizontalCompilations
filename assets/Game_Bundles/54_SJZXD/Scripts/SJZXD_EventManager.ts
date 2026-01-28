@@ -58,7 +58,6 @@ export class SJZXD_EventManager {
     static 技能无CD: string = "SJZXD.技能无CD";//无CD
 
     static 开启强制显示皮肤: string = "SJZXD.开启强制显示皮肤";//开启强制显示皮肤
-    static 穿戴皮肤: string = "SJZXD.穿戴皮肤";//穿戴皮肤，参数0为皮肤名字
 
     static 使用增强针: string = "SJZXD.使用增强针";//使用增强针，参数0为针名
 

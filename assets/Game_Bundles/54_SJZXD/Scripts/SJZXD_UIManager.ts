@@ -28,9 +28,6 @@ export class SJZXD_UIManager extends Component {
         director.addPersistRootNode(this.node);
         // SJZXD_UIManager.Instance.Init();
         this.LoadAllSprite();
-        this.schedule(() => {
-            SJZXD_GameData.DateSave();
-        }, 5);
         input.on(Input.EventType.KEY_DOWN, (event) => {//注册作弊器
             let keyCode = event.keyCode;
             if (keyCode == KeyCode.KEY_P) {

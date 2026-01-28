@@ -1,4 +1,4 @@
-import { _decorator, Color, Component, EventTouch, instantiate, Label, Node, Prefab, UITransform } from 'cc';
+import { _decorator, Color, Component, EventTouch, instantiate, Label, Node, Prefab, UITransform, v3 } from 'cc';
 import { PanelBase } from '../../../../Scripts/Framework/UI/PanelBase';
 import { SJZXD_UIManager } from '../SJZXD_UIManager';
 import { SJZXD_Constant } from '../SJZXD_Constant';
@@ -45,6 +45,7 @@ export class SJZXD_SettleAccountsPanel extends PanelBase {
         this.node.getChildByPath("框/文字/撤离失败").active = !IsWin;
         this.node.getChildByPath("框/文字/撤离成功").active = IsWin;
         this.node.getChildByPath("框/底部按钮/找回遗失").active = !IsWin;
+        this.node.getChildByPath("框/底部按钮/返回主页").position = IsWin ? v3(0, 0, 0) : v3(-222, 0, 0);
         this.node.getChildByPath("框/收益/数量").getComponent(Label).color = IsWin ? new Color("00FF48") : new Color("FF0000");
         this.node.getChildByPath("框/击败敌人/数量").getComponent(Label).string = `${SJZXD_GameManager.KillEnemy}`;
         let PropArray: string[] = [];

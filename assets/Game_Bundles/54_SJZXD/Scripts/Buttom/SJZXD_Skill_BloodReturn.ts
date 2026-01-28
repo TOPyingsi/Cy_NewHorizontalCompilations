@@ -19,7 +19,7 @@ export class SJZXD_Skill_BloodReturn extends SJZXD_I_SkillBtn {//回血技能
     private MaskSprite: Sprite = null;
     private skeNode: Node = null;
     start() {
-        this.MaskSprite = this.node.getChildByName("图/Mask").getComponent(Sprite);
+        this.MaskSprite = this.node.getChildByPath("图/Mask").getComponent(Sprite);
         this.skeNode = this.node.getChildByName("动画");
         director.getScene().on(SJZXD_EventManager.技能无CD, () => { this.SkillMaxTime = 0.1, this.SkillTime = 0 });
     }

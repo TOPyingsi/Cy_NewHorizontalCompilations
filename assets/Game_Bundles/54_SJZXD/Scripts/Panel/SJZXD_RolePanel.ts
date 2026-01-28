@@ -42,6 +42,8 @@ export class SJZXD_RolePanel extends PanelBase {
         SJZXD_UIManager.Instance.SJZXD_On(SJZXD_EventManager.开启强制显示皮肤, () => {
             if (SJZXD_GameData.Instance.GameData[3] == 1) {
                 this.ShowEquip();
+            } else {
+                SJZXD_UIManager.Instance.SJZXD_Emit(SJZXD_EventManager.龙骨_主角刷新);
             }
         })
     }
@@ -180,8 +182,8 @@ export class SJZXD_RolePanel extends PanelBase {
             Banner.Instance.ShowVideoAd(() => {
                 SJZXD_GameData.Instance.UpAgentLevel(this.seletcName);
                 SJZXD_UIManager.Instance.ShowText("解锁干员成功！");
+                this.ShowPanel();
             })
-            this.ShowPanel();
         }
     }
 
@@ -338,11 +340,8 @@ export class SJZXD_RolePanel extends PanelBase {
             return;
         }
         SJZXD_GameData.Instance.Skin = this.seletSkinName;
-        this.ShowPanel();
-        this.ShowSkinPanel();
+        this.node.getChildByPath("框/皮肤选择栏/选择皮肤").active = !(SJZXD_GameData.Instance.Skin == this.seletSkinName);
         SJZXD_UIManager.Instance.SJZXD_Emit(SJZXD_EventManager.开启强制显示皮肤);
-        director.getScene().emit(SJZXD_EventManager.穿戴皮肤, this.seletSkinName);
-        SJZXD_UIManager.Instance.SJZXD_Emit(SJZXD_EventManager.龙骨_主角刷新);
         SJZXD_UIManager.Instance.ShowText("穿戴成功！");
     }
 

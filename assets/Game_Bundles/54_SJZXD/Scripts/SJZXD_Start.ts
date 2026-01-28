@@ -53,9 +53,6 @@ export class SJZXD_Start extends Component {
             case "研究所":
                 SJZXD_UIManager.Instance.ShowPanel(SJZXD_Constant.Panel.GraduateSchoolPanel);
                 break;
-            // case "返回主页":
-            //     UIManager.ShowPanel(Panel.ReturnPanel);
-            //     break;
             case "收藏室":
                 SJZXD_UIManager.Instance.ShowPanel(SJZXD_Constant.Panel.LoadingPanel, ["SJZXD_Boxroom"]);
                 break;

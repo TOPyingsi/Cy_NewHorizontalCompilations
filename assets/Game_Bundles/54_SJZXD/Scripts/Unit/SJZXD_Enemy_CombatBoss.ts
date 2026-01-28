@@ -116,7 +116,7 @@ export class SJZXD_Enemy_CombatBoss extends Component {    //近战BOSS
                     tween(this.UnitSkeleton.node.getComponent(UIOpacity)).to(1, { opacity: 0 }).start();
                 }, 1);
                 this.scheduleOnce(() => {
-                    this.node.destroy();
+                    this.node.active = false;
                 }, 2);
                 break;
         }
