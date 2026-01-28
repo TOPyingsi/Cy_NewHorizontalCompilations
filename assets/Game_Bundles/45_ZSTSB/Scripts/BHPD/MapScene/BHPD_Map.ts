@@ -1,4 +1,4 @@
-import { _decorator, Button, Component, director, EventTouch, macro, Node, ScrollView, Sprite, SpriteFrame, tween, v3 } from 'cc';
+import { _decorator, Button, Component, director, EventTouch, find, Layout, macro, Node, ScrollView, Sprite, SpriteFrame, tween, UITransform, v3 } from 'cc';
 import { ZSTSB_AudioManager } from '../../ZSTSB_AudioManager';
 import { Panel, UIManager } from 'db://assets/Scripts/Framework/Managers/UIManager';
 import { ZSTSB_UIGame } from '../../ZSTSB_UIGame';
@@ -15,6 +15,9 @@ export class BHPD_Map extends Component {
     AdNode: Node = null;
 
     public mainMapNode: Node = null;
+
+    private _mapBtn: Node[] = [];
+    private _points: Node = null;
     start() {
         this.mainMapNode = this.node.getChildByName("大地图");
         this.refresghMap();
@@ -26,12 +29,24 @@ export class BHPD_Map extends Component {
             this.mainMapNode.getComponent(ScrollView).horizontal = true;
         }
 
+        this._points = find("view/points", this.mainMapNode);
+
         // this.schedule(BHPD_GameData.DateSave(), 5, macro.REPEAT_FOREVER, 5);
 
+
+        //设置第一个解锁关卡
+        this.Unlock(BHPD_GameData.Instance.LockCount);
     }
 
-    update(deltaTime: number) {
-
+    /**
+     * @param map 前面锁住的关卡数
+     */
+    Unlock(map: number) {
+        if (Banner.TimeMask && !BHPD_GameData.Instance.LockArr[0]) {
+            BHPD_GameData.Instance.LockArr[0] = true;
+        } else if (!Banner.TimeMask && !BHPD_GameData.Instance.LockArr[map]) {
+            BHPD_GameData.Instance.LockArr[map] = true;
+        }
     }
 
     lockMapName: string = "";
@@ -106,7 +121,7 @@ export class BHPD_Map extends Component {
                 for (let i = 0; i < BHPD_GameData.Instance.mapData.length; i++) {
 
                     if (mapID === BHPD_GameData.Instance.mapData[i].BuildingName) {
-                        if (i + 1 >= BHPD_GameData.Instance.mapData.length) {
+                        if (i + 1 >= BHPD_GameData.Instance.mapData.length || (BHPD_GameData.Instance.LockName.includes(BHPD_GameData.Instance.mapData[i + 1].BuildingName) && !Banner.TimeMask)) {
                             UIManager.ShowTip("已经是最后一关!");
                             return;
                         }
@@ -278,12 +293,18 @@ export class BHPD_Map extends Component {
         this.scheduleOnce(() => {
             let mapData = BHPD_GameData.Instance.LockArr;
             let content = this.mainMapNode.getComponent(ScrollView).content;
+            // let points = content.getChildByName("points");
 
             for (let i = 0; i < mapData.length; i++) {
                 let flag = mapData[i];
 
-                let mapNode = content.children[i + 3];
+                // let mapNode = content.children[i + 3];
+                let mapNode = content.children[i];
 
+                if (BHPD_GameData.Instance.LockName.includes(mapNode.name)) {
+                    mapNode.active = Banner.TimeMask;
+                    if (i < this._points.children.length) this._points.children[i].active = Banner.TimeMask;
+                }
                 if (flag) {
                     mapNode.children[0].active = false;
                     mapNode.name = "地图" + (i + 1).toString();
@@ -292,9 +313,13 @@ export class BHPD_Map extends Component {
                     mapNode.children[0].active = true;
                     mapNode.name = "未解锁" + (i + 1).toString();
                 }
-            }
 
-        }, 0.1);
+            }
+        },);
+    }
+
+    Slide(scrollView: ScrollView) {
+        this._points.setWorldPosition(scrollView.content.worldPosition);
     }
 }
 

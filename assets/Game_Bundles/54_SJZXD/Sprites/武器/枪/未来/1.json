@@ -1,0 +1,129 @@
+{
+"skeleton": {
+	"hash": "z+cDYDidizl4zQn1oT4P7FDAjjQ",
+	"spine": "3.8.75",
+	"x": -276.05,
+	"y": -178.5,
+	"width": 741,
+	"height": 306,
+	"images": "./images/",
+	"audio": "D:/2026/修狗三角洲（新）/动画/枪/神·猩红射手"
+},
+"bones": [
+	{ "name": "root" },
+	{
+		"name": "gun",
+		"parent": "root",
+		"length": 511.66,
+		"rotation": 0.98,
+		"x": -157.18,
+		"y": -10.05,
+		"color": "00ffb4ff"
+	},
+	{ "name": "ys", "parent": "gun", "rotation": -2.17, "x": 152.89, "y": -36.38, "color": "00ffb4ff" },
+	{ "name": "zs", "parent": "gun", "rotation": -2.17, "x": 323.24, "y": -16.8, "color": "e200ffff" },
+	{
+		"name": "qktx",
+		"parent": "gun",
+		"rotation": -4.41,
+		"x": 551.15,
+		"y": 2.99,
+		"scaleX": 1.1605,
+		"scaleY": 1.1605,
+		"color": "00ffb4ff"
+	}
+],
+"slots": [
+	{ "name": "qiang", "bone": "gun", "attachment": "qiang" },
+	{ "name": "右手", "bone": "ys", "attachment": "右手" },
+	{ "name": "左手", "bone": "zs", "attachment": "左手" },
+	{ "name": "tx", "bone": "qktx" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"qiang": {
+				"qiang": { "x": 251.33, "y": -19.76, "rotation": -0.98, "width": 741, "height": 306 }
+			},
+			"tx": {
+				"qk1": { "x": 42.39, "y": 6.87, "rotation": -2.71, "width": 109, "height": 92 },
+				"qk2": { "x": 47.57, "y": 10.88, "width": 116, "height": 104 },
+				"qk3": { "x": 49.33, "y": 9.85, "rotation": -3.19, "width": 105, "height": 112 },
+				"qk4": { "x": 56.22, "y": 7.3, "rotation": -5.64, "width": 90, "height": 116 }
+			},
+			"左手": {
+				"左手": { "x": 2.27, "y": 3.45, "width": 65, "height": 60 }
+			},
+			"右手": {
+				"右手": { "x": 1.99, "y": -0.68, "width": 64, "height": 57 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "angle": 0.38, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -1.75, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 3.05, "y": -8.12, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"ys": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"zs": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"qktx": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"slots": {
+			"tx": {
+				"attachment": [
+					{ "time": 0.0333, "name": "qk1" },
+					{ "time": 0.0667, "name": "qk2" },
+					{ "time": 0.1, "name": "qk3" },
+					{ "time": 0.1333, "name": "qk4" },
+					{ "time": 0.1667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "angle": 1.27, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "x": -30.33, "y": -11.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				]
+			}
+		}
+	}
+}
+}

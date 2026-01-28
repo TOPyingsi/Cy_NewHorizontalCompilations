@@ -208,26 +208,55 @@ export class BHPD_GameMgr extends Component {
 
         ZSTSB_AudioManager.instance.playSFX("胜利");
 
-        ZSTSB_Incident.LoadSprite("Sprites/八花拼豆/关卡/" + this.curMapID + "最终").then((sp: SpriteFrame) => {
-            let sprite = this.winNode.getChildByName("图片");
-            let winSprite = sprite.getChildByName("完成图").getComponent(Sprite);
-            winSprite.spriteFrame = sp;
+        if (BHPD_GameData.Instance.AniName.includes(this.curMapID)) {
+            ZSTSB_Incident.Loadprefab("Prefabs/动画/" + this.curMapID).then((prefab: Prefab) => {
+                let sprite = this.winNode.getChildByName("图片");
+                sprite.getChildByName("完成图").active = false;
 
-            tween(sprite)
-                .to(1, { scale: v3(1, 1, 1) })
-                .call(() => {
-                    this.particle.node.active = true;
-                    this.particle.resetSystem();
-                })
-                .start();
+                let ani = sprite.getChildByName("动画");
+                ani.active = true;
+                ani.removeAllChildren();
 
-        })
+                const aniNode = instantiate(prefab);
+                aniNode.parent = ani;
+
+                tween(sprite)
+                    .to(1, { scale: v3(1, 1, 1) })
+                    .call(() => {
+                        this.particle.node.active = true;
+                        this.particle.resetSystem();
+                    })
+                    .start();
+
+            })
+        } else {
+            ZSTSB_Incident.LoadSprite("Sprites/八花拼豆/关卡/" + this.curMapID + "最终").then((sp: SpriteFrame) => {
+                let sprite = this.winNode.getChildByName("图片");
+                sprite.getChildByName("完成图").active = true;
+                let winSprite = sprite.getChildByName("完成图").getComponent(Sprite);
+                winSprite.spriteFrame = sp;
+
+                sprite.getChildByName("动画").active = false;
+
+                tween(sprite)
+                    .to(1, { scale: v3(1, 1, 1) })
+                    .call(() => {
+                        this.particle.node.active = true;
+                        this.particle.resetSystem();
+                    })
+                    .start();
+
+            })
+        }
 
 
         //解锁下一关
         if (this.level < BHPD_GameData.Instance.LockArr.length) {
             BHPD_GameData.Instance.LockArr[this.level] = true;
         }
+
+        // BHPD_GameData.Instance.LockArr[this.level % BHPD_GameData.Instance.LockArr.length] = true;
+
 
         BHPD_GameData.Instance.finifshByName(this.curMapID);
 

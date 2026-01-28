@@ -1,10 +1,21 @@
 import { _decorator, Component, Node, sys } from 'cc';
+import Banner from 'db://assets/Scripts/Banner';
 const { ccclass, property } = _decorator;
 
 @ccclass('BHPD_GameData')
 export class BHPD_GameData {
     //正常版
-    public LockArr: boolean[] = [true, false, false, false, false, false, false, false, false, false];
+    public LockArr: boolean[] = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+
+    //锁住的关卡
+    public LockName: string[] = ["地图12", "地图13", "地图14", "地图15"];
+
+    //锁住前面的关卡数量
+    public LockCount: number = 0;
+
+    //结束时播放动画的关卡
+    public AniName: string[] = ["地图1", "地图2"];
+
 
     //全部解锁版
     // public LockArr: boolean[] = [true, true, true, true, true, true, true, true, true, true];
@@ -24,6 +35,11 @@ export class BHPD_GameData {
         { BuildingName: "地图8", State: false, fillArr: [] },
         { BuildingName: "地图9", State: false, fillArr: [] },
         { BuildingName: "地图10", State: false, fillArr: [] },
+        { BuildingName: "地图11", State: false, fillArr: [] },
+        { BuildingName: "地图12", State: false, fillArr: [] },
+        { BuildingName: "地图13", State: false, fillArr: [] },
+        { BuildingName: "地图14", State: false, fillArr: [] },
+        { BuildingName: "地图15", State: false, fillArr: [] },
     ]
 
     finifshByName(buildingName: string) {

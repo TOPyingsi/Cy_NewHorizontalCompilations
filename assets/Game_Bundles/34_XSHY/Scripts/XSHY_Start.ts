@@ -28,9 +28,6 @@ export class XSHY_Start extends Component {
 
     OnbuttonClick(Btn: EventTouch) {
         XSHY_AudioManager.globalAudioPlay("按钮点击");
-        if(Btn.target.name!="返回"){
-               ProjectEventManager.emit(ProjectEvent.弹出窗口);
-        }
         switch (Btn.target.name) {
             case "对战":
                 this.Bg.getChildByName("模式选择").active = true;

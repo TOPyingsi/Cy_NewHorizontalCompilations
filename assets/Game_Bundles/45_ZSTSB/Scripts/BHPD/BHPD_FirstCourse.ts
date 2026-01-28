@@ -1,6 +1,7 @@
 import { _decorator, Component, director, Node, NodeEventType } from 'cc';
 import { BHPD_GameMgr } from './BHPD_GameMgr';
 import { BHPD_GameData } from './BHPD_GameData';
+import Banner from 'db://assets/Scripts/Banner';
 const { ccclass, property } = _decorator;
 
 @ccclass('BHPD_FirstCourse')
@@ -21,9 +22,11 @@ export class BHPD_FirstCourse extends Component {
 
         this.airWall = BHPD_GameMgr.instance.AirWall;
 
-        for (let i = 0; i < this.courseNodes.length; i++) {
-            this.courseNodes[i].once(NodeEventType.TOUCH_END, this.onClick, this);
-        }
+        // for (let i = 0; i < this.courseNodes.length; i++) {
+        //     this.courseNodes[i].once(NodeEventType.TOUCH_END, this.onClick, this);
+        // }
+
+        BHPD_GameData.Instance.LockCount == 0 || Banner.TimeMask ? this.courseNodes[0].once(NodeEventType.TOUCH_END, this.onClick, this) : this.courseNodes[1].once(NodeEventType.TOUCH_END, this.onClick, this);
 
         director.getScene().on("八花拼豆_新手教程", this.onClick, this);
         director.getScene().once("八花拼豆_新手教程结束", this.FinishCourse, this);
@@ -36,6 +39,7 @@ export class BHPD_FirstCourse extends Component {
         this.airWall.active = true;
 
         console.log("点击了", this.index);
+
 
         this.node.children[this.index - 1].active = false;
 

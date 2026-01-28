@@ -7,7 +7,6 @@ import { XSHY_AIControl } from './XSHY_AIControl';
 import { XSHY_Constant } from './XSHY_Constant';
 import { XSHY_Unit } from './XSHY_Unit';
 import { XSHY_GameData } from './XSHY_GameData';
-import { ProjectEvent, ProjectEventManager } from '../../../Scripts/Framework/Managers/ProjectEventManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('XSHY_GameManager')
@@ -42,7 +41,7 @@ export class XSHY_GameManager extends Component {
     start() {
         this.Init();
         // PhysicsSystem2D.instance.debugDrawFlags = 1;
-        ProjectEventManager.emit(ProjectEvent.游戏开始);
+
         director.getScene().on(XSHY_EasyControllerEvent.角色死亡, this.UnitDie, this);
         this.InitBg();
     }
@@ -151,14 +150,12 @@ export class XSHY_GameManager extends Component {
     //角色死亡处理
     UnitDie(IsEnemy: boolean) {
         if (XSHY_GameManager.GameMode == "1V1" || XSHY_GameManager.GameMode == "强者挑战") {
-            ProjectEventManager.emit(ProjectEvent.游戏结束);
             director.getScene().emit(XSHY_EasyControllerEvent.弹出结算窗口, IsEnemy);
         }
         if (XSHY_GameManager.GameMode == "3V3") {
             if (IsEnemy) {
                 XSHY_GameManager.TeamisDie[XSHY_GameManager.EnemyID] = true;
                 if ((XSHY_GameManager.EnemyID + 1) >= 6) {//敌人没有后续人选
-                    ProjectEventManager.emit(ProjectEvent.游戏结束);
                     director.getScene().emit(XSHY_EasyControllerEvent.弹出结算窗口, true);
                 } else {//敌人还有后续人选
                     director.getScene().emit(XSHY_EasyControllerEvent.弹出下一场);
@@ -170,7 +167,6 @@ export class XSHY_GameManager extends Component {
             } else {
                 XSHY_GameManager.TeamisDie[XSHY_GameManager.PlayerID] = true;
                 if ((XSHY_GameManager.PlayerID + 1) >= 3) {//玩家没有后续人选
-                    ProjectEventManager.emit(ProjectEvent.游戏结束);
                     director.getScene().emit(XSHY_EasyControllerEvent.弹出结算窗口, false);
                 } else {//我方还有后续人选
                     director.getScene().emit(XSHY_EasyControllerEvent.弹出下一场);
@@ -190,7 +186,6 @@ export class XSHY_GameManager extends Component {
                 }, 3)
             } else {
                 XSHY_GameData.Instance.GameData[1] = XSHY_GameManager.WinNum;
-                ProjectEventManager.emit(ProjectEvent.游戏结束);
                 director.getScene().emit(XSHY_EasyControllerEvent.弹出结算窗口, false);
             }
         }

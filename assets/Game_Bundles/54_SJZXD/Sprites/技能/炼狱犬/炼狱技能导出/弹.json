@@ -1,0 +1,83 @@
+{
+"skeleton": { "hash": "qfymT4rEay2iHDtCAAfu3nXLCvw", "spine": "3.8.75", "images": "./images/", "audio": "D:/2026/修狗三角洲（新）/角色技能-assets/轰炸" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": 0.78, "y": 698.46, "color": "ff0000ff" },
+	{ "name": "zha", "parent": "bone", "x": -0.14, "y": -26.46, "color": "00fdf7ff" }
+],
+"slots": [
+	{ "name": "wei", "bone": "bone" },
+	{ "name": "图层 1", "bone": "bone" },
+	{ "name": "zha", "bone": "zha" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"图层 1": {
+				"图层 1": { "x": -5.76, "y": 18.94, "width": 77, "height": 175 }
+			},
+			"wei": {
+				"尾0": { "x": 12.32, "y": 18.54, "width": 530, "height": 495 }
+			},
+			"zha": {
+				"炸0": { "y": 0.5, "width": 530, "height": 495 },
+				"炸1": { "y": 0.5, "width": 530, "height": 495 },
+				"炸2": { "y": 0.5, "width": 530, "height": 495 },
+				"炸3": { "y": 0.5, "width": 530, "height": 495 },
+				"炸4": { "y": 0.5, "width": 530, "height": 495 },
+				"炸5": { "y": 0.5, "width": 530, "height": 495 },
+				"炸6": { "y": 0.5, "width": 530, "height": 495 },
+				"炸7": { "y": 0.5, "width": 530, "height": 495 },
+				"炸8": { "y": 0.5, "width": 530, "height": 495 },
+				"炸9": { "y": 0.5, "width": 530, "height": 495 },
+				"炸10": { "y": 0.5, "width": 530, "height": 495 },
+				"炸11": { "y": 0.5, "width": 530, "height": 495 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"wei": {
+				"attachment": [
+					{ "name": "尾0" },
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"zha": {
+				"attachment": [
+					{ "time": 0.3333, "name": "炸0" },
+					{ "time": 0.3667, "name": "炸1" },
+					{ "time": 0.4, "name": "炸2" },
+					{ "time": 0.4333, "name": "炸3" },
+					{ "time": 0.4667, "name": "炸4" },
+					{ "time": 0.5, "name": "炸5" },
+					{ "time": 0.5333, "name": "炸6" },
+					{ "time": 0.5667, "name": "炸7" },
+					{ "time": 0.6, "name": "炸8" },
+					{ "time": 0.6333, "name": "炸9" },
+					{ "time": 0.6667, "name": "炸10" },
+					{ "time": 0.7, "name": "炸11" },
+					{ "time": 0.7333, "name": null }
+				]
+			},
+			"图层 1": {
+				"attachment": [
+					{ "name": "图层 1" },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": -618.24 }
+				]
+			}
+		}
+	}
+}
+}
