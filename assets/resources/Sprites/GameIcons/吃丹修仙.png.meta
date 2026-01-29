@@ -2,22 +2,22 @@
   "ver": "1.0.27",
   "importer": "image",
   "imported": true,
-  "uuid": "3dd8f9bb-265a-4e4e-878c-a60848b56135",
+  "uuid": "b6b4f8a0-c09b-4832-a7c6-7f7ff9a45c02",
   "files": [
-    ".jpg",
-    ".json"
+    ".json",
+    ".png"
   ],
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "3dd8f9bb-265a-4e4e-878c-a60848b56135@6c48a",
-      "displayName": "Start_Background",
+      "uuid": "b6b4f8a0-c09b-4832-a7c6-7f7ff9a45c02@6c48a",
+      "displayName": "吃丹修仙",
       "id": "6c48a",
       "name": "texture",
       "userData": {
         "wrapModeS": "clamp-to-edge",
         "wrapModeT": "clamp-to-edge",
-        "imageUuidOrDatabaseUri": "3dd8f9bb-265a-4e4e-878c-a60848b56135",
+        "imageUuidOrDatabaseUri": "b6b4f8a0-c09b-4832-a7c6-7f7ff9a45c02",
         "isUuid": true,
         "visible": false,
         "minfilter": "linear",
@@ -34,22 +34,21 @@
     },
     "f9941": {
       "importer": "sprite-frame",
-      "uuid": "3dd8f9bb-265a-4e4e-878c-a60848b56135@f9941",
-      "displayName": "Start_Background",
+      "uuid": "b6b4f8a0-c09b-4832-a7c6-7f7ff9a45c02@f9941",
+      "displayName": "吃丹修仙",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
-        "trimType": "auto",
         "trimThreshold": 1,
         "rotated": false,
-        "offsetX": 0,
-        "offsetY": 0,
-        "trimX": 0,
-        "trimY": 0,
-        "width": 898,
-        "height": 424,
-        "rawWidth": 898,
-        "rawHeight": 424,
+        "offsetX": 0.5,
+        "offsetY": 0.5,
+        "trimX": 3,
+        "trimY": 3,
+        "width": 144,
+        "height": 40,
+        "rawWidth": 149,
+        "rawHeight": 47,
         "borderTop": 0,
         "borderBottom": 0,
         "borderLeft": 0,
@@ -61,17 +60,17 @@
         "meshType": 0,
         "vertices": {
           "rawPosition": [
-            -449,
-            -212,
+            -72,
+            -20,
             0,
-            449,
-            -212,
+            72,
+            -20,
             0,
-            -449,
-            212,
+            -72,
+            20,
             0,
-            449,
-            212,
+            72,
+            20,
             0
           ],
           "indexes": [
@@ -83,39 +82,40 @@
             3
           ],
           "uv": [
-            0,
-            424,
-            898,
-            424,
-            0,
-            0,
-            898,
-            0
+            3,
+            44,
+            147,
+            44,
+            3,
+            4,
+            147,
+            4
           ],
           "nuv": [
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            1,
-            1
+            0.020134228187919462,
+            0.0851063829787234,
+            0.9865771812080537,
+            0.0851063829787234,
+            0.020134228187919462,
+            0.9361702127659575,
+            0.9865771812080537,
+            0.9361702127659575
           ],
           "minPos": [
-            -449,
-            -212,
+            -72,
+            -20,
             0
           ],
           "maxPos": [
-            449,
-            212,
+            72,
+            20,
             0
           ]
         },
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "3dd8f9bb-265a-4e4e-878c-a60848b56135@6c48a",
-        "atlasUuid": ""
+        "imageUuidOrDatabaseUri": "b6b4f8a0-c09b-4832-a7c6-7f7ff9a45c02@6c48a",
+        "atlasUuid": "",
+        "trimType": "auto"
       },
       "ver": "1.0.12",
       "imported": true,
@@ -127,8 +127,8 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "hasAlpha": false,
+    "hasAlpha": true,
     "fixAlphaTransparencyArtifacts": false,
-    "redirect": "3dd8f9bb-265a-4e4e-878c-a60848b56135@6c48a"
+    "redirect": "b6b4f8a0-c09b-4832-a7c6-7f7ff9a45c02@6c48a"
   }
 }
