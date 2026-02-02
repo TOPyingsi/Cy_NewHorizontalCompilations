@@ -24,15 +24,15 @@ export default class Banner {
 
     //健康忠告
     static Owner: string = `著作权人：周辉`;              //著作权人
-    static License: string = `登记号：2024SR1206208`;                         //登记号
+    static License: string = `登记号：2025SR1998636`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
     private _appId: string = "115216107";
 
-    private _videoId: string = "61a7bc7c78db4d3f89dee085451dd69e";
-    private _customId: string = "c1d25b01499f4b6582c70ce8599a6768";
-    private _bannerId: string = "b465d0fae1124c10b5cfabf5a5a09f40";
+    private _videoId: string = "eb9c3236e23a4a228299b7437a87ad77";
+    private _customId: string = "c151a662db4049edb39e9531f983344e";
+    private _bannerId: string = "080df40c5993472b8ea92af79bedd954";
 
 
     //微信
@@ -49,7 +49,7 @@ export default class Banner {
     //屏蔽时间
     private _year: number = 2026;
     private _month: number = 2;
-    private _date: number = 3;
+    private _date: number = 4;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -65,7 +65,7 @@ export default class Banner {
     public static IsShowServerBundle: boolean = false;//是否能使用远程包
     private server_year: number = 2026;//远程包屏蔽时间
     private server_month: number = 2;
-    private server_date: number = 3;
+    private server_date: number = 4;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
