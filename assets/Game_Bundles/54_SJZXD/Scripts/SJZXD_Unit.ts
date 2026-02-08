@@ -181,7 +181,7 @@ export class SJZXD_Unit extends Component {
         if (this.Hp <= 0) {
             return;
         }
-        Damage *= (1 - this.Defensive / (this.Defensive + 100)) * 2;
+        Damage *= (1 - this.Defensive / (this.Defensive + 500)) * 2;
         Damage = Math.floor(Damage);
         this.Hp -= Damage;
         let nd = SJZXD_PoolManager.Instance.Get("伤害显示图");

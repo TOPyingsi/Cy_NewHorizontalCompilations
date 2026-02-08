@@ -1,0 +1,104 @@
+{
+"skeleton": {
+	"hash": "6AXWCSm7ZSlfuGz8wTeIHYCMj2U",
+	"spine": "3.8.75",
+	"x": -69.38,
+	"y": -133.79,
+	"width": 311.85,
+	"height": 239.9,
+	"images": "./images/",
+	"audio": "D:/2026/修狗三角洲（新）/动画/枪/神·猩红射手"
+},
+"bones": [
+	{ "name": "root" },
+	{
+		"name": "gun",
+		"parent": "root",
+		"length": 511.66,
+		"rotation": 0.19,
+		"x": -157.18,
+		"y": -1.32,
+		"color": "00ffb4ff"
+	},
+	{ "name": "ys", "parent": "gun", "rotation": -2.17, "x": 157.14, "y": -36.46, "color": "00ffb4ff" },
+	{ "name": "zs", "parent": "gun", "rotation": -2.17, "x": 276.47, "y": -26.86, "color": "e200ffff" }
+],
+"slots": [
+	{ "name": "qiang", "bone": "gun", "attachment": "qiang" },
+	{ "name": "右手", "bone": "ys", "attachment": "右手" },
+	{ "name": "左手", "bone": "zs", "attachment": "左手" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"qiang": {
+				"qiang": {
+					"x": 243.68,
+					"y": -13.35,
+					"scaleX": 0.8387,
+					"scaleY": 0.8387,
+					"rotation": -0.98,
+					"width": 368,
+					"height": 281
+				}
+			},
+			"左手": {
+				"左手": { "x": 2.27, "y": 3.45, "width": 65, "height": 60 }
+			},
+			"右手": {
+				"右手": { "x": 1.99, "y": -0.68, "width": 64, "height": 57 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "angle": 0.38, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -1.75, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 3.05, "y": -8.12, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"ys": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"zs": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "angle": 1.39, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "x": -30.33, "y": -11.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				]
+			}
+		}
+	}
+}
+}

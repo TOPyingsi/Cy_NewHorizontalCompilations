@@ -1,0 +1,50 @@
+{
+"skeleton": {
+	"hash": "kv7lja7dIGafUWeGo4oGwPjnHL0",
+	"spine": "3.8.75",
+	"x": -193.78,
+	"y": -272.9,
+	"width": 380.45,
+	"height": 744.62,
+	"images": "D:/2026/古墓摸金/角色-技能/游侠/images/",
+	"audio": "D:\\2026\\古墓摸金\\角色-技能\\游侠"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -6.5, "y": 231.63, "scaleX": 1.6092, "scaleY": 1.3595 }
+],
+"slots": [
+	{ "name": "图层 3", "bone": "bone", "color": "ffffffdc", "attachment": "tx (6)" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"图层 3": {
+				"tx (1)": { "x": 0.5, "y": 0.5, "width": 369, "height": 497 },
+				"tx (2)": { "x": 0.5, "y": 0.5, "width": 369, "height": 497 },
+				"tx (3)": { "x": 0.5, "y": 0.5, "width": 369, "height": 497 },
+				"tx (4)": { "x": 0.5, "y": 0.5, "width": 369, "height": 497 },
+				"tx (5)": { "x": 0.5, "y": 0.5, "width": 369, "height": 497 },
+				"tx (6)": { "x": -15.75, "y": 1.7, "width": 369, "height": 497 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"图层 3": {
+				"attachment": [
+					{ "name": "tx (1)" },
+					{ "time": 0.0667, "name": "tx (2)" },
+					{ "time": 0.1333, "name": "tx (3)" },
+					{ "time": 0.2, "name": "tx (4)" },
+					{ "time": 0.2667, "name": "tx (5)" },
+					{ "time": 0.3333, "name": "tx (6)" }
+				]
+			}
+		}
+	}
+}
+}

@@ -11,7 +11,7 @@
     "speed": 0.2,
     "wrapMode": 1,
     "enableTrsBlending": false,
-    "_duration": 0.35,
+    "_duration": 0.16666666666666666,
     "_hash": 500763545,
     "_tracks": [
       {
@@ -33,6 +33,30 @@
     "_exoticAnimation": null,
     "_events": [
       {
+        "frame": 0.016666666666666666,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.016666666666666666,
+        "func": "MovePosX",
+        "params": [
+          150
+        ]
+      },
+      {
+        "frame": 0.08333333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.08333333333333333,
+        "func": "Emit",
+        "params": [
+          "技2"
+        ]
+      },
+      {
         "frame": 0.1,
         "func": "",
         "params": []
@@ -45,24 +69,36 @@
         ]
       },
       {
-        "frame": 0.25,
+        "frame": 0.11666666666666667,
         "func": "",
         "params": []
       },
       {
-        "frame": 0.25,
+        "frame": 0.11666666666666667,
         "func": "Emit",
         "params": [
           "技2"
         ]
       },
       {
-        "frame": 0.3333333333333333,
+        "frame": 0.13333333333333333,
         "func": "",
         "params": []
       },
       {
-        "frame": 0.3333333333333333,
+        "frame": 0.13333333333333333,
+        "func": "Emit",
+        "params": [
+          "技2"
+        ]
+      },
+      {
+        "frame": 0.15,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.15,
         "func": "Emit",
         "params": [
           "技能结束"
@@ -119,67 +155,47 @@
       0.1,
       0.11666666666666667,
       0.13333333333333333,
-      0.15,
-      0.16666666666666666,
-      0.18333333333333332,
-      0.2,
-      0.31666666666666665
+      0.15
     ],
     "_values": [
       {
-        "__uuid__": "62a22c2d-be0f-4d44-a3e5-0b20fa8401ea@f9941",
+        "__uuid__": "b936ac0c-decd-4c1d-80fd-8f09fe7194a0@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "cc3aaf58-527b-429a-bf30-787302c371bb@f9941",
+        "__uuid__": "e004c12b-61ed-494e-b2df-bea55c610ddd@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "01b581a7-ad97-4992-a2b2-ea10da487cf1@f9941",
+        "__uuid__": "600428da-9816-4f55-8978-36528c8b89b0@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "b4771691-d8cf-4916-bcca-067f4cdb77eg@f9941",
+        "__uuid__": "96d9d6cb-9264-4239-ad8e-3b5d7d61dea2@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "0108b730-5903-4d55-9471-d02b11559b96@f9941",
+        "__uuid__": "71d8fe98-2734-4e05-82d6-603f77cf5d99@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "b4771691-d8cf-4916-bcca-067f4cdb77eg@f9941",
+        "__uuid__": "f493ceca-6989-438d-955f-af259b5c3cb5@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "01b581a7-ad97-4992-a2b2-ea10da487cf1@f9941",
+        "__uuid__": "b1c0a94c-12f2-483f-b30e-7cbf7624a6ac@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "cc3aaf58-527b-429a-bf30-787302c371bb@f9941",
+        "__uuid__": "a65517b1-a86b-447b-80c3-9efed48ffa35@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "62a22c2d-be0f-4d44-a3e5-0b20fa8401ea@f9941",
+        "__uuid__": "dc8f8515-5b06-44a7-b48d-6b946b3ce43e@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "cc3aaf58-527b-429a-bf30-787302c371bb@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "01b581a7-ad97-4992-a2b2-ea10da487cf1@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "b4771691-d8cf-4916-bcca-067f4cdb77eg@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "0108b730-5903-4d55-9471-d02b11559b96@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "c63c063a-0a3e-4285-ba43-2553a4882675@f9941",
+        "__uuid__": "d157129c-3ce6-4cac-8488-da7e59eaf906@f9941",
         "__expectedType__": "cc.SpriteFrame"
       }
     ]
@@ -225,112 +241,8 @@
   },
   {
     "__type__": "cc.ObjectCurve",
-    "_times": [
-      0,
-      0.016666666666666666,
-      0.03333333333333333,
-      0.05,
-      0.06666666666666667,
-      0.08333333333333333,
-      0.1,
-      0.11666666666666667,
-      0.13333333333333333,
-      0.15,
-      0.16666666666666666,
-      0.18333333333333332,
-      0.2,
-      0.21666666666666667,
-      0.23333333333333334,
-      0.25,
-      0.26666666666666666,
-      0.2833333333333333,
-      0.3,
-      0.31666666666666665,
-      0.3333333333333333
-    ],
-    "_values": [
-      {
-        "__uuid__": "ac9f659b-81af-4024-998c-4dc427b45378@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "8c2e7ec1-d0da-40db-a3c0-20628a46d147@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a340092e-f73d-46a3-80f1-29b458f87b2a@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a4a823e1-dae0-49ba-9603-211f698aa447@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "fe3ee7cb-5aca-4e50-aa23-0b3765b1711e@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "ac9f659b-81af-4024-998c-4dc427b45378@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "8c2e7ec1-d0da-40db-a3c0-20628a46d147@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a340092e-f73d-46a3-80f1-29b458f87b2a@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a4a823e1-dae0-49ba-9603-211f698aa447@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "fe3ee7cb-5aca-4e50-aa23-0b3765b1711e@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "ac9f659b-81af-4024-998c-4dc427b45378@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "8c2e7ec1-d0da-40db-a3c0-20628a46d147@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a340092e-f73d-46a3-80f1-29b458f87b2a@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a4a823e1-dae0-49ba-9603-211f698aa447@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "fe3ee7cb-5aca-4e50-aa23-0b3765b1711e@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "ac9f659b-81af-4024-998c-4dc427b45378@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "8c2e7ec1-d0da-40db-a3c0-20628a46d147@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a340092e-f73d-46a3-80f1-29b458f87b2a@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a4a823e1-dae0-49ba-9603-211f698aa447@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "fe3ee7cb-5aca-4e50-aa23-0b3765b1711e@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      null
-    ]
+    "_times": [],
+    "_values": []
   },
   {
     "__type__": "cc.animation.ObjectTrack",
@@ -373,76 +285,8 @@
   },
   {
     "__type__": "cc.ObjectCurve",
-    "_times": [
-      0,
-      0.06666666666666667,
-      0.08333333333333333,
-      0.1,
-      0.11666666666666667,
-      0.13333333333333333,
-      0.15,
-      0.16666666666666666,
-      0.21666666666666667,
-      0.23333333333333334,
-      0.25,
-      0.26666666666666666,
-      0.2833333333333333,
-      0.3,
-      0.31666666666666665
-    ],
-    "_values": [
-      null,
-      {
-        "__uuid__": "f1ea2f27-a3a7-48ad-b64d-1298b297d837@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "427be9e4-d4a8-48ff-85a5-1c73ba004de1@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "f6e101aa-9a2f-4faa-b473-66c4c19f4394@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "15008d08-eb02-4d16-bcc2-599e37f33dd8@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "d1b6d6b1-039a-44eb-bf14-b1abefc8ca8g@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "0d09df98-c478-48d0-b76c-1f9eb1a69d3g@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      null,
-      {
-        "__uuid__": "f1ea2f27-a3a7-48ad-b64d-1298b297d837@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "427be9e4-d4a8-48ff-85a5-1c73ba004de1@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "f6e101aa-9a2f-4faa-b473-66c4c19f4394@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "15008d08-eb02-4d16-bcc2-599e37f33dd8@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "d1b6d6b1-039a-44eb-bf14-b1abefc8ca8g@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "0d09df98-c478-48d0-b76c-1f9eb1a69d3g@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      null
-    ]
+    "_times": [],
+    "_values": []
   },
   {
     "__type__": "cc.animation.ObjectTrack",
@@ -478,12 +322,8 @@
   },
   {
     "__type__": "cc.ObjectCurve",
-    "_times": [
-      0
-    ],
-    "_values": [
-      true
-    ]
+    "_times": [],
+    "_values": []
   },
   {
     "__type__": "cc.animation.ObjectTrack",
@@ -519,12 +359,8 @@
   },
   {
     "__type__": "cc.ObjectCurve",
-    "_times": [
-      0
-    ],
-    "_values": [
-      true
-    ]
+    "_times": [],
+    "_values": []
   },
   {
     "__type__": "cc.AnimationClipAdditiveSettings",

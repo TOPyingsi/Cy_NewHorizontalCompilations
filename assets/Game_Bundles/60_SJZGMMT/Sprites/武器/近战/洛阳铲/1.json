@@ -1,0 +1,129 @@
+{
+"skeleton": {
+	"hash": "n3AhyaFZiZ3aN7bXPtcf8P6OwBY",
+	"spine": "3.8.75",
+	"x": -130.7,
+	"y": -171.45,
+	"width": 328.93,
+	"height": 346.57,
+	"images": "./images/",
+	"audio": "D:/2026/修狗三角洲（新）/动画/近战"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "zs", "parent": "root", "x": -56.97, "y": -46.26, "color": "00fff4ff" },
+	{
+		"name": "wq",
+		"parent": "zs",
+		"length": 329.62,
+		"rotation": 20.71,
+		"x": -33.05,
+		"y": -15.63,
+		"color": "ceff00ff"
+	},
+	{
+		"name": "jztx",
+		"parent": "root",
+		"rotation": 20.89,
+		"x": 89.58,
+		"y": 29.76,
+		"scaleX": 2.6492,
+		"scaleY": 2.6492,
+		"color": "ceff00ff"
+	}
+],
+"slots": [
+	{ "name": "右手", "bone": "root" },
+	{ "name": "神·霓虹战斧", "bone": "wq", "attachment": "图层 1" },
+	{ "name": "左手", "bone": "zs", "attachment": "左手" },
+	{ "name": "jztx", "bone": "jztx" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"jztx": {
+				"jz (1)": { "x": 0.5, "width": 347, "height": 318 },
+				"jz (2)": { "x": 0.5, "width": 347, "height": 318 },
+				"jz (3)": { "x": 0.5, "width": 347, "height": 318 },
+				"jz (4)": { "x": 0.5, "width": 347, "height": 318 },
+				"jz (5)": { "x": 0.5, "width": 347, "height": 318 },
+				"jz (6)": { "x": 0.5, "width": 347, "height": 318 },
+				"jz (7)": { "x": 0.5, "width": 347, "height": 318 },
+				"jz (8)": { "x": 0.5, "width": 347, "height": 318 },
+				"jz (9)": { "x": 0.5, "width": 347, "height": 318 }
+			},
+			"左手": {
+				"左手": { "x": 1.42, "y": -1.5, "width": 66, "height": 65 }
+			},
+			"神·霓虹战斧": {
+				"图层 1": {
+					"x": 138.33,
+					"y": 15.81,
+					"scaleX": 0.2902,
+					"scaleY": -0.2902,
+					"rotation": 55.52,
+					"width": 1004,
+					"height": 921
+				},
+				"神·霓虹战斧": { "x": 192.94, "y": 12.7, "rotation": -20.71, "width": 373, "height": 195 }
+			},
+			"右手": {
+				"右手": { "x": 117.34, "y": 221.3, "width": 62, "height": 67 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"bones": {
+			"zs": {
+				"rotate": [
+					{},
+					{ "time": 0.5, "angle": 3.03 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 1.84, "y": -25.73 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"slots": {
+			"jztx": {
+				"attachment": [
+					{ "time": 0.2, "name": "jz (1)" },
+					{ "time": 0.2333, "name": "jz (2)" },
+					{ "time": 0.2667, "name": "jz (3)" },
+					{ "time": 0.3, "name": "jz (4)" },
+					{ "time": 0.3333, "name": "jz (5)" },
+					{ "time": 0.3667, "name": "jz (6)" },
+					{ "time": 0.4, "name": "jz (7)" },
+					{ "time": 0.4333, "name": "jz (8)" },
+					{ "time": 0.4667, "name": "jz (9)" },
+					{ "time": 0.5, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"zs": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 74.98 },
+					{ "time": 0.3333, "angle": -47.12 },
+					{ "time": 0.4333 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -45.33, "y": 120.16 },
+					{ "time": 0.3333, "x": 42.18, "y": -30.98 },
+					{ "time": 0.4333 }
+				]
+			}
+		}
+	}
+}
+}

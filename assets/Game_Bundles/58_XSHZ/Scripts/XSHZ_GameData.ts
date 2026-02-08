@@ -27,7 +27,7 @@ export class XSHZ_GameData extends Component {
 
 
 
-    public UnLook: string[] = ["鼬", "山治", "艾斯", "纲手",];//解锁的角色
+    public UnLook: string[] = ["鼬", "山治", "艾斯", "火柴人",];//解锁的角色
 
 
     public TimeDate: number[] = [];

@@ -7,12 +7,14 @@ import { SJZXD_GameData } from '../SJZXD_GameData';
 import { SJZXD_AudioManager } from '../SJZXD_AudioManager';
 import { SJZXD_GameManager } from '../SJZXD_GameManager';
 import { SJZXD_EventManager } from '../SJZXD_EventManager';
+import { ProjectEvent, ProjectEventManager } from '../../../../Scripts/Framework/Managers/ProjectEventManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('SJZXD_DeadPanel')
 export class SJZXD_DeadPanel extends PanelBase {
     Show(...args: any[]): void {
         super.Show(this.node.getChildByName("框"));
+        ProjectEventManager.emit(ProjectEvent.游戏结束, "三角洲行动")
     }
 
 

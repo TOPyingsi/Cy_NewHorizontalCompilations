@@ -2,6 +2,7 @@ import { _decorator, Component, Node, Label, Button, EventHandler, Prefab, insta
 import { DH_DataManager, DH_ItemType, DH_NpcJsonData } from '../Manager/DH_DataManager';
 import { EventManager } from 'db://assets/Scripts/Framework/Managers/EventManager';
 import { DH_GameEvents } from '../Common/DH_GameEvents';
+import Banner from 'db://assets/Scripts/Banner';
 const { ccclass, property } = _decorator;
 
 @ccclass('DH_DialougePanel')
@@ -324,6 +325,8 @@ export class DH_DialougePanel extends Component {
         }
 
         this.node.active = false;
+
+        Banner.Instance.ShowCustomAd();
         
         // 可以在这里添加关闭对话面板的逻辑
         // 例如：隐藏面板、触发关闭回调等

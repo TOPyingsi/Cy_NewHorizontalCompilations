@@ -1,0 +1,223 @@
+{
+"skeleton": {
+	"hash": "0l/IsbGAO2wKfN+7/Km8UoLguWk",
+	"spine": "3.8.75",
+	"x": -237.35,
+	"y": -255.15,
+	"width": 778.66,
+	"height": 510.3,
+	"images": "./images/",
+	"audio": "D:/2026/修狗三角洲（新）/动画/枪/神·猩红射手"
+},
+"bones": [
+	{ "name": "root" },
+	{
+		"name": "gun",
+		"parent": "root",
+		"length": 511.66,
+		"rotation": 0.98,
+		"x": -157.18,
+		"y": -10.05,
+		"color": "00ffb4ff"
+	},
+	{ "name": "ys", "parent": "gun", "rotation": -2.17, "x": 143.64, "y": -39.29, "color": "00ffb4ff" },
+	{ "name": "zs", "parent": "gun", "rotation": -2.17, "x": 304.73, "y": -24.15, "color": "e200ffff" },
+	{
+		"name": "qktx",
+		"parent": "gun",
+		"rotation": -4.41,
+		"x": 649.11,
+		"y": -7.46,
+		"scaleX": 1.1605,
+		"scaleY": 1.1605,
+		"color": "00ffb4ff"
+	},
+	{
+		"name": "骨骼",
+		"parent": "gun",
+		"rotation": -0.98,
+		"x": 264.2,
+		"y": 5.53,
+		"scaleX": 2.3519,
+		"scaleY": 2.3519
+	},
+	{
+		"name": "骨骼2",
+		"parent": "gun",
+		"rotation": -0.98,
+		"x": 157.33,
+		"y": 7.36,
+		"scaleX": 1.6954,
+		"scaleY": 1.6954
+	}
+],
+"slots": [
+	{ "name": "qiang", "bone": "gun", "attachment": "qiang" },
+	{ "name": "右手", "bone": "ys", "attachment": "右手" },
+	{ "name": "左手", "bone": "zs", "attachment": "左手" },
+	{ "name": "tx", "bone": "qktx" },
+	{ "name": "1hongshandian_1_0001_1hongshandian_3", "bone": "骨骼", "attachment": "1hongshandian_1_0000_1hongshandian_4" },
+	{ "name": "水龙__0001_2", "bone": "骨骼2", "attachment": "水龙__0000_3" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"qiang": {
+				"qiang": { "x": 311.7, "y": -19.34, "rotation": -0.98, "width": 773, "height": 306 }
+			},
+			"1hongshandian_1_0001_1hongshandian_3": {
+				"1hongshandian_1_0001_1hongshandian_3": { "width": 214, "height": 90 },
+				"1hongshandian_1_0002_1hongshandian_2": { "width": 214, "height": 90 },
+				"1hongshandian_1_0003_图层-1": { "width": 214, "height": 90 },
+				"1hongshandian_1_0000_1hongshandian_4": { "width": 214, "height": 90 }
+			},
+			"tx": {
+				"qk1": { "x": 42.39, "y": 6.87, "rotation": -2.71, "width": 109, "height": 92 },
+				"qk2": { "x": 47.57, "y": 10.88, "width": 116, "height": 104 },
+				"qk3": { "x": 49.33, "y": 9.85, "rotation": -3.19, "width": 105, "height": 112 },
+				"qk4": { "x": 56.22, "y": 7.3, "rotation": -5.64, "width": 90, "height": 116 }
+			},
+			"左手": {
+				"左手": { "x": 2.27, "y": 3.45, "width": 65, "height": 60 }
+			},
+			"右手": {
+				"右手": { "x": 1.99, "y": -0.68, "width": 64, "height": 57 }
+			},
+			"水龙__0001_2": {
+				"水龙__0001_2": { "width": 280, "height": 301 },
+				"水龙__0002_1": { "width": 280, "height": 301 },
+				"水龙__0000_3": { "width": 280, "height": 301 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"slots": {
+			"水龙__0001_2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"1hongshandian_1_0001_1hongshandian_3": {
+				"attachment": [
+					{ "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.0667, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.1333, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.2, "name": "1hongshandian_1_0000_1hongshandian_4" },
+					{ "time": 0.2667, "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.3333, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.4, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.4667, "name": "1hongshandian_1_0000_1hongshandian_4" },
+					{ "time": 0.5333, "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.6, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.6667, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.7333, "name": "1hongshandian_1_0000_1hongshandian_4" },
+					{ "time": 0.8, "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.8667, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.9333, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 1, "name": "1hongshandian_1_0000_1hongshandian_4" }
+				]
+			}
+		},
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "angle": 0.38, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -1.75, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 3.05, "y": -8.12, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"ys": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"zs": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"qktx": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"slots": {
+			"水龙__0001_2": {
+				"color": [
+					{ "time": 0.2333, "color": "ffffffff" },
+					{ "time": 0.3, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "水龙__0002_1" },
+					{ "time": 0.0667, "name": "水龙__0001_2" },
+					{ "time": 0.1333, "name": "水龙__0000_3" }
+				]
+			},
+			"tx": {
+				"attachment": [
+					{ "time": 0.0333, "name": "qk1" },
+					{ "time": 0.0667, "name": "qk2" },
+					{ "time": 0.1, "name": "qk3" },
+					{ "time": 0.1333, "name": "qk4" },
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"1hongshandian_1_0001_1hongshandian_3": {
+				"attachment": [
+					{ "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.0862, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.1725, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.2587, "name": "1hongshandian_1_0000_1hongshandian_4" }
+				]
+			}
+		},
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "angle": 2.07, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "x": -30.33, "y": -11.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				]
+			},
+			"骨骼": {
+				"translate": [
+					{ "x": 97.77, "y": -1.67 },
+					{ "time": 0.3, "x": -61.39, "y": 1.05 }
+				]
+			},
+			"骨骼2": {
+				"translate": [
+					{},
+					{ "time": 0.1333, "x": 265.09, "y": 9.2 },
+					{ "time": 0.2333, "x": 265.21, "y": 14.49 }
+				],
+				"scale": [
+					{ "x": 1.502, "y": 1.502 },
+					{ "time": 0.3, "x": 1.744, "y": 1.744 }
+				]
+			}
+		}
+	}
+}
+}

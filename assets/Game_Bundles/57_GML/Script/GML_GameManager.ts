@@ -51,6 +51,8 @@ export class GML_GameManager extends Component {
             EventManager.Scene.emit(GML_Events.UI_SHOW_BTN_ReStart);
         }
         else{
+            EventManager.Scene.emit(GML_Events.UI_HIDE_BTN_ReStart);
+            EventManager.Scene.emit(GML_Events.UI_HIDE_BTN_Video);
             this.failGame();
         }
         EventManager.Scene.emit(GML_Events.UI_HIDE_BTN_CTRL);
@@ -62,6 +64,9 @@ export class GML_GameManager extends Component {
         // this.node.getComponent(GML_CarFlowSystem).stopCarFlow();
         // this.node.getComponent(GML_CarFlowSystem).restartCarFlow();
         this.resurgenceCount--;
+        if(!this.isPlayerDie){
+            EventManager.Scene.emit(GML_Events.PLAYER_LOG_RESUERGENCE_POS);
+        }
         EventManager.Scene.emit(GML_Events.UI_UPDATE_RESTART_COUNT);
         EventManager.Scene.emit(GML_Events.RESET_PLAYER);
         EventManager.Scene.emit(GML_Events.UI_SHOW_BTN_CTRL);
@@ -131,6 +136,7 @@ export class GML_GameManager extends Component {
             this.restart();
             this.resurgenceCount = 1;
             EventManager.Scene.emit(GML_Events.UI_UPDATE_RESTART_COUNT);
+            EventManager.Scene.emit(GML_Events.UI_SHOW_BTN_ReStart);
         })
         .start();
         ProjectEventManager.emit(ProjectEvent.游戏开始, "过马路")

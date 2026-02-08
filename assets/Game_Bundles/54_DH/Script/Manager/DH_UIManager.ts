@@ -15,6 +15,7 @@ import { DH_FishPanel } from '../UI/DH_FishPanel';
 import { DH_SkillPanel } from '../UI/DH_SkillPanel';
 import { DH_FishRodPanel } from '../UI/DH_FishRodPanel';
 import { DH_TipPanel } from '../UI/DH_TipPanel';
+import { DH_GetMoreMoneyPanel } from '../UI/DH_GetMoreMoneyPanel';
 
 
 const { ccclass, property } = _decorator;
@@ -60,6 +61,8 @@ export class DH_UIManager extends Component {
     @property(DH_TipPanel)
     tipPanel: DH_TipPanel = null; 
     
+    @property(DH_GetMoreMoneyPanel)
+    getMoreMoneyPanel: DH_GetMoreMoneyPanel = null;
     
 
     protected onLoad(): void {
@@ -87,6 +90,7 @@ export class DH_UIManager extends Component {
         this.hideSkillPanel();
         this.hideFishRodPanel();
         this.showTipPanel();
+        this.hideGetMoreMoneyPanel();
     }
 
     enterGame(){
@@ -207,6 +211,14 @@ export class DH_UIManager extends Component {
         this.fishRodPanel.node.active = false;
     }
 
+    showGetMoreMoneyPanel(){
+        this.getMoreMoneyPanel.init();
+        this.getMoreMoneyPanel.node.active = true;
+    }
+
+    hideGetMoreMoneyPanel(){
+        this.getMoreMoneyPanel.node.active = false;
+    }
 
     showEndPanel() {
 
@@ -291,6 +303,8 @@ export class DH_UIManager extends Component {
         EventManager.on(DH_GameEvents.UI_HIDE_SKILL_PANEL, this.hideSkillPanel, this);
         EventManager.on(DH_GameEvents.UI_SHOW_FISH_ROD_PANEL, this.showFishRodPanel, this);
         EventManager.on(DH_GameEvents.UI_HIDE_FISH_ROD_PANEL, this.hideFishRodPanel, this);
+        EventManager.on(DH_GameEvents.UI_SHOW_GET_MORE_MONEY_PANEL, this.showGetMoreMoneyPanel, this);
+        EventManager.on(DH_GameEvents.UI_HIDE_GET_MORE_MONEY_PANEL, this.hideGetMoreMoneyPanel, this);
 
 
         EventManager.on(DH_GameEvents.UI_SHOW_ANIMATION_PANEL, this.showAnimationPanel, this);
@@ -330,6 +344,8 @@ export class DH_UIManager extends Component {
         EventManager.off(DH_GameEvents.UI_HIDE_SKILL_PANEL, this.hideSkillPanel, this);
         EventManager.off(DH_GameEvents.UI_SHOW_FISH_ROD_PANEL, this.showFishRodPanel, this);
         EventManager.off(DH_GameEvents.UI_HIDE_FISH_ROD_PANEL, this.hideFishRodPanel, this);
+        EventManager.off(DH_GameEvents.UI_SHOW_GET_MORE_MONEY_PANEL, this.showGetMoreMoneyPanel, this);
+        EventManager.off(DH_GameEvents.UI_HIDE_GET_MORE_MONEY_PANEL, this.hideGetMoreMoneyPanel, this);
 
         EventManager.off(DH_GameEvents.UI_SHOW_ANIMATION_PANEL, this.showAnimationPanel, this);
         EventManager.off(DH_GameEvents.UI_HIDE_ANIMATION_PANEL, this.hideAnimationPanel, this);

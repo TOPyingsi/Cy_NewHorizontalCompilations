@@ -162,6 +162,11 @@ export class CDXX2_ItemGun extends Component {
         if (this.Mask) this.Mask.active = true;
         this._isHave = true;
         CDXX2_UIController.Instance.TipsPanel.show(`获得武器：${this.Name}`);
+        
+        // 如果使用碎片购买，更新碎片显示
+        if (this.CurrencyType === CDXX2_CURRENCY_TYPE.碎片) {
+            CDXX2_Equipment.Instance.updatePropDisplay("碎片");
+        }
     }
 
     // 购买丹药
@@ -169,6 +174,11 @@ export class CDXX2_ItemGun extends Component {
         CDXX2_Equipment.Instance.addElixir(this.Name, this.RewardCount);
         CDXX2_UIController.Instance.TipsPanel.show(`获得丹药：${this.Name} x${this.RewardCount}`);
         CDXX2_UIController.Instance.refreshCurrency();
+        
+        // 如果使用碎片购买，更新碎片显示
+        if (this.CurrencyType === CDXX2_CURRENCY_TYPE.碎片) {
+            CDXX2_Equipment.Instance.updatePropDisplay("碎片");
+        }
     }
 
     // 购买道具
@@ -177,6 +187,11 @@ export class CDXX2_ItemGun extends Component {
         CDXX2_Equipment.Instance.addProp(this.Name, this.RewardCount);
         CDXX2_UIController.Instance.TipsPanel.show(`获得道具：${this.Name} x${this.RewardCount}`);
         CDXX2_UIController.Instance.refreshCurrency();
+        
+        // 如果使用碎片购买，更新碎片显示
+        if (this.CurrencyType === CDXX2_CURRENCY_TYPE.碎片) {
+            CDXX2_Equipment.Instance.updatePropDisplay("碎片");
+        }
     }
 
     // 货币兑换
@@ -190,5 +205,10 @@ export class CDXX2_ItemGun extends Component {
         CDXX2_GameData.DateSave();
         CDXX2_UIController.Instance.TipsPanel.show(`获得${this.Name} x${this.RewardCount}`);
         CDXX2_UIController.Instance.refreshCurrency();
+        
+        // 更新碎片显示（如果使用碎片购买）
+        if (this.CurrencyType === CDXX2_CURRENCY_TYPE.碎片) {
+            CDXX2_Equipment.Instance.updatePropDisplay("碎片");
+        }
     }
 }

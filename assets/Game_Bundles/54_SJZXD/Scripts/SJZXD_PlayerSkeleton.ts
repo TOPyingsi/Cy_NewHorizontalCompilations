@@ -69,8 +69,8 @@ export class SJZXD_PlayerSkeleton extends Component {
         }
         if (SJZXD_GameData.Instance.PlayerData[0] != "无") {
             if (this.node.getChildByName("武器")) {//如果本节点下有武器节点(只有渲染角色才有，游戏内角色没有该节点)
-                this.node.getChildByName("武器").removeAllChildren();
                 SJZXD_Incident.Loadprefab("Prefabs/武器/" + SJZXD_GameData.Instance.PlayerData[0]).then((prefab: Prefab) => {
+                    this.node.getChildByName("武器").removeAllChildren();
                     let wp = instantiate(prefab);
                     wp.setParent(this.node.getChildByName("武器"));
                     wp.layer = wp.parent.layer;

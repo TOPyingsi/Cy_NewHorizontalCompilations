@@ -192,14 +192,14 @@ export class SJZXD_Constant {
         { Name: "精锐头盔", price: 50000000, quality: SJZXD_Quality.金色, weight: 5, type: SJZXD_PropType.头盔, description: "重型防护头盔，提供最高级别的头部保护，但会降低移动速度。", property: 1700 }, // 头盔属性为生命
         { Name: "AEGIS装甲头盔", price: 98000000, quality: SJZXD_Quality.红色, weight: 5, type: SJZXD_PropType.头盔, description: "顶级装甲头盔，拥有智能防护系统，可抵御各种攻击。", property: 2000 }, // 头盔属性为生命
 
-        { Name: "轻型战术背心", price: 8000, quality: SJZXD_Quality.绿色, weight: 5, type: SJZXD_PropType.防具, description: "轻型战术背心，提供基础防护，不影响行动灵活性。", property: 100 }, // 防具属性为防御
-        { Name: "通用战术背心", price: 50000, quality: SJZXD_Quality.绿色, weight: 5, type: SJZXD_PropType.防具, description: "通用战术背心，平衡防护和机动性，适合常规作战。", property: 150 }, // 防具属性为防御
-        { Name: "快拆防弹衣", price: 4000000, quality: SJZXD_Quality.蓝色, weight: 5, type: SJZXD_PropType.防具, description: "快拆式防弹衣，紧急情况下可快速脱卸，提供中等防护。", property: 250 }, // 防具属性为防御
-        { Name: "MC轻型防弹衣", price: 6000000, quality: SJZXD_Quality.蓝色, weight: 5, type: SJZXD_PropType.防具, description: "迷彩轻型防弹衣，具有良好的隐蔽性，适合野外作战。", property: 350 }, // 防具属性为防御
-        { Name: "作战防弹衣", price: 24000000, quality: SJZXD_Quality.紫色, weight: 5, type: SJZXD_PropType.防具, description: "专业作战防弹衣，提供高级防护，内置战术装备挂载系统。", property: 500 }, // 防具属性为防御
-        { Name: "Gen4作战防弹衣", price: 30000000, quality: SJZXD_Quality.紫色, weight: 5, type: SJZXD_PropType.防具, description: "第四代作战防弹衣，采用先进材料，防护性能卓越。", property: 650 }, // 防具属性为防御
-        { Name: "MF重型防弹衣", price: 60000000, quality: SJZXD_Quality.金色, weight: 5, type: SJZXD_PropType.防具, description: "重型防弹衣，提供最高级别的防护，适合高风险作战环境。", property: 750 }, // 防具属性为防御
-        { Name: "重型突击防弹衣", price: 80000000, quality: SJZXD_Quality.金色, weight: 5, type: SJZXD_PropType.防具, description: "突击专用重型防弹衣，防护和机动性完美结合。", property: 850 }, // 防具属性为防御
+        { Name: "轻型战术背心", price: 8000, quality: SJZXD_Quality.绿色, weight: 5, type: SJZXD_PropType.防具, description: "轻型战术背心，提供基础防护，不影响行动灵活性。", property: 50 }, // 防具属性为防御
+        { Name: "通用战术背心", price: 50000, quality: SJZXD_Quality.绿色, weight: 5, type: SJZXD_PropType.防具, description: "通用战术背心，平衡防护和机动性，适合常规作战。", property: 100 }, // 防具属性为防御
+        { Name: "快拆防弹衣", price: 4000000, quality: SJZXD_Quality.蓝色, weight: 5, type: SJZXD_PropType.防具, description: "快拆式防弹衣，紧急情况下可快速脱卸，提供中等防护。", property: 150 }, // 防具属性为防御
+        { Name: "MC轻型防弹衣", price: 6000000, quality: SJZXD_Quality.蓝色, weight: 5, type: SJZXD_PropType.防具, description: "迷彩轻型防弹衣，具有良好的隐蔽性，适合野外作战。", property: 200 }, // 防具属性为防御
+        { Name: "作战防弹衣", price: 24000000, quality: SJZXD_Quality.紫色, weight: 5, type: SJZXD_PropType.防具, description: "专业作战防弹衣，提供高级防护，内置战术装备挂载系统。", property: 300 }, // 防具属性为防御
+        { Name: "Gen4作战防弹衣", price: 30000000, quality: SJZXD_Quality.紫色, weight: 5, type: SJZXD_PropType.防具, description: "第四代作战防弹衣，采用先进材料，防护性能卓越。", property: 400 }, // 防具属性为防御
+        { Name: "MF重型防弹衣", price: 60000000, quality: SJZXD_Quality.金色, weight: 5, type: SJZXD_PropType.防具, description: "重型防弹衣，提供最高级别的防护，适合高风险作战环境。", property: 600 }, // 防具属性为防御
+        { Name: "重型突击防弹衣", price: 80000000, quality: SJZXD_Quality.金色, weight: 5, type: SJZXD_PropType.防具, description: "突击专用重型防弹衣，防护和机动性完美结合。", property: 800 }, // 防具属性为防御
         { Name: "AEGIS防弹装甲", price: 120000000, quality: SJZXD_Quality.红色, weight: 5, type: SJZXD_PropType.防具, description: "顶级防弹装甲，拥有主动防护系统，可抵御各种攻击。", property: 1000 }, // 防具属性为防御
     ]
 

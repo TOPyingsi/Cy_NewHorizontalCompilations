@@ -1,0 +1,235 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "技能1",
+    "_objFlags": 0,
+    "__editorExtras__": {
+      "embeddedPlayerGroups": []
+    },
+    "_native": "",
+    "sample": 12,
+    "speed": 0.7,
+    "wrapMode": 1,
+    "enableTrsBlending": false,
+    "_duration": 1.0833333333333333,
+    "_hash": 500763545,
+    "_tracks": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_exoticAnimation": null,
+    "_events": [
+      {
+        "frame": 0.16666666666666666,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.16666666666666666,
+        "func": "Emit",
+        "params": [
+          "技1_0"
+        ]
+      },
+      {
+        "frame": 0.3333333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.3333333333333333,
+        "func": "Emit",
+        "params": [
+          "技1_0"
+        ]
+      },
+      {
+        "frame": 0.4166666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.4166666666666667,
+        "func": "Emit",
+        "params": [
+          "技1_0"
+        ]
+      },
+      {
+        "frame": 0.5,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.5,
+        "func": "Emit",
+        "params": [
+          "技1_0"
+        ]
+      },
+      {
+        "frame": 0.75,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.75,
+        "func": "Emit",
+        "params": [
+          "技1_1"
+        ]
+      },
+      {
+        "frame": 0.8333333333333334,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.8333333333333334,
+        "func": "Emit",
+        "params": [
+          "技1_1"
+        ]
+      },
+      {
+        "frame": 0.9166666666666666,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.9166666666666666,
+        "func": "Emit",
+        "params": [
+          "技1_1"
+        ]
+      },
+      {
+        "frame": 1,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 1,
+        "func": "Emit",
+        "params": [
+          "技能结束"
+        ]
+      }
+    ],
+    "_embeddedPlayers": [],
+    "_additiveSettings": {
+      "__id__": 6
+    },
+    "_auxiliaryCurveEntries": []
+  },
+  {
+    "__type__": "cc.animation.ObjectTrack",
+    "_binding": {
+      "__type__": "cc.animation.TrackBinding",
+      "path": {
+        "__id__": 2
+      },
+      "proxy": null
+    },
+    "_channel": {
+      "__id__": 4
+    }
+  },
+  {
+    "__type__": "cc.animation.TrackPath",
+    "_paths": [
+      {
+        "__id__": 3
+      },
+      "spriteFrame"
+    ]
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.Channel",
+    "_curve": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.ObjectCurve",
+    "_times": [
+      0,
+      0.08333333333333333,
+      0.16666666666666666,
+      0.25,
+      0.3333333333333333,
+      0.4166666666666667,
+      0.5,
+      0.5833333333333334,
+      0.6666666666666666,
+      0.75,
+      0.8333333333333334,
+      0.9166666666666666,
+      1
+    ],
+    "_values": [
+      {
+        "__uuid__": "2af9a70f-321b-4665-9601-3f57554fe055@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "6f743339-ee0b-4fb9-a3b9-bc324d93c8aa@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "317a699d-7092-4b95-8597-7574960441d6@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "3d5587e4-991a-48df-8f2a-be3c609c2fbb@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "c91beb86-0728-4702-98dd-4388ddd28e66@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "daa9f37f-6326-49ab-b2ce-cd27bd3c93cc@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f3494a6b-c168-4fa1-bac9-d0bbba155fa0@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "50918c4f-329d-45d7-882d-f43aee46f457@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "457e12c5-e59c-4ecf-90f7-aabaca076494@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d443aafb-a008-4fd9-830d-1a51b4acda83@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "62eaca1d-747a-4eb1-a32c-b94b4b6ed8fb@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "9b9ebc3e-f6e6-4f0e-b450-f3fed8d11d1c@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "90d796a7-7131-467e-a9c3-e41320aba840@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      }
+    ]
+  },
+  {
+    "__type__": "cc.AnimationClipAdditiveSettings",
+    "enabled": false,
+    "refClip": null
+  }
+]

@@ -1,0 +1,217 @@
+{
+"skeleton": {
+	"hash": "OhrGcYtKKQtikD4IDBsQ0HDOCPQ",
+	"spine": "3.8.75",
+	"x": -278.75,
+	"y": -177.12,
+	"width": 723,
+	"height": 341.72,
+	"images": "./images/",
+	"audio": "D:/2026/修狗三角洲（新）/动画/枪/神·猩红射手"
+},
+"bones": [
+	{ "name": "root" },
+	{
+		"name": "gun",
+		"parent": "root",
+		"length": 511.66,
+		"rotation": 0.98,
+		"x": -157.18,
+		"y": -10.05,
+		"color": "00ffb4ff"
+	},
+	{ "name": "ys", "parent": "gun", "rotation": -2.17, "x": 161.84, "y": -38.46, "color": "00ffb4ff" },
+	{ "name": "zs", "parent": "gun", "rotation": -2.17, "x": 324.45, "y": -4.29, "color": "e200ffff" },
+	{
+		"name": "qktx",
+		"parent": "gun",
+		"rotation": -4.41,
+		"x": 544.77,
+		"y": 6.83,
+		"scaleX": 1.1605,
+		"scaleY": 1.1605,
+		"color": "00ffb4ff"
+	},
+	{
+		"name": "骨骼",
+		"parent": "gun",
+		"rotation": -0.98,
+		"x": 227.2,
+		"y": 16.57,
+		"scaleX": 2.036,
+		"scaleY": 2.036
+	},
+	{ "name": "骨骼2", "parent": "gun", "rotation": -0.98, "x": 157.33, "y": 7.36 }
+],
+"slots": [
+	{ "name": "qiang", "bone": "gun", "attachment": "qiang" },
+	{ "name": "右手", "bone": "ys", "attachment": "右手" },
+	{ "name": "左手", "bone": "zs", "attachment": "左手" },
+	{ "name": "tx", "bone": "qktx" },
+	{ "name": "1hongshandian_1_0001_1hongshandian_3", "bone": "骨骼", "attachment": "1hongshandian_1_0002_1hongshandian_2" },
+	{ "name": "em__0001_5", "bone": "骨骼2", "attachment": "em__0000_6" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"qiang": {
+				"qiang": { "x": 239.66, "y": -18.17, "rotation": -0.98, "width": 723, "height": 306 }
+			},
+			"1hongshandian_1_0001_1hongshandian_3": {
+				"1hongshandian_1_0001_1hongshandian_3": { "width": 214, "height": 90 },
+				"1hongshandian_1_0002_1hongshandian_2": { "width": 214, "height": 90 },
+				"1hongshandian_1_0003_图层-1": { "width": 214, "height": 90 },
+				"1hongshandian_1_0000_1hongshandian_4": { "width": 214, "height": 90 }
+			},
+			"tx": {
+				"qk1": { "x": 42.39, "y": 6.87, "rotation": -2.71, "width": 109, "height": 92 },
+				"qk2": { "x": 47.57, "y": 10.88, "width": 116, "height": 104 },
+				"qk3": { "x": 49.33, "y": 9.85, "rotation": -3.19, "width": 105, "height": 112 },
+				"qk4": { "x": 56.22, "y": 7.3, "rotation": -5.64, "width": 90, "height": 116 }
+			},
+			"左手": {
+				"左手": { "x": 2.27, "y": 3.45, "width": 65, "height": 60 }
+			},
+			"右手": {
+				"右手": { "x": 1.99, "y": -0.68, "width": 64, "height": 57 }
+			},
+			"em__0001_5": {
+				"em__0001_5": { "width": 562, "height": 353 },
+				"em__0002_4": { "width": 562, "height": 353 },
+				"em__0003_3": { "width": 562, "height": 353 },
+				"em__0004_2": { "width": 562, "height": 353 },
+				"em__0005_1": { "width": 562, "height": 353 },
+				"em__0000_6": { "x": -8.36, "y": -2.2, "scaleX": 0.9451, "scaleY": 0.9451, "width": 562, "height": 353 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"slots": {
+			"1hongshandian_1_0001_1hongshandian_3": {
+				"attachment": [
+					{ "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.0607, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.1213, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.182, "name": "1hongshandian_1_0000_1hongshandian_4" },
+					{ "time": 0.2375, "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.2981, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.3588, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.4194, "name": "1hongshandian_1_0000_1hongshandian_4" },
+					{ "time": 0.4667, "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.5273, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.588, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.6486, "name": "1hongshandian_1_0000_1hongshandian_4" },
+					{ "time": 0.7041, "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.7648, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.8255, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.8861, "name": "1hongshandian_1_0000_1hongshandian_4" },
+					{ "time": 0.9607, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 1, "name": "1hongshandian_1_0001_1hongshandian_3" }
+				]
+			}
+		},
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "angle": 0.38, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -1.75, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 3.05, "y": -8.12, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"ys": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"zs": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			},
+			"qktx": {
+				"rotate": [
+					{ "angle": 0.38 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"slots": {
+			"tx": {
+				"attachment": [
+					{ "time": 0.0333, "name": "qk1" },
+					{ "time": 0.0667, "name": "qk2" },
+					{ "time": 0.1, "name": "qk3" },
+					{ "time": 0.1333, "name": "qk4" },
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"1hongshandian_1_0001_1hongshandian_3": {
+				"attachment": [
+					{ "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.0361, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.0722, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.1083, "name": "1hongshandian_1_0000_1hongshandian_4" },
+					{ "time": 0.1444, "name": "1hongshandian_1_0003_图层-1" },
+					{ "time": 0.1805, "name": "1hongshandian_1_0002_1hongshandian_2" },
+					{ "time": 0.2166, "name": "1hongshandian_1_0001_1hongshandian_3" },
+					{ "time": 0.2527, "name": "1hongshandian_1_0000_1hongshandian_4" }
+				]
+			},
+			"em__0001_5": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "em__0005_1" },
+					{ "time": 0.044, "name": "em__0004_2" },
+					{ "time": 0.0935, "name": "em__0003_3" },
+					{ "time": 0.149, "name": "em__0002_4" },
+					{ "time": 0.2045, "name": "em__0001_5" },
+					{ "time": 0.2599, "name": "em__0000_6" }
+				]
+			}
+		},
+		"bones": {
+			"gun": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "angle": 1.38, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "x": -30.33, "y": -11.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				]
+			},
+			"骨骼2": {
+				"translate": [
+					{ "x": -176.18, "y": -7.37 },
+					{ "time": 0.2, "x": 140.4, "y": -21.09 },
+					{ "time": 0.2667, "x": 140.94, "y": -2.41 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1, "x": 1.58, "y": 1.58 },
+					{ "time": 0.2667, "x": 2.354, "y": 2.354 }
+				]
+			}
+		}
+	}
+}
+}

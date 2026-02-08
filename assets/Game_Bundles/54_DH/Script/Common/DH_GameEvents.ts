@@ -1,5 +1,6 @@
 export const DH_GameEvents = {
 
+    DH_UpdateFishRodPanel :"DH_UpdateFishRodPanel",//更新竿子面板事件
     
 
     Enter_Map_End:"Enter_Map_End",//进入地图结束事件
@@ -92,6 +93,8 @@ export const DH_GameEvents = {
     UI_HIDE_SKILL_PANEL: "UI_HIDE_SKILL_PANEL",        // 隐藏技能面板事件
     UI_SHOW_FISH_ROD_PANEL: "UI_SHOW_FISH_ROD_PANEL",        // 显示鱼杆面板事件
     UI_HIDE_FISH_ROD_PANEL: "UI_HIDE_FISH_ROD_PANEL",        // 隐藏鱼杆面板事件
+    UI_SHOW_GET_MORE_MONEY_PANEL: "UI_SHOW_GET_MORE_MONEY_PANEL",        // 显示获取更多金币面板事件
+    UI_HIDE_GET_MORE_MONEY_PANEL: "UI_HIDE_GET_MORE_MONEY_PANEL",        // 隐藏获取更多金币面板事件
 
 
 

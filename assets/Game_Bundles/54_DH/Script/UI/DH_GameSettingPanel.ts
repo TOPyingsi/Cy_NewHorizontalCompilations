@@ -158,7 +158,7 @@ export class DH_GameSettingPanel extends Component {
             displayMoney = (money / 10000).toFixed(1) + "万";
         } else {
             // 保留1位小数
-            displayMoney = money.toFixed(1);
+            displayMoney = money.toFixed(0);
         }
         
         this.lblMoney.string = displayMoney;

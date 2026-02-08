@@ -1,0 +1,125 @@
+{
+"skeleton": {
+	"hash": "UodgTlXfDKmZZQJg9bivZbLTMAg",
+	"spine": "3.8.75",
+	"x": -155.65,
+	"y": -321.27,
+	"width": 650.76,
+	"height": 649.33,
+	"images": "./images/",
+	"audio": "D:/2026/修狗三角洲（新）/动画/近战"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "zs", "parent": "root", "rotation": -17.66, "x": -33.08, "y": -21.84, "color": "00fff4ff" },
+	{
+		"name": "wq",
+		"parent": "zs",
+		"length": 329.62,
+		"rotation": 20.71,
+		"x": -33.05,
+		"y": -15.63,
+		"color": "ceff00ff"
+	},
+	{ "name": "zhendi", "parent": "root", "x": 233.74, "y": -271.1 },
+	{
+		"name": "bone2",
+		"parent": "wq",
+		"rotation": 3.22,
+		"x": 566.36,
+		"y": 48.3,
+		"scaleX": 1.4665,
+		"scaleY": 1.4665
+	}
+],
+"slots": [
+	{ "name": "zhendi", "bone": "zhendi" },
+	{ "name": "右手", "bone": "wq", "attachment": "右手" },
+	{ "name": "神·霓虹战斧", "bone": "wq", "attachment": "长枪" },
+	{ "name": "左手", "bone": "zs", "attachment": "左手" },
+	{ "name": "cth (2)", "bone": "bone2" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"cth (2)": {
+				"cth (1)": { "x": -151.93, "y": 10.65, "width": 374, "height": 156 },
+				"cth (2)": { "x": -151.93, "y": 10.65, "width": 374, "height": 156 },
+				"cth (3)": { "x": -151.93, "y": 10.65, "width": 374, "height": 156 },
+				"cth (4)": { "x": -151.93, "y": 10.65, "width": 374, "height": 156 },
+				"cth (5)": { "x": -151.93, "y": 10.65, "width": 374, "height": 156 }
+			},
+			"左手": {
+				"左手": { "x": 1.42, "y": -1.5, "width": 66, "height": 65 }
+			},
+			"神·霓虹战斧": {
+				"长枪": {
+					"x": 240.31,
+					"y": 17.32,
+					"scaleX": 0.4873,
+					"scaleY": 0.4873,
+					"rotation": -38.86,
+					"width": 962,
+					"height": 949
+				}
+			},
+			"右手": {
+				"右手": { "x": 132.93, "y": 7.17, "scaleX": -1, "rotation": 95.83, "width": 62, "height": 67 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"bones": {
+			"zs": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 3.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.84, "y": -25.73, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"slots": {
+			"cth (2)": {
+				"attachment": [
+					{ "time": 0.5333, "name": "cth (1)" },
+					{ "time": 0.6, "name": "cth (2)" },
+					{ "time": 0.6667, "name": "cth (3)" },
+					{ "time": 0.7333, "name": "cth (4)" },
+					{ "time": 0.8, "name": "cth (5)" },
+					{ "time": 0.8667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"zs": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "angle": -12.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -12.62, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6333, "angle": -3.95, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7667, "angle": -3.68, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.9333 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "x": -99.5, "y": 16.36, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": -107.68, "y": 16.36, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6333, "x": 189.46, "y": 2.73, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7667, "x": 226.26, "y": 2.73, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.9333 }
+				]
+			}
+		}
+	}
+}
+}
