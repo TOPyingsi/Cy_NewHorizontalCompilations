@@ -814,7 +814,11 @@ export class DH_DataManager extends Component {
                     this.saveData.fishingRodData[rodId] = {isEquipped:false,isUnlocked:true};  // 增加鱼的数量
                     this.dynamicData.rewardSpriteFrame = sp;
                     EventManager.Scene.emit(DH_GameEvents.UI_SHOW_REWARD_PANEL);
+                    this.changeRod(rodId);
+                    EventManager.Scene.emit(DH_GameEvents.DH_UpdateFishRodPanel);
                     this.saveToStorage();
+
+
                 });
             })
             return;
@@ -833,6 +837,8 @@ export class DH_DataManager extends Component {
                 this.saveData.fishingRodData[rodId] = {isEquipped:false,isUnlocked:true};  // 增加鱼的数量
                 this.dynamicData.rewardSpriteFrame = sp;
                 EventManager.Scene.emit(DH_GameEvents.UI_SHOW_REWARD_PANEL);
+                this.changeRod(rodId);
+                EventManager.Scene.emit(DH_GameEvents.DH_UpdateFishRodPanel);
                 this.saveToStorage();
             });
         }
@@ -883,6 +889,7 @@ export class DH_DataManager extends Component {
         let price =(Math.floor(anglerSaveData.level/10)+1)*anglerSaveData.level*anglerJsonData.等级配置["1"].下一等级解锁价格;
         if(this.saveData.itemData[DH_ItemType.Coin] < price){
             EventManager.Scene.emit(DH_GameEvents.Show_Tip,"金币不足");
+            EventManager.Scene.emit(DH_GameEvents.UI_SHOW_GET_MORE_MONEY_PANEL);
             return;
         }
         if(anglerSaveData.level < 50){
@@ -933,6 +940,7 @@ export class DH_DataManager extends Component {
         let skillJsonData = this.getItemDataById(skillId) as DH_SkillJsonData;
         if(this.saveData.itemData[DH_ItemType.Coin] < skillJsonData.等级配置[skillSaveData].下一等级解锁价格){
             EventManager.Scene.emit(DH_GameEvents.Show_Tip,"金币不足");
+            EventManager.Scene.emit(DH_GameEvents.UI_SHOW_GET_MORE_MONEY_PANEL);
             return;
         }
        

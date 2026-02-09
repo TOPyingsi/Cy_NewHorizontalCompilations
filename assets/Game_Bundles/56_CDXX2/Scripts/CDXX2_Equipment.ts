@@ -237,6 +237,76 @@ export class CDXX2_Equipment extends Component {
         }
     }
 
+    // 更新道具显示（用于货币兑换等场景）
+    updatePropDisplay(name: string) {
+        const currentCount = CDXX2_GameData.Instance.userData[name] || 0;
+        
+        // 如果道具不存在于Map中，或者数量为0，需要重新显示
+        if (!this.MapPropEquipment.has(name) || currentCount === 0) {
+            // 移除旧的显示
+            if (this.MapPropEquipment.has(name)) {
+                const items = this.MapPropEquipment.get(name);
+                items.forEach(item => item.node.destroy());
+                this.MapPropEquipment.delete(name);
+            }
+            
+            // 如果数量大于0，重新创建
+            if (currentCount > 0) {
+                this.MapPropEquipment.set(name, []);
+                let remaining = currentCount;
+                
+                while (remaining > 99) {
+                    remaining -= 99;
+                    const item = instantiate(this.ItemEquipmentPrefab);
+                    item.parent = this.Content;
+                    const itemEquipment: CDXX2_ItemEquipment = item.getComponent(CDXX2_ItemEquipment);
+                    itemEquipment.showProp(name, 99);
+                    this.MapPropEquipment.get(name).push(itemEquipment);
+                }
+                
+                if (remaining > 0) {
+                    const item = instantiate(this.ItemEquipmentPrefab);
+                    item.parent = this.Content;
+                    const itemEquipment: CDXX2_ItemEquipment = item.getComponent(CDXX2_ItemEquipment);
+                    itemEquipment.showProp(name, remaining);
+                    this.MapPropEquipment.get(name).push(itemEquipment);
+                }
+            }
+            return;
+        }
+        
+        // 更新现有显示
+        const items = this.MapPropEquipment.get(name);
+        let remaining = currentCount;
+        let itemIndex = 0;
+        
+        // 更新现有的item
+        while (remaining > 0 && itemIndex < items.length) {
+            const displayCount = Math.min(remaining, 99);
+            items[itemIndex].Count = displayCount;
+            items[itemIndex].Num.string = displayCount.toString();
+            remaining -= displayCount;
+            itemIndex++;
+        }
+        
+        // 如果还有剩余，创建新的item
+        while (remaining > 0) {
+            const displayCount = Math.min(remaining, 99);
+            const item = instantiate(this.ItemEquipmentPrefab);
+            item.parent = this.Content;
+            const itemEquipment: CDXX2_ItemEquipment = item.getComponent(CDXX2_ItemEquipment);
+            itemEquipment.showProp(name, displayCount);
+            items.push(itemEquipment);
+            remaining -= displayCount;
+        }
+        
+        // 如果item多了，删除多余的
+        while (itemIndex < items.length) {
+            const item = items.pop();
+            item.node.destroy();
+        }
+    }
+
     loseElixir(name: string, count: number = 1) {
         CDXX2_GameData.LoseElixirByName(name, count);
         if (!this.MapElixirEquipment.has(name)) return;

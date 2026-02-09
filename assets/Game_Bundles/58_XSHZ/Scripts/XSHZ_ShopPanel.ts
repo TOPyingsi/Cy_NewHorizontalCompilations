@@ -10,7 +10,7 @@ const { ccclass, property } = _decorator;
 @ccclass('XSHZ_ShopPanel')
 export class XSHZ_ShopPanel extends Component {
     private SelectId: number = 0;
-    private ShopData: string[] = ["鼬", "山治", "艾斯", "纲手", "宇智波斑", "索隆", "空条承太郎", "路飞"];
+    private ShopData: string[] = ["鼬", "山治", "艾斯", "火柴人", "宇智波斑", "索隆", "空条承太郎", "路飞"];
 
     private Xzk: Node = null;
     start() {

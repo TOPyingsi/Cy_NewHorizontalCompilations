@@ -64,7 +64,7 @@ export class DH_SkillPanel extends Component {
         this.currentAllSkillData = DH_DataManager.Instance.getAllSkillData();
 
         this.onBtnClick_0();
-        // ProjectEventManager.emit(ProjectEvent.弹出窗口, "钓魂");
+        ProjectEventManager.emit(ProjectEvent.弹出窗口, "钓魂");
         
     }
 
@@ -169,23 +169,31 @@ export class DH_SkillPanel extends Component {
         this.btnRight.active = this.currentIdx_1 < Object.keys(this.currentSkillTypeData).length-1;
     }
 
-    onBtnLeftClick(){
-        if(this.currentIdx_0 > 0){
-            this.currentIdx_0--;
-            this.currentIdx_1--;
+   onBtnLeftClick(){
+        if(this.currentIdx_0-1 > 0){
+            this.currentIdx_0-=2;
+            this.currentIdx_1-=2;
             this.initList(this.idx);
-        
+        }
+        else if(this.currentIdx_0-1 === 0){
+            this.currentIdx_0 = 0;
+            this.currentIdx_1 = 1;
+            this.initList(this.idx);
         }
     }
 
     onBtnRightClick(){
-        if(this.currentIdx_1 < Object.keys(this.currentSkillTypeData).length-1){
-            this.currentIdx_0++;
-            this.currentIdx_1++;
+        if(this.currentIdx_1+1 < Object.keys(this.currentSkillTypeData).length-1){
+            this.currentIdx_0+=2;
+            this.currentIdx_1+=2;
+            this.initList(this.idx);
+        }
+        else if(this.currentIdx_1+1 === Object.keys(this.currentSkillTypeData).length-1){
+            this.currentIdx_0 = this.currentIdx_1;
+            this.currentIdx_1 = this.currentIdx_1+1;
             this.initList(this.idx);
         }
     }
-
 
     // onFishItemClick(fishId:string){
     //     DH_DataManager.Instance.(fishId);

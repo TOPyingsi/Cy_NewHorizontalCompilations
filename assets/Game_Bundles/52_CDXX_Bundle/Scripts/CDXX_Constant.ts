@@ -225,6 +225,8 @@ export enum CDXX_BG {
 
     仙界_下层,
     仙界_上层,
+
+    
 }
 
 export const CDXX_TJZL: Map<CDXX_BG, number> = new Map([

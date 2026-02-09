@@ -59,6 +59,7 @@ export class GML_Player extends Component {
 
         EventManager.on(GML_Events.RESET_PLAYER, this.ReStartPos, this);
         EventManager.on(GML_Events.PLAYER_DIE, this.OnPlayerDie, this);
+        EventManager.on(GML_Events.PLAYER_LOG_RESUERGENCE_POS, this.OnLogResurgencePos, this);
 
 
         EventManager.on(GML_Events.Keep_Jump, this.OnKeepJumpStart, this);
@@ -75,6 +76,12 @@ export class GML_Player extends Component {
         this.resurgencePos = this.node.worldPosition.clone();
         this.rigidbody.setLinearVelocity(v3(0, 0, 0));
     }
+
+    OnLogResurgencePos(){
+        this.resurgencePos = this.node.worldPosition.clone();
+        this.rigidbody.setLinearVelocity(v3(0, 0, 0));
+    }
+
 
     state:"静止"|"跳跃"|"后退" ="静止";
     private jumpStage: number = 0; // 0:未开始, 1:准备阶段, 2:跳跃阶段, 3:掉落阶段
@@ -356,6 +363,7 @@ export class GML_Player extends Component {
     protected onDestroy(): void {
         EventManager.off(GML_Events.PLAYER_DIE, this.OnPlayerDie, this);
         EventManager.off(GML_Events.RESET_PLAYER, this.ReStartPos, this);
+        EventManager.off(GML_Events.PLAYER_LOG_RESUERGENCE_POS, this.OnLogResurgencePos, this);
 
     }
 }

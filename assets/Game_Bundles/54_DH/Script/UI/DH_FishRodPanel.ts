@@ -2,6 +2,8 @@ import { _decorator, Button, Component, instantiate, Label, Node, Sprite, v3 } f
 import { DH_DataManager, DH_FishingRodJsonData, DH_FishJsonData, DH_SkillJsonData } from '../Manager/DH_DataManager';
 import { DH_LoadManager } from '../Manager/DH_LoadManager';
 import { ProjectEvent, ProjectEventManager } from 'db://assets/Scripts/Framework/Managers/ProjectEventManager';
+import { EventManager } from 'db://assets/Scripts/Framework/Managers/EventManager';
+import { DH_GameEvents } from '../Common/DH_GameEvents';
 const { ccclass, property } = _decorator;
 
 @ccclass('DH_FishRodPanel')
@@ -159,18 +161,27 @@ export class DH_FishRodPanel extends Component {
     }
 
     onBtnLeftClick(){
-        if(this.currentIdx_0 > 0){
-            this.currentIdx_0--;
-            this.currentIdx_1--;
+        if(this.currentIdx_0-1 > 0){
+            this.currentIdx_0-=2;
+            this.currentIdx_1-=2;
             this.initList(this.idx);
-        
+        }
+        else if(this.currentIdx_0-1 === 0){
+            this.currentIdx_0 = 0;
+            this.currentIdx_1 = 1;
+            this.initList(this.idx);
         }
     }
 
     onBtnRightClick(){
-        if(this.currentIdx_1 < Object.keys(this.currentSkillTypeData).length-1){
-            this.currentIdx_0++;
-            this.currentIdx_1++;
+        if(this.currentIdx_1+1 < Object.keys(this.currentSkillTypeData).length-1){
+            this.currentIdx_0+=2;
+            this.currentIdx_1+=2;
+            this.initList(this.idx);
+        }
+        else if(this.currentIdx_1+1 === Object.keys(this.currentSkillTypeData).length-1){
+            this.currentIdx_0 = this.currentIdx_1;
+            this.currentIdx_1 = this.currentIdx_1+1;
             this.initList(this.idx);
         }
     }
@@ -256,6 +267,10 @@ export class DH_FishRodPanel extends Component {
     // }
 
 
+    updateList(){
+        this.initList(this.idx);
+    }
+
 
 
     onAllSoleClick(){
@@ -278,6 +293,8 @@ export class DH_FishRodPanel extends Component {
 
             this.btn_0.on("click", this.onBtnClick_0, this);
             this.btn_1.on("click", this.onBtnClick_1, this);
+
+            EventManager.on(DH_GameEvents.DH_UpdateFishRodPanel, this.updateList, this);
             // this.btn_2.on("click", this.onBtnClick_2, this);
             // this.btn_3.on("click", this.onBtnClick_3, this);
             // this.btn_4.on("click", this.onBtnClick_4, this);
@@ -287,10 +304,7 @@ export class DH_FishRodPanel extends Component {
     
       
         removeListener(){
-
-    
-    
-    
+            EventManager.off(DH_GameEvents.DH_UpdateFishRodPanel);
         }
     
         protected onDestroy(): void {

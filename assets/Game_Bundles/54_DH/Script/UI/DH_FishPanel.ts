@@ -78,7 +78,7 @@ export class DH_FishPanel extends Component {
          this.nodeTip.active = false;
 
          this.updateValue();
-        // ProjectEventManager.emit(ProjectEvent.弹出窗口, "钓魂");
+        ProjectEventManager.emit(ProjectEvent.弹出窗口, "钓魂");
        
     }
 

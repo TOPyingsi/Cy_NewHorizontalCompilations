@@ -227,7 +227,9 @@ export class SJZXD_UIManager extends Component {
     LoadAllSprite() {
         SJZXD_Constant.PropData.forEach((propData: SJZXD_PropDataItem) => {
             SJZXD_Incident.LoadSprite("Sprites/Prop/" + propData.Name).then((sprite: SpriteFrame) => {
-                this.PropSprite.set(propData.Name, sprite);
+                if (this.PropSprite) {
+                    this.PropSprite.set(propData.Name, sprite);
+                }
             })
         })
     }

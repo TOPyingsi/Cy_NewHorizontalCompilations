@@ -108,6 +108,7 @@ export class CDXX_GameManager extends Component {
     ShowResurgencePanel() {
         CDXX_EventManager.Scene.emit(CDXX_MyEvent.CDXX_PAUSE);
         this.ResurgencePanel.active = true;
+        ProjectEventManager.emit(ProjectEvent.游戏结束, "吃丹修仙")
     }
 
     ShowBattlePanel() {

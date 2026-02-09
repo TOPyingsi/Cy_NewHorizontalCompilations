@@ -7,7 +7,7 @@ const { ccclass, property } = _decorator;
 @ccclass('CDXX2_ItemShop')
 export class CDXX2_ItemShop extends Component {
     @property({ type: Enum(CDXX2_PICKAXE) })
-    Type: CDXX2_PICKAXE = CDXX2_PICKAXE.丛林魅影;
+    Type: CDXX2_PICKAXE = CDXX2_PICKAXE.良品影刀;
 
 }
 

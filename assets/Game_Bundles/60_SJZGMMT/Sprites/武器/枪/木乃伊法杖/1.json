@@ -1,0 +1,95 @@
+{
+"skeleton": {
+	"hash": "seXb1zd74P7p6WXaSn1NHSsltzY",
+	"spine": "3.8.75",
+	"x": -222.01,
+	"y": -137.89,
+	"width": 491,
+	"height": 274,
+	"images": "./images/",
+	"audio": "D:/2026/古墓摸金/怪物动画/远程小怪攻击"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 64.42, "rotation": -82.87, "x": -69.57, "y": 21.36 },
+	{ "name": "bone2", "parent": "root", "length": 57.83, "rotation": -18.43, "x": 86.71, "y": 13.27 }
+],
+"slots": [
+	{ "name": "右手", "bone": "bone2", "attachment": "右手" },
+	{ "name": "左手", "bone": "bone", "attachment": "左手" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"左手": {
+				"左手": { "x": 33.62, "y": 89.58, "rotation": 82.87, "width": 491, "height": 274 }
+			},
+			"右手": {
+				"右手": { "x": 19.92, "y": 29.66, "rotation": 18.43, "width": 102, "height": 136 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -6.27, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": -3.24, "y": -11.89, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -8.31, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": -1.08, "y": -17.3, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "angle": 125.84, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -11.9, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "x": -33.86, "y": 105.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "angle": 59.87, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -8.31, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "x": 21.38, "y": 67.72, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 14.26, "y": -42.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}

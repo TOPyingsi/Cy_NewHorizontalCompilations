@@ -11,7 +11,7 @@
     "speed": 0.2,
     "wrapMode": 1,
     "enableTrsBlending": false,
-    "_duration": 0.2,
+    "_duration": 0.16666666666666666,
     "_hash": 500763545,
     "_tracks": [
       {
@@ -36,37 +36,79 @@
     "_exoticAnimation": null,
     "_events": [
       {
-        "frame": 0.1,
+        "frame": 0.03333333333333333,
         "func": "",
         "params": []
       },
       {
-        "frame": 0.1,
-        "func": "MovePosX",
-        "params": [
-          350,
-          0.25
-        ]
-      },
-      {
-        "frame": 0.15,
-        "func": "",
-        "params": []
-      },
-      {
-        "frame": 0.15,
+        "frame": 0.03333333333333333,
         "func": "Emit",
         "params": [
           "技1"
         ]
       },
       {
-        "frame": 0.18333333333333332,
+        "frame": 0.03333333333333333,
+        "func": "MovePosX",
+        "params": [
+          100
+        ]
+      },
+      {
+        "frame": 0.06666666666666667,
         "func": "",
         "params": []
       },
       {
-        "frame": 0.18333333333333332,
+        "frame": 0.06666666666666667,
+        "func": "Emit",
+        "params": [
+          "技1"
+        ]
+      },
+      {
+        "frame": 0.1,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.1,
+        "func": "Emit",
+        "params": [
+          "技1"
+        ]
+      },
+      {
+        "frame": 0.11666666666666667,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.11666666666666667,
+        "func": "Emit",
+        "params": [
+          "技1"
+        ]
+      },
+      {
+        "frame": 0.13333333333333333,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.13333333333333333,
+        "func": "Emit",
+        "params": [
+          "技1"
+        ]
+      },
+      {
+        "frame": 0.15,
+        "func": "",
+        "params": []
+      },
+      {
+        "frame": 0.15,
         "func": "Emit",
         "params": [
           "技能结束"
@@ -127,43 +169,43 @@
     ],
     "_values": [
       {
-        "__uuid__": "1f267bf4-0366-493c-ada1-b51425599702@f9941",
+        "__uuid__": "f235c15c-dfba-46b8-8629-a43ea1d27bbe@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "bfd224b6-a9a8-44fc-8af8-ed7f191d391c@f9941",
+        "__uuid__": "db9b53c3-f7e9-48ff-861a-6a2a40ed70d2@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "8d2b8973-cfb1-4403-8964-e1270e211273@f9941",
+        "__uuid__": "970f8416-49f7-4870-b2a2-55ae5eea78f0@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "1baef34e-59d6-4788-96bd-cff2b16487f4@f9941",
+        "__uuid__": "65cd59b4-1c6f-48c3-bc1b-c87485c62ef5@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "76a14043-733f-4a1a-908e-53b8fa0875db@f9941",
+        "__uuid__": "246ab5ea-6ff2-4c45-afe6-2540b75e5de0@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "bdbe4911-d960-4fd4-814e-1a9ad01bb8c5@f9941",
+        "__uuid__": "e2add953-657b-49aa-a7fc-de73eabeff33@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "f53a86ae-d013-4c17-9d44-8f9388b1fbc3@f9941",
+        "__uuid__": "cd20c9e4-8e23-4c45-afdd-257fd108d8e0@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "53daaaba-efa2-4a46-a6ea-d8bfb34f8d0c@f9941",
+        "__uuid__": "f35e6000-cf0e-4627-a3b7-c328a6407078@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "9cfb299f-170c-48e7-9fe4-3a919227c94b@f9941",
+        "__uuid__": "203c5d0a-f08a-4396-bc64-488100c7f05a@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "e7a06c73-daa5-4437-bba6-5a8fcb13e2c8@f9941",
+        "__uuid__": "d157129c-3ce6-4cac-8488-da7e59eaf906@f9941",
         "__expectedType__": "cc.SpriteFrame"
       }
     ]
@@ -209,39 +251,8 @@
   },
   {
     "__type__": "cc.ObjectCurve",
-    "_times": [
-      0,
-      0.1,
-      0.11666666666666667,
-      0.13333333333333333,
-      0.15,
-      0.16666666666666666,
-      0.18333333333333332
-    ],
-    "_values": [
-      null,
-      {
-        "__uuid__": "167a852f-f7ff-44ec-9827-39ff281cc4bf@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "63a1c528-72be-4089-8b59-b6b956434db5@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "4d99852d-7451-485a-8197-88c8a157f89a@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "cf524a12-be4c-4bee-9ceb-66a323df4c8e@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "7e58ea99-e4dc-4c38-98ac-03c1e176df55@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      null
-    ]
+    "_times": [],
+    "_values": []
   },
   {
     "__type__": "cc.animation.VectorTrack",
@@ -289,85 +300,8 @@
   },
   {
     "__type__": "cc.RealCurve",
-    "_times": [
-      0.1,
-      0.11666666666666667,
-      0.13333333333333333,
-      0.15,
-      0.16666666666666666
-    ],
-    "_values": [
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": -126.375,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": -73.7979965209961,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": -5.956999778747559,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 107.677001953125,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 150.07699584960938,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      }
-    ],
+    "_times": [],
+    "_values": [],
     "preExtrapolation": 1,
     "postExtrapolation": 1
   },
@@ -379,85 +313,8 @@
   },
   {
     "__type__": "cc.RealCurve",
-    "_times": [
-      0.1,
-      0.11666666666666667,
-      0.13333333333333333,
-      0.15,
-      0.16666666666666666
-    ],
-    "_values": [
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 240.88699340820312,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 222.2310028076172,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 113.68499755859375,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 67.89199829101562,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 67.89199829101562,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      }
-    ],
+    "_times": [],
+    "_values": [],
     "preExtrapolation": 1,
     "postExtrapolation": 1
   },
@@ -469,85 +326,8 @@
   },
   {
     "__type__": "cc.RealCurve",
-    "_times": [
-      0.1,
-      0.11666666666666667,
-      0.13333333333333333,
-      0.15,
-      0.16666666666666666
-    ],
-    "_values": [
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 0,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 0,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 0,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 0,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      },
-      {
-        "__type__": "cc.RealKeyframeValue",
-        "interpolationMode": 0,
-        "tangentWeightMode": 0,
-        "value": 0,
-        "rightTangent": 0,
-        "rightTangentWeight": 1,
-        "leftTangent": 0,
-        "leftTangentWeight": 1,
-        "easingMethod": 0,
-        "__editorExtras__": {
-          "broken": null
-        }
-      }
-    ],
+    "_times": [],
+    "_values": [],
     "preExtrapolation": 1,
     "postExtrapolation": 1
   },
@@ -605,19 +385,8 @@
   },
   {
     "__type__": "cc.ObjectCurve",
-    "_times": [
-      0.1,
-      0.15,
-      0.18333333333333332
-    ],
-    "_values": [
-      null,
-      {
-        "__uuid__": "a7353d68-ab17-4f3c-9ea6-f1ff0e89129c@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      null
-    ]
+    "_times": [],
+    "_values": []
   },
   {
     "__type__": "cc.animation.ObjectTrack",
@@ -653,12 +422,8 @@
   },
   {
     "__type__": "cc.ObjectCurve",
-    "_times": [
-      0
-    ],
-    "_values": [
-      true
-    ]
+    "_times": [],
+    "_values": []
   },
   {
     "__type__": "cc.animation.ObjectTrack",
@@ -694,12 +459,8 @@
   },
   {
     "__type__": "cc.ObjectCurve",
-    "_times": [
-      0
-    ],
-    "_values": [
-      true
-    ]
+    "_times": [],
+    "_values": []
   },
   {
     "__type__": "cc.AnimationClipAdditiveSettings",

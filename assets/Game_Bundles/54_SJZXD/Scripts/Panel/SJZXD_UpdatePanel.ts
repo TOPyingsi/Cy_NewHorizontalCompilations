@@ -10,7 +10,9 @@ export class SJZXD_UpdatePanel extends PanelBase {
     private Maxindex: number = 0;//总页数
     public static IsOnceShow: boolean = false;
     private UpdateData: { Title: string, Content: string }[] = [
+        { Title: "2月6日更新公告", Content: "1.游戏数值调整\n2.修复第四关Boss移动动画错误的Bug" },
         { Title: "1月24日更新公告", Content: "1.收藏室上线！珍惜物品等你来收集\n2.新增黑市神话武器特效\n3.新增大红[坦克模型][唱片机][黄金怀表]\n4.地图外景全面翻新！" }
+
     ]
 
 

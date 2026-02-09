@@ -1,0 +1,128 @@
+{
+"skeleton": {
+	"hash": "3L0Qi3xE2RiavACKXc+2nyOMvpI",
+	"spine": "3.8.75",
+	"x": -117.85,
+	"y": -93.51,
+	"width": 283.85,
+	"height": 440,
+	"images": "./images/",
+	"audio": "D:/2026/古墓摸金/怪物动画/远程小怪攻击"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 64.42, "rotation": -82.87, "x": -69.57, "y": 21.36 },
+	{ "name": "bone2", "parent": "root", "length": 57.83, "rotation": -18.43, "x": 86.71, "y": 13.27 },
+	{
+		"name": "tx",
+		"parent": "root",
+		"rotation": 48.17,
+		"x": 327.21,
+		"y": 128.44,
+		"scaleX": 5.6928,
+		"scaleY": 5.6928,
+		"shearY": 5.43
+	}
+],
+"slots": [
+	{ "name": "右手", "bone": "bone2", "attachment": "右手" },
+	{ "name": "左手", "bone": "bone", "attachment": "左手" },
+	{ "name": "tx", "bone": "tx" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"tx": {
+				"tx (1)": { "x": 0.5, "width": 143, "height": 110 },
+				"tx (2)": { "x": 0.5, "width": 143, "height": 110 },
+				"tx (3)": { "x": 0.5, "width": 143, "height": 110 },
+				"tx (4)": { "x": 6.49, "y": 11.13, "width": 143, "height": 110 },
+				"tx (5)": { "x": 0.5, "width": 143, "height": 110 },
+				"tx (6)": { "x": 0.5, "width": 143, "height": 110 }
+			},
+			"左手": {
+				"左手": { "x": -96.72, "y": 73.78, "rotation": 82.87, "width": 219, "height": 440 }
+			},
+			"右手": {
+				"右手": { "x": 19.92, "y": 29.66, "rotation": 18.43, "width": 102, "height": 136 }
+			}
+		}
+	}
+],
+"animations": {
+	"daiji": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -6.27, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": -3.24, "y": -11.89, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -8.31, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": -1.08, "y": -17.3, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"gongji": {
+		"slots": {
+			"tx": {
+				"attachment": [
+					{ "time": 0.4667, "name": "tx (1)" },
+					{ "time": 0.5333, "name": "tx (2)" },
+					{ "time": 0.6, "name": "tx (3)" },
+					{ "time": 0.6667, "name": "tx (4)" },
+					{ "time": 0.7333, "name": "tx (5)" },
+					{ "time": 0.8, "name": "tx (6)" },
+					{ "time": 0.8667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "angle": 52.4, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -114.15, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "x": -58.08, "y": 105.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 189.5, "y": -75.59, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "angle": 59.87, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "angle": -8.31, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "x": 21.38, "y": 67.72, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 14.26, "y": -42.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}

@@ -3,6 +3,7 @@ import { EventManager } from 'db://assets/Scripts/Framework/Managers/EventManage
 import { DH_GameEvents } from '../Common/DH_GameEvents';
 import { DH_DataManager } from '../Manager/DH_DataManager';
 import { DH_AudioManager } from '../Manager/DH_AudioManager';
+import { ProjectEvent, ProjectEventManager } from 'db://assets/Scripts/Framework/Managers/ProjectEventManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('DH_RewardPanel')
@@ -48,6 +49,7 @@ export class DH_RewardPanel extends Component {
                 DH_AudioManager.getInstance().playSound("get");
             })
             .start()
+        ProjectEventManager.emit(ProjectEvent.弹出窗口, "钓魂");
     }
 
     onSetReWard(){

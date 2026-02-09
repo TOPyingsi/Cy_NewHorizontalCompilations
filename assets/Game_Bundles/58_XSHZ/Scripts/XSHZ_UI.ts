@@ -184,6 +184,7 @@ export class XSHZ_UI extends Component {
         XSHZ_GameData.DateSave();
         this.node.getChildByPath("结算界面/奖励/钻石数量").getComponent(Label).string = `${money}`;
         this.node.getChildByPath("结算界面/奖励/经验数量").getComponent(Label).string = `${exp}`;
+        ProjectEventManager.emit(ProjectEvent.游戏结束, "像素海贼");
     }
 
 

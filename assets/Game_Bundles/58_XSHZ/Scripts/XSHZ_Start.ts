@@ -16,8 +16,8 @@ export class XSHZ_Start extends Component {
 
         if (!Banner.TimeMask) {
             XSHZ_GameManager.GameMode = "1V1";
-            XSHZ_GameManager.TeamData[0] = "路飞";
-            XSHZ_GameManager.TeamData[3] = "空条承太郎";
+            XSHZ_GameManager.TeamData[0] = "火柴人";
+            XSHZ_GameManager.TeamData[3] = "火柴人";
             XSHZ_GameManager.ReSetData();
             director.loadScene("XSHZ_Game");
         }

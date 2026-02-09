@@ -122,6 +122,8 @@ export class GML_GameUI extends Component {
 
 
         EventManager.on(GML_Events.UI_SHOW_BTN_ReStart, this.OnShowBtnReStart, this);
+        EventManager.on(GML_Events.UI_HIDE_BTN_ReStart, this.OnHideBtnReStart, this);
+        EventManager.on(GML_Events.UI_HIDE_BTN_Video, this.OnHideBtnVideo, this);
         EventManager.on(GML_Events.UI_HIDE_BTN_CTRL, this.OnHideBtnCtrl, this);
         EventManager.on(GML_Events.UI_SHOW_BTN_CTRL, this.OnShowBtnCtrl, this);
         EventManager.on(GML_Events.UI_Update_Progress, this.OnUpdateProgress, this);
@@ -130,14 +132,15 @@ export class GML_GameUI extends Component {
 
         this.btnJump.active = true;
         // this.btnJumpBack.active = true;
-        this._btnReStart.active = false;
-        this.btnVideo.active = false;
+        // this._btnReStart.active = false;
+        // this.btnVideo.active = false;
         this.OnUpdateRestartCount();
 
     }
 
     onDestroy() { 
         EventManager.off(GML_Events.UI_SHOW_BTN_ReStart, this.OnShowBtnReStart, this);
+        EventManager.off(GML_Events.UI_HIDE_BTN_ReStart, this.OnHideBtnReStart, this);
         EventManager.off(GML_Events.UI_HIDE_BTN_CTRL, this.OnHideBtnCtrl, this);
         EventManager.off(GML_Events.UI_SHOW_BTN_CTRL, this.OnShowBtnCtrl, this);
         EventManager.off(GML_Events.UI_Update_Progress, this.OnUpdateProgress, this);
@@ -196,11 +199,24 @@ export class GML_GameUI extends Component {
     }
     
     OnShowBtnReStart(){
-        this._btnReStart.active = true;
+        if(GML_GameManager.Instance.resurgenceCount<=0){
+            this._btnReStart.active = false;
+        }
+        else{
+            this._btnReStart.active = true;
+        }
 
         if(!GML_GameManager.Instance.isWatchedVideo){
             this.btnVideo.active = true;
         }
+    }
+
+    OnHideBtnReStart(){
+        this._btnReStart.active = false;
+    }
+
+    OnHideBtnVideo(){
+        this.btnVideo.active = false;
     }
 
     onBtnVideoClick(){
@@ -225,8 +241,9 @@ export class GML_GameUI extends Component {
 
     OnClick_ReStart(){
         GML_GameManager.Instance.restart();
-        this._btnReStart.active = false;
-        this.btnVideo.active = false;
+        // this._btnReStart.active = false;
+        // this.btnVideo.active = false;
+        this.OnShowBtnReStart();
         this.btnJump.active = true;
         // this.btnJumpBack.active = true;
     }
