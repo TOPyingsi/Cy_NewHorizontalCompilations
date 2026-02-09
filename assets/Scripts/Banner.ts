@@ -24,15 +24,15 @@ export default class Banner {
 
     //健康忠告
     static Owner: string = `著作权人：周辉`;              //著作权人
-    static License: string = `登记号：2024SR1548690`;                         //登记号
+    static License: string = `登记号：2024SR1444685`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
     private _appId: string = "106038979";
 
-    private _videoId: string = "e4c288a555934bb6bd82a7d5dadf6717";
-    private _customId: string = "e7f2a1e57bf641119b428be8245d236a";
-    private _bannerId: string = "6010aaad2b7646c68e13e448952c21c6";
+    private _videoId: string = "32a8167c87cd46f0adac912c3da1f7ad";
+    private _customId: string = "2819c95440af4ce9917454589ba78dc3";
+    private _bannerId: string = "bada79248dc54069968b52d5ac337234";
 
 
     //微信
