@@ -23,16 +23,16 @@ export default class Banner {
     static IsWz: boolean = false;//万总华为策略
 
     //健康忠告
-    static Owner: string = `著作权人：周辉`;              //著作权人
-    static License: string = `登记号：2024SR1444685`;                         //登记号
+    static Owner: string = `著作权人：海口童趣科技有限公司`;              //著作权人
+    static License: string = `登记号：2024SR0954572`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
     private _appId: string = "106038979";
 
-    private _videoId: string = "32a8167c87cd46f0adac912c3da1f7ad";
-    private _customId: string = "2819c95440af4ce9917454589ba78dc3";
-    private _bannerId: string = "bada79248dc54069968b52d5ac337234";
+    private _videoId: string = "f0f0e5cd158b47f2a1a96d011b1c5b97";
+    private _customId: string = "fc06a11526624f969c3e2fd655d65dd4";
+    private _bannerId: string = "1d66aba902374978826af22231d66f06";
 
 
     //微信
