@@ -24,15 +24,15 @@ export default class Banner {
 
     //健康忠告
     static Owner: string = `著作权人：海口童趣科技有限公司`;              //著作权人
-    static License: string = `登记号：2025SR116044`;                         //登记号
+    static License: string = `登记号：2024SR0643570`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
     private _appId: string = "36990629";
 
-    private _videoId: string = "3687464";
-    private _customId: string = "3687463";
-    private _bannerId: string = "3687462";
+    private _videoId: string = "3511217";
+    private _customId: string = "3511216";
+    private _bannerId: string = "3511215";
 
 
     //微信
