@@ -2,22 +2,22 @@
   "ver": "1.0.27",
   "importer": "image",
   "imported": true,
-  "uuid": "bc4330f9-8339-458e-9554-45ee50029dce",
+  "uuid": "c656f422-f14e-42e7-9bd8-464460379646",
   "files": [
-    ".jpg",
-    ".json"
+    ".json",
+    ".png"
   ],
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "bc4330f9-8339-458e-9554-45ee50029dce@6c48a",
-      "displayName": "小鱼人战争2",
+      "uuid": "c656f422-f14e-42e7-9bd8-464460379646@6c48a",
+      "displayName": "吃丹修仙",
       "id": "6c48a",
       "name": "texture",
       "userData": {
         "wrapModeS": "clamp-to-edge",
         "wrapModeT": "clamp-to-edge",
-        "imageUuidOrDatabaseUri": "bc4330f9-8339-458e-9554-45ee50029dce",
+        "imageUuidOrDatabaseUri": "c656f422-f14e-42e7-9bd8-464460379646",
         "isUuid": true,
         "visible": false,
         "minfilter": "linear",
@@ -34,22 +34,21 @@
     },
     "f9941": {
       "importer": "sprite-frame",
-      "uuid": "bc4330f9-8339-458e-9554-45ee50029dce@f9941",
-      "displayName": "小鱼人战争2",
+      "uuid": "c656f422-f14e-42e7-9bd8-464460379646@f9941",
+      "displayName": "吃丹修仙",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
-        "trimType": "auto",
         "trimThreshold": 1,
         "rotated": false,
         "offsetX": 0,
-        "offsetY": 0,
-        "trimX": 0,
-        "trimY": 0,
-        "width": 1164,
-        "height": 403,
-        "rawWidth": 1164,
-        "rawHeight": 403,
+        "offsetY": 0.5,
+        "trimX": 3,
+        "trimY": 4,
+        "width": 177,
+        "height": 49,
+        "rawWidth": 183,
+        "rawHeight": 58,
         "borderTop": 0,
         "borderBottom": 0,
         "borderLeft": 0,
@@ -61,17 +60,17 @@
         "meshType": 0,
         "vertices": {
           "rawPosition": [
-            -582,
-            -201.5,
+            -88.5,
+            -24.5,
             0,
-            582,
-            -201.5,
+            88.5,
+            -24.5,
             0,
-            -582,
-            201.5,
+            -88.5,
+            24.5,
             0,
-            582,
-            201.5,
+            88.5,
+            24.5,
             0
           ],
           "indexes": [
@@ -83,39 +82,40 @@
             3
           ],
           "uv": [
-            0,
-            403,
-            1164,
-            403,
-            0,
-            0,
-            1164,
-            0
+            3,
+            54,
+            180,
+            54,
+            3,
+            5,
+            180,
+            5
           ],
           "nuv": [
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            1,
-            1
+            0.01639344262295082,
+            0.08620689655172414,
+            0.9836065573770492,
+            0.08620689655172414,
+            0.01639344262295082,
+            0.9310344827586207,
+            0.9836065573770492,
+            0.9310344827586207
           ],
           "minPos": [
-            -582,
-            -201.5,
+            -88.5,
+            -24.5,
             0
           ],
           "maxPos": [
-            582,
-            201.5,
+            88.5,
+            24.5,
             0
           ]
         },
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "bc4330f9-8339-458e-9554-45ee50029dce@6c48a",
-        "atlasUuid": ""
+        "imageUuidOrDatabaseUri": "c656f422-f14e-42e7-9bd8-464460379646@6c48a",
+        "atlasUuid": "",
+        "trimType": "auto"
       },
       "ver": "1.0.12",
       "imported": true,
@@ -127,8 +127,8 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "hasAlpha": false,
+    "hasAlpha": true,
     "fixAlphaTransparencyArtifacts": false,
-    "redirect": "bc4330f9-8339-458e-9554-45ee50029dce@6c48a"
+    "redirect": "c656f422-f14e-42e7-9bd8-464460379646@6c48a"
   }
 }

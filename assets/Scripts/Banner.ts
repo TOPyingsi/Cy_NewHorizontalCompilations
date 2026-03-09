@@ -23,16 +23,16 @@ export default class Banner {
     static IsWz: boolean = false;//万总华为策略
 
     //健康忠告
-    static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
-    static License: string = `登记号：2025SA0121312`;                         //登记号
+    static Owner: string = `著作权人：海口童趣科技有限公司`;              //著作权人
+    static License: string = `登记号：2025SR116044`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
-    private _appId: string = "115216107";
+    private _appId: string = "36990629";
 
-    private _videoId: string = "l9tqvdw7u2";
-    private _customId: string = "i5ys6albth";
-    private _bannerId: string = "c2wgr7y495";
+    private _videoId: string = "3687464";
+    private _customId: string = "3687463";
+    private _bannerId: string = "3687462";
 
 
     //微信
@@ -47,9 +47,9 @@ export default class Banner {
     private _shareUrl: string = "https://mmocgame.qpic.cn/wechatgame/SSraPWBCo8uTN55cbEEzLibdDEdNlxCDrJyaeTNhtAiagH8uaUcLicIj26wbNeDAnr0/0";
 
     //屏蔽时间
-    private _year: number = 2025;
-    private _month: number = 11;
-    private _date: number = 1;
+    private _year: number = 2026;
+    private _month: number = 3;
+    private _date: number = 16;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -63,9 +63,9 @@ export default class Banner {
     popupAddShortcutCount: number = 0;
 
     public static IsShowServerBundle: boolean = false;//是否能使用远程包
-    private server_year: number = 2025;//远程包屏蔽时间
-    private server_month: number = 9;
-    private server_date: number = 3;
+    private server_year: number = 2026;//远程包屏蔽时间
+    private server_month: number = 3;
+    private server_date: number = 16;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
