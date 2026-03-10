@@ -49,7 +49,7 @@ export default class Banner {
     //屏蔽时间
     private _year: number = 2026;
     private _month: number = 3;
-    private _date: number = 16;
+    private _date: number = 19;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -65,7 +65,7 @@ export default class Banner {
     public static IsShowServerBundle: boolean = false;//是否能使用远程包
     private server_year: number = 2026;//远程包屏蔽时间
     private server_month: number = 3;
-    private server_date: number = 16;
+    private server_date: number = 13;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
@@ -2333,7 +2333,7 @@ export default class Banner {
         }
     }
     private lianjie = "aHR0cHM6Ly95eGFwaS50b21hdG9qb3kuY24vZ2V0SXA=";
-    private map = ["å¦é¨å¸", "åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"];//
+    private map = ["", "", "", "", ""];//"å¦é¨å¸", "åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"
 
     //判断
     SetCityIsYYB() {
